@@ -1,0 +1,3280 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--grep",
+      "@smoke"
+    ],
+    "configFile": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\playwright.config.ts",
+    "rootDir": "C:/Users/talentfarm_learner/financial-services-playwright-automation/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/talentfarm_learner/financial-services-playwright-automation/test-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/talentfarm_learner/financial-services-playwright-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/talentfarm_learner/financial-services-playwright-automation/test-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/talentfarm_learner/financial-services-playwright-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/talentfarm_learner/financial-services-playwright-automation/test-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/talentfarm_learner/financial-services-playwright-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/talentfarm_learner/financial-services-playwright-automation/test-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "mobile-chrome",
+        "name": "mobile-chrome",
+        "testDir": "C:/Users/talentfarm_learner/financial-services-playwright-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "reports/html-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/test-results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "reports/junit-results.xml"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "api\\auth.api.spec.ts",
+      "file": "api/auth.api.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "API - Health & Auth @api",
+          "file": "api/auth.api.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-API-001: GET /health returns 200 @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 480,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:38:42.059Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "355ca0daa7c364686698-b034c15fbf834eb03921",
+              "file": "api/auth.api.spec.ts",
+              "line": 12,
+              "column": 7
+            },
+            {
+              "title": "TC-API-001: GET /health returns 200 @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 558,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:39:28.219Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "355ca0daa7c364686698-253c3ca74ff11bd597a7",
+              "file": "api/auth.api.spec.ts",
+              "line": 12,
+              "column": 7
+            },
+            {
+              "title": "TC-API-001: GET /health returns 200 @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 416,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:40:21.310Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "355ca0daa7c364686698-b022ca8031fba8858626",
+              "file": "api/auth.api.spec.ts",
+              "line": 12,
+              "column": 7
+            },
+            {
+              "title": "TC-API-001: GET /health returns 200 @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 456,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:41:16.798Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "355ca0daa7c364686698-8e6834ab77ab5c993e83",
+              "file": "api/auth.api.spec.ts",
+              "line": 12,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api\\insurancePolicies.api.spec.ts",
+      "file": "api/insurancePolicies.api.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "API - Insurance & Policies @api",
+          "file": "api/insurancePolicies.api.spec.ts",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-API-030: GET /insurance-products returns 200 with a list @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 547,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:38:42.086Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "83ef131151be2dcb5ade-7561d413d21236fb834e",
+              "file": "api/insurancePolicies.api.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "TC-API-034: GET /policies returns policies scoped to the authenticated user @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 495,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:38:42.632Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "83ef131151be2dcb5ade-1075fa2da56a330824f7",
+              "file": "api/insurancePolicies.api.spec.ts",
+              "line": 39,
+              "column": 7
+            },
+            {
+              "title": "TC-API-030: GET /insurance-products returns 200 with a list @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 510,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:39:28.879Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "83ef131151be2dcb5ade-82eb9b21522379da21f4",
+              "file": "api/insurancePolicies.api.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "TC-API-034: GET /policies returns policies scoped to the authenticated user @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 495,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:39:29.425Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "83ef131151be2dcb5ade-abef3a76ac7ab450c32a",
+              "file": "api/insurancePolicies.api.spec.ts",
+              "line": 39,
+              "column": 7
+            },
+            {
+              "title": "TC-API-030: GET /insurance-products returns 200 with a list @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 539,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:40:21.807Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "83ef131151be2dcb5ade-d9a8c00fc0c89da9955d",
+              "file": "api/insurancePolicies.api.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "TC-API-034: GET /policies returns policies scoped to the authenticated user @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 445,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:40:22.375Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "83ef131151be2dcb5ade-8847665b438802679909",
+              "file": "api/insurancePolicies.api.spec.ts",
+              "line": 39,
+              "column": 7
+            },
+            {
+              "title": "TC-API-030: GET /insurance-products returns 200 with a list @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 590,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:41:17.356Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "83ef131151be2dcb5ade-34330331017ee837794e",
+              "file": "api/insurancePolicies.api.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "TC-API-034: GET /policies returns policies scoped to the authenticated user @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 495,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:41:17.978Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "83ef131151be2dcb5ade-e0bbe7fe35de5f0ed4d8",
+              "file": "api/insurancePolicies.api.spec.ts",
+              "line": 39,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api\\mutualFunds.api.spec.ts",
+      "file": "api/mutualFunds.api.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "API - Mutual Funds @api",
+          "file": "api/mutualFunds.api.spec.ts",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-API-010: GET /mutual-funds returns 200 with a list @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 480,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:38:42.733Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0fa843f196ae93132d6-f782fa311ad3be9c9998",
+              "file": "api/mutualFunds.api.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "TC-API-010: GET /mutual-funds returns 200 with a list @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 439,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:39:29.958Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0fa843f196ae93132d6-7027215320c739d4d144",
+              "file": "api/mutualFunds.api.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "TC-API-010: GET /mutual-funds returns 200 with a list @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 456,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:40:22.854Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0fa843f196ae93132d6-8f3bfe41239fcc3ae77f",
+              "file": "api/mutualFunds.api.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "TC-API-010: GET /mutual-funds returns 200 with a list @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 462,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:41:18.511Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "f0fa843f196ae93132d6-f2023511a6bd7b2ea616",
+              "file": "api/mutualFunds.api.spec.ts",
+              "line": 11,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api\\portfolioRedemption.api.spec.ts",
+      "file": "api/portfolioRedemption.api.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "API - Portfolio & Redemptions @api",
+          "file": "api/portfolioRedemption.api.spec.ts",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-API-020: GET /portfolio returns 200 with holdings scoped to the caller @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 454,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:38:43.163Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0cc1a20952b67a068cb4-253de8270bf022a9a59c",
+              "file": "api/portfolioRedemption.api.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "TC-API-020: GET /portfolio returns 200 with holdings scoped to the caller @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 487,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:39:30.461Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0cc1a20952b67a068cb4-8fc9588c6bc08d0da1ce",
+              "file": "api/portfolioRedemption.api.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "TC-API-020: GET /portfolio returns 200 with holdings scoped to the caller @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 494,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:40:23.352Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0cc1a20952b67a068cb4-00e9d64faad6e6797f24",
+              "file": "api/portfolioRedemption.api.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "TC-API-020: GET /portfolio returns 200 with holdings scoped to the caller @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 509,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:41:19.020Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0cc1a20952b67a068cb4-ebf5855cb7ec392cfab2",
+              "file": "api/portfolioRedemption.api.spec.ts",
+              "line": 11,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api\\transactions.api.spec.ts",
+      "file": "api/transactions.api.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "API - Transactions @api",
+          "file": "api/transactions.api.spec.ts",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-API-040: GET /transactions returns 200 with a list @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 442,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:38:43.248Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2bff350072f3c0b6ce06-562c751a5717da3a4112",
+              "file": "api/transactions.api.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "TC-API-040: GET /transactions returns 200 with a list @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 499,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:39:30.983Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2bff350072f3c0b6ce06-56c7b7e45740eb858604",
+              "file": "api/transactions.api.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "TC-API-040: GET /transactions returns 200 with a list @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 428,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:40:23.882Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2bff350072f3c0b6ce06-4033e77aec05ac4a423d",
+              "file": "api/transactions.api.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "TC-API-040: GET /transactions returns 200 with a list @smoke @api",
+              "ok": true,
+              "tags": [
+                "api",
+                "smoke",
+                "api"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 470,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:41:19.574Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2bff350072f3c0b6ce06-1650fb96cb63de5e83bd",
+              "file": "api/transactions.api.spec.ts",
+              "line": 11,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "auth\\login.spec.ts",
+      "file": "auth/login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authentication @auth",
+          "file": "auth/login.spec.ts",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-AUTH-001: valid seed user can log in and reach dashboard @smoke @regression",
+              "ok": true,
+              "tags": [
+                "auth",
+                "smoke",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9266,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:38:43.655Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "231ca1f0f4db3e4958c3-9c22a96012160d384ba5",
+              "file": "auth/login.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "TC-AUTH-001: valid seed user can log in and reach dashboard @smoke @regression",
+              "ok": true,
+              "tags": [
+                "auth",
+                "smoke",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9831,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:39:31.518Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "231ca1f0f4db3e4958c3-13a12953e074b40acd06",
+              "file": "auth/login.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "TC-AUTH-001: valid seed user can log in and reach dashboard @smoke @regression",
+              "ok": true,
+              "tags": [
+                "auth",
+                "smoke",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 7543,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:40:24.346Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "231ca1f0f4db3e4958c3-6fa98202ad42e1044a55",
+              "file": "auth/login.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "TC-AUTH-001: valid seed user can log in and reach dashboard @smoke @regression",
+              "ok": true,
+              "tags": [
+                "auth",
+                "smoke",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3786,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:41:20.091Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "231ca1f0f4db3e4958c3-98afd5b1861d5a0f19c3",
+              "file": "auth/login.spec.ts",
+              "line": 11,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "dashboard\\dashboard.spec.ts",
+      "file": "dashboard/dashboard.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Dashboard @dashboard",
+          "file": "dashboard/dashboard.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-DASH-001: authenticated investor sees dashboard with portfolio summary @smoke",
+              "ok": true,
+              "tags": [
+                "dashboard",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 9955,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:38:43.742Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "747340cde928aa6c3216-c3bafcf04545c4b8b14a",
+              "file": "dashboard/dashboard.spec.ts",
+              "line": 12,
+              "column": 7
+            },
+            {
+              "title": "TC-DASH-001: authenticated investor sees dashboard with portfolio summary @smoke",
+              "ok": true,
+              "tags": [
+                "dashboard",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 8879,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:39:35.046Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "747340cde928aa6c3216-a74af7b497dbafc09156",
+              "file": "dashboard/dashboard.spec.ts",
+              "line": 12,
+              "column": 7
+            },
+            {
+              "title": "TC-DASH-001: authenticated investor sees dashboard with portfolio summary @smoke",
+              "ok": true,
+              "tags": [
+                "dashboard",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6805,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:40:31.325Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "747340cde928aa6c3216-639a14dc7ae333d055f2",
+              "file": "dashboard/dashboard.spec.ts",
+              "line": 12,
+              "column": 7
+            },
+            {
+              "title": "TC-DASH-001: authenticated investor sees dashboard with portfolio summary @smoke",
+              "ok": true,
+              "tags": [
+                "dashboard",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4157,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:41:22.633Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "747340cde928aa6c3216-9243ac6ab90eb251a51e",
+              "file": "dashboard/dashboard.spec.ts",
+              "line": 12,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "insurance\\insuranceDiscovery.spec.ts",
+      "file": "insurance/insuranceDiscovery.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Insurance Discovery @insurance",
+          "file": "insurance/insuranceDiscovery.spec.ts",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-INS-001: insurance product listing loads with visible products @smoke",
+              "ok": true,
+              "tags": [
+                "insurance",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4802,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:38:53.173Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2e19a849b337d6ba6f3a-81e21e94be4d3950f5a2",
+              "file": "insurance/insuranceDiscovery.spec.ts",
+              "line": 10,
+              "column": 7
+            },
+            {
+              "title": "TC-INS-001: insurance product listing loads with visible products @smoke",
+              "ok": true,
+              "tags": [
+                "insurance",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5589,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:39:42.587Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2e19a849b337d6ba6f3a-2dd6161abe9940843413",
+              "file": "insurance/insuranceDiscovery.spec.ts",
+              "line": 10,
+              "column": 7
+            },
+            {
+              "title": "TC-INS-001: insurance product listing loads with visible products @smoke",
+              "ok": true,
+              "tags": [
+                "insurance",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6099,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:40:32.044Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2e19a849b337d6ba6f3a-baf9890ec69ab471d5cb",
+              "file": "insurance/insuranceDiscovery.spec.ts",
+              "line": 10,
+              "column": 7
+            },
+            {
+              "title": "TC-INS-001: insurance product listing loads with visible products @smoke",
+              "ok": true,
+              "tags": [
+                "insurance",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3553,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:41:24.182Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2e19a849b337d6ba6f3a-3ac67ae68dd21c68899e",
+              "file": "insurance/insuranceDiscovery.spec.ts",
+              "line": 10,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "insurance\\insurancePurchase.spec.ts",
+      "file": "insurance/insurancePurchase.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Insurance Purchase @insurance @purchase",
+          "file": "insurance/insurancePurchase.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-INSP-001: valid nominee details lead to successful policy creation @smoke @regression",
+              "ok": false,
+              "tags": [
+                "insurance",
+                "purchase",
+                "smoke",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 15229,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /buy now|purchase/i })\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /buy now|purchase/i })\u001b[22m\n\n    at openPurchaseFormForFirstProduct (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts:28:67)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts:32:5",
+                        "location": {
+                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts",
+                          "column": 67,
+                          "line": 28
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m insurance\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m insurance\u001b[33m.\u001b[39mproductCards\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/buy now|purchase/i\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m   }\n \u001b[90m 30 |\u001b[39m\n \u001b[90m 31 |\u001b[39m   test(\u001b[32m'TC-INSP-001: valid nominee details lead to successful policy creation @smoke @regression'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts",
+                            "column": 67,
+                            "line": 28
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /buy now|purchase/i })\u001b[22m\n\n\n\u001b[0m \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m insurance\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m insurance\u001b[33m.\u001b[39mproductCards\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/buy now|purchase/i\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m   }\n \u001b[90m 30 |\u001b[39m\n \u001b[90m 31 |\u001b[39m   test(\u001b[32m'TC-INSP-001: valid nominee details lead to successful policy creation @smoke @regression'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at openPurchaseFormForFirstProduct (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts:28:67)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts:32:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:38:54.139Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\insurance-insurancePurchas-a636e-y-creation-smoke-regression-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\insurance-insurancePurchas-a636e-y-creation-smoke-regression-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\insurance-insurancePurchas-a636e-y-creation-smoke-regression-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\insurance-insurancePurchas-a636e-y-creation-smoke-regression-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts",
+                        "column": 67,
+                        "line": 28
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7d06a6bca0cd96a40d54-516135eba11587b96296",
+              "file": "insurance/insurancePurchase.spec.ts",
+              "line": 31,
+              "column": 7
+            },
+            {
+              "title": "TC-INSP-001: valid nominee details lead to successful policy creation @smoke @regression",
+              "ok": false,
+              "tags": [
+                "insurance",
+                "purchase",
+                "smoke",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 15798,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /buy now|purchase/i })\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /buy now|purchase/i })\u001b[22m\n\n    at openPurchaseFormForFirstProduct (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts:28:67)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts:32:5",
+                        "location": {
+                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts",
+                          "column": 67,
+                          "line": 28
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m insurance\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m insurance\u001b[33m.\u001b[39mproductCards\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/buy now|purchase/i\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m   }\n \u001b[90m 30 |\u001b[39m\n \u001b[90m 31 |\u001b[39m   test(\u001b[32m'TC-INSP-001: valid nominee details lead to successful policy creation @smoke @regression'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts",
+                            "column": 67,
+                            "line": 28
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /buy now|purchase/i })\u001b[22m\n\n\n\u001b[0m \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m insurance\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m insurance\u001b[33m.\u001b[39mproductCards\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/buy now|purchase/i\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m   }\n \u001b[90m 30 |\u001b[39m\n \u001b[90m 31 |\u001b[39m   test(\u001b[32m'TC-INSP-001: valid nominee details lead to successful policy creation @smoke @regression'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at openPurchaseFormForFirstProduct (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts:28:67)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts:32:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:39:45.752Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\insurance-insurancePurchas-a636e-y-creation-smoke-regression-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\insurance-insurancePurchas-a636e-y-creation-smoke-regression-firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\insurance-insurancePurchas-a636e-y-creation-smoke-regression-firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\insurance-insurancePurchas-a636e-y-creation-smoke-regression-firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts",
+                        "column": 67,
+                        "line": 28
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7d06a6bca0cd96a40d54-b3b74984f36891f44d2f",
+              "file": "insurance/insurancePurchase.spec.ts",
+              "line": 31,
+              "column": 7
+            },
+            {
+              "title": "TC-INSP-001: valid nominee details lead to successful policy creation @smoke @regression",
+              "ok": false,
+              "tags": [
+                "insurance",
+                "purchase",
+                "smoke",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 18400,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid^=\"insurance-card-\"]').first()\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid^=\"insurance-card-\"]').first()\u001b[22m\n\n    at openPurchaseFormForFirstProduct (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts:27:42)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts:32:5",
+                        "location": {
+                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts",
+                          "column": 42,
+                          "line": 27
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36mconst\u001b[39m insurance \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mInsurancePage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m insurance\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m insurance\u001b[33m.\u001b[39mproductCards\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/buy now|purchase/i\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m   }\n \u001b[90m 30 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts",
+                            "column": 42,
+                            "line": 27
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('[data-testid^=\"insurance-card-\"]').first()\u001b[22m\n\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     \u001b[36mconst\u001b[39m insurance \u001b[33m=\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mInsurancePage\u001b[39m(page)\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m insurance\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m insurance\u001b[33m.\u001b[39mproductCards\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/buy now|purchase/i\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m   }\n \u001b[90m 30 |\u001b[39m\u001b[0m\n\u001b[2m    at openPurchaseFormForFirstProduct (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts:27:42)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts:32:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:40:38.243Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\insurance-insurancePurchas-a636e-y-creation-smoke-regression-webkit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\insurance-insurancePurchas-a636e-y-creation-smoke-regression-webkit\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\insurance-insurancePurchas-a636e-y-creation-smoke-regression-webkit\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\insurance-insurancePurchas-a636e-y-creation-smoke-regression-webkit\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts",
+                        "column": 42,
+                        "line": 27
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7d06a6bca0cd96a40d54-837f4b217f745f10a740",
+              "file": "insurance/insurancePurchase.spec.ts",
+              "line": 31,
+              "column": 7
+            },
+            {
+              "title": "TC-INSP-001: valid nominee details lead to successful policy creation @smoke @regression",
+              "ok": false,
+              "tags": [
+                "insurance",
+                "purchase",
+                "smoke",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 15284,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /buy now|purchase/i })\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /buy now|purchase/i })\u001b[22m\n\n    at openPurchaseFormForFirstProduct (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts:28:67)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts:32:5",
+                        "location": {
+                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts",
+                          "column": 67,
+                          "line": 28
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m insurance\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m insurance\u001b[33m.\u001b[39mproductCards\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/buy now|purchase/i\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m   }\n \u001b[90m 30 |\u001b[39m\n \u001b[90m 31 |\u001b[39m   test(\u001b[32m'TC-INSP-001: valid nominee details lead to successful policy creation @smoke @regression'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts",
+                            "column": 67,
+                            "line": 28
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /buy now|purchase/i })\u001b[22m\n\n\n\u001b[0m \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m insurance\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m insurance\u001b[33m.\u001b[39mproductCards\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 28 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/buy now|purchase/i\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 29 |\u001b[39m   }\n \u001b[90m 30 |\u001b[39m\n \u001b[90m 31 |\u001b[39m   test(\u001b[32m'TC-INSP-001: valid nominee details lead to successful policy creation @smoke @regression'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at openPurchaseFormForFirstProduct (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts:28:67)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts:32:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:41:27.065Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\insurance-insurancePurchas-a636e-y-creation-smoke-regression-mobile-chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\insurance-insurancePurchas-a636e-y-creation-smoke-regression-mobile-chrome\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\insurance-insurancePurchas-a636e-y-creation-smoke-regression-mobile-chrome\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\insurance-insurancePurchas-a636e-y-creation-smoke-regression-mobile-chrome\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insurancePurchase.spec.ts",
+                        "column": 67,
+                        "line": 28
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "7d06a6bca0cd96a40d54-3303c8eabb403a4ee61b",
+              "file": "insurance/insurancePurchase.spec.ts",
+              "line": 31,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "mutual-funds\\investment.spec.ts",
+      "file": "mutual-funds/investment.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Mutual Fund Investment @mutual-funds @investment",
+          "file": "mutual-funds/investment.spec.ts",
+          "line": 15,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-INV-001: valid lumpsum investment above minimum succeeds and updates portfolio @smoke @regression",
+              "ok": false,
+              "tags": [
+                "mutual-funds",
+                "investment",
+                "smoke",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 8642,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /invest now/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /invest now/i })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /invest now/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /invest now/i })\u001b[22m\n\n    at FundDetailsPage.expectLoaded (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\FundDetailsPage.ts:27:37)\n    at navigateToFirstFundInvestmentForm (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\mutual-funds\\investment.spec.ts:30:19)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\mutual-funds\\investment.spec.ts:35:5",
+                        "location": {
+                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\FundDetailsPage.ts",
+                          "column": 37,
+                          "line": 27
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\FundDetailsPage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m\n \u001b[90m 26 |\u001b[39m   \u001b[36masync\u001b[39m expectLoaded() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39minvestButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m   }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m   \u001b[36masync\u001b[39m clickInvest() {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\FundDetailsPage.ts",
+                            "column": 37,
+                            "line": 27
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /invest now/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /invest now/i })\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\FundDetailsPage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m\n \u001b[90m 26 |\u001b[39m   \u001b[36masync\u001b[39m expectLoaded() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39minvestButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m   }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m   \u001b[36masync\u001b[39m clickInvest() {\u001b[0m\n\u001b[2m    at FundDetailsPage.expectLoaded (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\FundDetailsPage.ts:27:37)\u001b[22m\n\u001b[2m    at navigateToFirstFundInvestmentForm (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\mutual-funds\\investment.spec.ts:30:19)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\mutual-funds\\investment.spec.ts:35:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:38:58.041Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\FundDetailsPage.ts",
+                        "column": 37,
+                        "line": 27
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ebc2ece6da49e2718372-96cfce73b6742a0e0492",
+              "file": "mutual-funds/investment.spec.ts",
+              "line": 34,
+              "column": 7
+            },
+            {
+              "title": "TC-INV-001: valid lumpsum investment above minimum succeeds and updates portfolio @smoke @regression",
+              "ok": false,
+              "tags": [
+                "mutual-funds",
+                "investment",
+                "smoke",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 10436,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /invest now/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /invest now/i })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /invest now/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /invest now/i })\u001b[22m\n\n    at FundDetailsPage.expectLoaded (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\FundDetailsPage.ts:27:37)\n    at navigateToFirstFundInvestmentForm (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\mutual-funds\\investment.spec.ts:30:19)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\mutual-funds\\investment.spec.ts:35:5",
+                        "location": {
+                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\FundDetailsPage.ts",
+                          "column": 37,
+                          "line": 27
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\FundDetailsPage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m\n \u001b[90m 26 |\u001b[39m   \u001b[36masync\u001b[39m expectLoaded() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39minvestButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m   }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m   \u001b[36masync\u001b[39m clickInvest() {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\FundDetailsPage.ts",
+                            "column": 37,
+                            "line": 27
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /invest now/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /invest now/i })\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\FundDetailsPage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m\n \u001b[90m 26 |\u001b[39m   \u001b[36masync\u001b[39m expectLoaded() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39minvestButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m   }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m   \u001b[36masync\u001b[39m clickInvest() {\u001b[0m\n\u001b[2m    at FundDetailsPage.expectLoaded (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\FundDetailsPage.ts:27:37)\u001b[22m\n\u001b[2m    at navigateToFirstFundInvestmentForm (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\mutual-funds\\investment.spec.ts:30:19)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\mutual-funds\\investment.spec.ts:35:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:39:48.280Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\FundDetailsPage.ts",
+                        "column": 37,
+                        "line": 27
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ebc2ece6da49e2718372-c0c81abeaad42de5e73f",
+              "file": "mutual-funds/investment.spec.ts",
+              "line": 34,
+              "column": 7
+            },
+            {
+              "title": "TC-INV-001: valid lumpsum investment above minimum succeeds and updates portfolio @smoke @regression",
+              "ok": false,
+              "tags": [
+                "mutual-funds",
+                "investment",
+                "smoke",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 11816,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /invest now/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /invest now/i })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /invest now/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /invest now/i })\u001b[22m\n\n    at FundDetailsPage.expectLoaded (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\FundDetailsPage.ts:27:37)\n    at navigateToFirstFundInvestmentForm (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\mutual-funds\\investment.spec.ts:30:19)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\mutual-funds\\investment.spec.ts:35:5",
+                        "location": {
+                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\FundDetailsPage.ts",
+                          "column": 37,
+                          "line": 27
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\FundDetailsPage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m\n \u001b[90m 26 |\u001b[39m   \u001b[36masync\u001b[39m expectLoaded() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39minvestButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m   }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m   \u001b[36masync\u001b[39m clickInvest() {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\FundDetailsPage.ts",
+                            "column": 37,
+                            "line": 27
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /invest now/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /invest now/i })\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\FundDetailsPage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m\n \u001b[90m 26 |\u001b[39m   \u001b[36masync\u001b[39m expectLoaded() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39minvestButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m   }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m   \u001b[36masync\u001b[39m clickInvest() {\u001b[0m\n\u001b[2m    at FundDetailsPage.expectLoaded (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\FundDetailsPage.ts:27:37)\u001b[22m\n\u001b[2m    at navigateToFirstFundInvestmentForm (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\mutual-funds\\investment.spec.ts:30:19)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\mutual-funds\\investment.spec.ts:35:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:40:38.343Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-webkit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-webkit\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-webkit\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-webkit\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\FundDetailsPage.ts",
+                        "column": 37,
+                        "line": 27
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ebc2ece6da49e2718372-16aced495aff4091bac5",
+              "file": "mutual-funds/investment.spec.ts",
+              "line": 34,
+              "column": 7
+            },
+            {
+              "title": "TC-INV-001: valid lumpsum investment above minimum succeeds and updates portfolio @smoke @regression",
+              "ok": false,
+              "tags": [
+                "mutual-funds",
+                "investment",
+                "smoke",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 9154,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /invest now/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /invest now/i })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /invest now/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /invest now/i })\u001b[22m\n\n    at FundDetailsPage.expectLoaded (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\FundDetailsPage.ts:27:37)\n    at navigateToFirstFundInvestmentForm (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\mutual-funds\\investment.spec.ts:30:19)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\mutual-funds\\investment.spec.ts:35:5",
+                        "location": {
+                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\FundDetailsPage.ts",
+                          "column": 37,
+                          "line": 27
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\FundDetailsPage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m\n \u001b[90m 26 |\u001b[39m   \u001b[36masync\u001b[39m expectLoaded() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39minvestButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m   }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m   \u001b[36masync\u001b[39m clickInvest() {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\FundDetailsPage.ts",
+                            "column": 37,
+                            "line": 27
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /invest now/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /invest now/i })\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\FundDetailsPage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m\n \u001b[90m 26 |\u001b[39m   \u001b[36masync\u001b[39m expectLoaded() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39minvestButton)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m   }\n \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m   \u001b[36masync\u001b[39m clickInvest() {\u001b[0m\n\u001b[2m    at FundDetailsPage.expectLoaded (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\FundDetailsPage.ts:27:37)\u001b[22m\n\u001b[2m    at navigateToFirstFundInvestmentForm (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\mutual-funds\\investment.spec.ts:30:19)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\mutual-funds\\investment.spec.ts:35:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:41:27.795Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-mobile-chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-mobile-chrome\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-mobile-chrome\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-mobile-chrome\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\FundDetailsPage.ts",
+                        "column": 37,
+                        "line": 27
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ebc2ece6da49e2718372-95c9cf7f9a71069419ab",
+              "file": "mutual-funds/investment.spec.ts",
+              "line": 34,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "mutual-funds\\mutualFundsDiscovery.spec.ts",
+      "file": "mutual-funds/mutualFundsDiscovery.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Mutual Fund Discovery @mutual-funds",
+          "file": "mutual-funds/mutualFundsDiscovery.spec.ts",
+          "line": 12,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-MF-001: fund listing page loads with visible fund cards @smoke",
+              "ok": true,
+              "tags": [
+                "mutual-funds",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3805,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:39:07.890Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d16b5df476ac1687d183-99b0461f82f6ed74ef0a",
+              "file": "mutual-funds/mutualFundsDiscovery.spec.ts",
+              "line": 13,
+              "column": 7
+            },
+            {
+              "title": "TC-MF-001: fund listing page loads with visible fund cards @smoke",
+              "ok": true,
+              "tags": [
+                "mutual-funds",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 10447,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:40:00.850Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d16b5df476ac1687d183-f5ee137d5e60cc825f31",
+              "file": "mutual-funds/mutualFundsDiscovery.spec.ts",
+              "line": 13,
+              "column": 7
+            },
+            {
+              "title": "TC-MF-001: fund listing page loads with visible fund cards @smoke",
+              "ok": true,
+              "tags": [
+                "mutual-funds",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6009,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:40:51.250Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d16b5df476ac1687d183-79b4ec044224c0b66005",
+              "file": "mutual-funds/mutualFundsDiscovery.spec.ts",
+              "line": 13,
+              "column": 7
+            },
+            {
+              "title": "TC-MF-001: fund listing page loads with visible fund cards @smoke",
+              "ok": true,
+              "tags": [
+                "mutual-funds",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3153,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:41:37.993Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d16b5df476ac1687d183-e6c285d7ee2bfbec7abd",
+              "file": "mutual-funds/mutualFundsDiscovery.spec.ts",
+              "line": 13,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "portfolio\\portfolio.spec.ts",
+      "file": "portfolio/portfolio.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Portfolio Management @portfolio",
+          "file": "portfolio/portfolio.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-PORT-001: investor sees their own holdings only @smoke",
+              "ok": false,
+              "tags": [
+                "portfolio",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 15973,
+                      "error": {
+                        "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByTestId('login-email')\u001b[22m\n",
+                        "stack": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByTestId('login-email')\u001b[22m\n\n    at LoginPage.login (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\LoginPage.ts:25:27)\n    at loginAs (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\fixtures\\auth.fixture.ts:22:19)\n    at Object.investorPage (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\fixtures\\auth.fixture.ts:33:5)",
+                        "location": {
+                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\LoginPage.ts",
+                          "column": 27,
+                          "line": 25
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\LoginPage.ts:25\n\n\u001b[0m \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m   \u001b[36masync\u001b[39m login(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39memailInput\u001b[33m.\u001b[39mfill(email)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m   }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\LoginPage.ts",
+                            "column": 27,
+                            "line": 25
+                          },
+                          "message": "TimeoutError: locator.fill: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByTestId('login-email')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\LoginPage.ts:25\n\n\u001b[0m \u001b[90m 23 |\u001b[39m\n \u001b[90m 24 |\u001b[39m   \u001b[36masync\u001b[39m login(email\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m password\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39memailInput\u001b[33m.\u001b[39mfill(email)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordInput\u001b[33m.\u001b[39mfill(password)\u001b[33m;\u001b[39m\n \u001b[90m 27 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msubmitButton\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m 28 |\u001b[39m   }\u001b[0m\n\u001b[2m    at LoginPage.login (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\LoginPage.ts:25:27)\u001b[22m\n\u001b[2m    at loginAs (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\fixtures\\auth.fixture.ts:22:19)\u001b[22m\n\u001b[2m    at Object.investorPage (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\fixtures\\auth.fixture.ts:33:5)\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:39:10.606Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\LoginPage.ts",
+                        "column": 27,
+                        "line": 25
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2723ef038a17eca1eaa4-3193c6b449e066ad20f9",
+              "file": "portfolio/portfolio.spec.ts",
+              "line": 12,
+              "column": 7
+            },
+            {
+              "title": "TC-PORT-001: investor sees their own holdings only @smoke",
+              "ok": true,
+              "tags": [
+                "portfolio",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 8414,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:40:04.736Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2723ef038a17eca1eaa4-f8221bc8c73b33d61e99",
+              "file": "portfolio/portfolio.spec.ts",
+              "line": 12,
+              "column": 7
+            },
+            {
+              "title": "TC-PORT-001: investor sees their own holdings only @smoke",
+              "ok": false,
+              "tags": [
+                "portfolio",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 15737,
+                      "error": {
+                        "message": "TimeoutError: page.waitForURL: Timeout 10000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================",
+                        "stack": "TimeoutError: page.waitForURL: Timeout 10000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n    at LoginPage.expectLoginSuccess (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\LoginPage.ts:31:21)\n    at loginAs (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\fixtures\\auth.fixture.ts:23:19)\n    at Object.investorPage (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\fixtures\\auth.fixture.ts:33:5)",
+                        "location": {
+                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\LoginPage.ts",
+                          "column": 21,
+                          "line": 31
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\LoginPage.ts:31\n\n\u001b[0m \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m   \u001b[36masync\u001b[39m expectLoginSuccess() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForURL(\u001b[35m/dashboard/\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByTestId(dataTestIds\u001b[33m.\u001b[39mdashboard))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 33 |\u001b[39m   }\n \u001b[90m 34 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\LoginPage.ts",
+                            "column": 21,
+                            "line": 31
+                          },
+                          "message": "TimeoutError: page.waitForURL: Timeout 10000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n\n\u001b[90m   at \u001b[39m..\\pages\\LoginPage.ts:31\n\n\u001b[0m \u001b[90m 29 |\u001b[39m\n \u001b[90m 30 |\u001b[39m   \u001b[36masync\u001b[39m expectLoginSuccess() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForURL(\u001b[35m/dashboard/\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByTestId(dataTestIds\u001b[33m.\u001b[39mdashboard))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 33 |\u001b[39m   }\n \u001b[90m 34 |\u001b[39m\u001b[0m\n\u001b[2m    at LoginPage.expectLoginSuccess (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\LoginPage.ts:31:21)\u001b[22m\n\u001b[2m    at loginAs (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\fixtures\\auth.fixture.ts:23:19)\u001b[22m\n\u001b[2m    at Object.investorPage (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\fixtures\\auth.fixture.ts:33:5)\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:40:58.060Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-webkit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-webkit\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-webkit\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-webkit\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\LoginPage.ts",
+                        "column": 21,
+                        "line": 31
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "2723ef038a17eca1eaa4-c95bfc32559c0f68f715",
+              "file": "portfolio/portfolio.spec.ts",
+              "line": 12,
+              "column": 7
+            },
+            {
+              "title": "TC-PORT-001: investor sees their own holdings only @smoke",
+              "ok": true,
+              "tags": [
+                "portfolio",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3897,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:41:41.365Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2723ef038a17eca1eaa4-394add9113fed34cc0de",
+              "file": "portfolio/portfolio.spec.ts",
+              "line": 12,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "portfolio\\redemption.spec.ts",
+      "file": "portfolio/redemption.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Redemption @portfolio @redemption",
+          "file": "portfolio/redemption.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-RED-001: valid partial redemption by units succeeds @smoke @regression",
+              "ok": false,
+              "tags": [
+                "portfolio",
+                "redemption",
+                "smoke",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 14834,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /redeem/i })\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /redeem/i })\u001b[22m\n\n    at openRedemptionFormForFirstHolding (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts:25:57)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts:29:5",
+                        "location": {
+                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts",
+                          "column": 57,
+                          "line": 25
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m portfolio\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m portfolio\u001b[33m.\u001b[39mholdingsRows\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/redeem/i\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m   }\n \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   test(\u001b[32m'TC-RED-001: valid partial redemption by units succeeds @smoke @regression'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts",
+                            "column": 57,
+                            "line": 25
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /redeem/i })\u001b[22m\n\n\n\u001b[0m \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m portfolio\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m portfolio\u001b[33m.\u001b[39mholdingsRows\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/redeem/i\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m   }\n \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   test(\u001b[32m'TC-RED-001: valid partial redemption by units succeeds @smoke @regression'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at openRedemptionFormForFirstHolding (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts:25:57)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts:29:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:39:11.988Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts",
+                        "column": 57,
+                        "line": 25
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "244b949b7b5361c21d4f-62bdde1f54521708be3d",
+              "file": "portfolio/redemption.spec.ts",
+              "line": 28,
+              "column": 7
+            },
+            {
+              "title": "TC-RED-001: valid partial redemption by units succeeds @smoke @regression",
+              "ok": false,
+              "tags": [
+                "portfolio",
+                "redemption",
+                "smoke",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 15837,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /redeem/i })\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /redeem/i })\u001b[22m\n\n    at openRedemptionFormForFirstHolding (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts:25:57)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts:29:5",
+                        "location": {
+                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts",
+                          "column": 57,
+                          "line": 25
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m portfolio\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m portfolio\u001b[33m.\u001b[39mholdingsRows\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/redeem/i\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m   }\n \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   test(\u001b[32m'TC-RED-001: valid partial redemption by units succeeds @smoke @regression'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts",
+                            "column": 57,
+                            "line": 25
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /redeem/i })\u001b[22m\n\n\n\u001b[0m \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m portfolio\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m portfolio\u001b[33m.\u001b[39mholdingsRows\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/redeem/i\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m   }\n \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   test(\u001b[32m'TC-RED-001: valid partial redemption by units succeeds @smoke @regression'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at openRedemptionFormForFirstHolding (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts:25:57)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts:29:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:40:12.467Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-firefox\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-firefox\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-firefox\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts",
+                        "column": 57,
+                        "line": 25
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "244b949b7b5361c21d4f-aeb655b4bcac1965bca6",
+              "file": "portfolio/redemption.spec.ts",
+              "line": 28,
+              "column": 7
+            },
+            {
+              "title": "TC-RED-001: valid partial redemption by units succeeds @smoke @regression",
+              "ok": false,
+              "tags": [
+                "portfolio",
+                "redemption",
+                "smoke",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 17851,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /redeem/i })\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /redeem/i })\u001b[22m\n\n    at openRedemptionFormForFirstHolding (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts:25:57)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts:29:5",
+                        "location": {
+                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts",
+                          "column": 57,
+                          "line": 25
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m portfolio\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m portfolio\u001b[33m.\u001b[39mholdingsRows\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/redeem/i\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m   }\n \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   test(\u001b[32m'TC-RED-001: valid partial redemption by units succeeds @smoke @regression'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts",
+                            "column": 57,
+                            "line": 25
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /redeem/i })\u001b[22m\n\n\n\u001b[0m \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m portfolio\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m portfolio\u001b[33m.\u001b[39mholdingsRows\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/redeem/i\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m   }\n \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   test(\u001b[32m'TC-RED-001: valid partial redemption by units succeeds @smoke @regression'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at openRedemptionFormForFirstHolding (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts:25:57)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts:29:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:40:57.431Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-webkit\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-webkit\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-webkit\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-webkit\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts",
+                        "column": 57,
+                        "line": 25
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "244b949b7b5361c21d4f-f2701272ac0a42a940c4",
+              "file": "portfolio/redemption.spec.ts",
+              "line": 28,
+              "column": 7
+            },
+            {
+              "title": "TC-RED-001: valid partial redemption by units succeeds @smoke @regression",
+              "ok": false,
+              "tags": [
+                "portfolio",
+                "redemption",
+                "smoke",
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 14825,
+                      "error": {
+                        "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /redeem/i })\u001b[22m\n",
+                        "stack": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /redeem/i })\u001b[22m\n\n    at openRedemptionFormForFirstHolding (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts:25:57)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts:29:5",
+                        "location": {
+                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts",
+                          "column": 57,
+                          "line": 25
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m portfolio\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m portfolio\u001b[33m.\u001b[39mholdingsRows\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/redeem/i\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m   }\n \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   test(\u001b[32m'TC-RED-001: valid partial redemption by units succeeds @smoke @regression'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts",
+                            "column": 57,
+                            "line": 25
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /redeem/i })\u001b[22m\n\n\n\u001b[0m \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m portfolio\u001b[33m.\u001b[39mgoto()\u001b[33m;\u001b[39m\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m portfolio\u001b[33m.\u001b[39mholdingsRows\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 25 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/redeem/i\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 26 |\u001b[39m   }\n \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   test(\u001b[32m'TC-RED-001: valid partial redemption by units succeeds @smoke @regression'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at openRedemptionFormForFirstHolding (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts:25:57)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts:29:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:41:43.577Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-mobile-chrome\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-mobile-chrome\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-mobile-chrome\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-mobile-chrome\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\redemption.spec.ts",
+                        "column": 57,
+                        "line": 25
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "244b949b7b5361c21d4f-82dc8f2b3e2d66fcc6a2",
+              "file": "portfolio/redemption.spec.ts",
+              "line": 28,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "transactions\\transactions.spec.ts",
+      "file": "transactions/transactions.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Transaction History @transactions",
+          "file": "transactions/transactions.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-TXN-001: transaction history loads for the authenticated user @smoke",
+              "ok": true,
+              "tags": [
+                "transactions",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5226,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:39:28.131Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "662893c5e85f431a6cae-ea2ff91f540c24b2de96",
+              "file": "transactions/transactions.spec.ts",
+              "line": 15,
+              "column": 7
+            },
+            {
+              "title": "TC-TXN-001: transaction history loads for the authenticated user @smoke",
+              "ok": true,
+              "tags": [
+                "transactions",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4731,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:40:14.938Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "662893c5e85f431a6cae-3ffc27d112e68aefaa7e",
+              "file": "transactions/transactions.spec.ts",
+              "line": 15,
+              "column": 7
+            },
+            {
+              "title": "TC-TXN-001: transaction history loads for the authenticated user @smoke",
+              "ok": true,
+              "tags": [
+                "transactions",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 6108,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:41:15.140Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "662893c5e85f431a6cae-3552d28d891c9cffaafb",
+              "file": "transactions/transactions.spec.ts",
+              "line": 15,
+              "column": 7
+            },
+            {
+              "title": "TC-TXN-001: transaction history loads for the authenticated user @smoke",
+              "ok": true,
+              "tags": [
+                "transactions",
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "mobile-chrome",
+                  "projectName": "mobile-chrome",
+                  "results": [
+                    {
+                      "workerIndex": 16,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3501,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-17T19:41:45.310Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "662893c5e85f431a6cae-7ef9ec5e6559ac7ef5c1",
+              "file": "transactions/transactions.spec.ts",
+              "line": 15,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-17T19:38:40.708Z",
+    "duration": 198271.085,
+    "expected": 46,
+    "skipped": 0,
+    "unexpected": 14,
+    "flaky": 0
+  }
+}

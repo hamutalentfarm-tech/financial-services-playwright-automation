@@ -1,0 +1,27 @@
+{
+  "name": "financial-services-playwright-automation",
+  "version": "1.0.0",
+  "description": "Playwright + TypeScript QA automation suite for the FinServe Retail Demo Platform (Mutual Funds & Insurance B2C application).",
+  "scripts": {
+    "test": "playwright test",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:api": "playwright test tests/api --grep @api",
+    "test:finserve-chromium": "playwright test --project=chromium",
+    "test:ui": "playwright test --grep @ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report reports/html-report",
+    "codegen": "playwright codegen",
+    "lint": "tsc --noEmit -p tsconfig.json"
+  },
+  "keywords": ["playwright", "typescript", "qa-automation", "finserve"],
+  "author": "Haritha Mudili",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "@types/node": "^20.14.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.5.4"
+  }
+}
