@@ -33,7 +33,7 @@ test.describe('Authentication @auth', () => {
     const loginPage = new LoginPage(page);
     await loginPage.goto();
     await loginPage.login(users.lockedUser.email, users.lockedUser.password);
-    await loginPage.expectLoginError();
+    await loginPage.expectLockedError();
   });
 
   test('TC-AUTH-005: unauthenticated user is redirected away from a protected route @regression', async ({ page }) => {

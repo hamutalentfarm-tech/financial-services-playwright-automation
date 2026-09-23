@@ -22,11 +22,12 @@ test.describe('Insurance Purchase @insurance @purchase', () => {
   });
 
   async function openPurchaseFormForFirstProduct(page: import('@playwright/test').Page) {
-    const insurance = new InsurancePage(page);
-    await insurance.goto();
-    await insurance.productCards.first().click();
-    await page.getByRole('button', { name: /buy now|purchase/i }).click();
-  }
+  const insurance = new InsurancePage(page);
+  await insurance.goto();
+  const firstCard = insurance.productCardsBuy.first();
+  await firstCard.click();
+  
+}
 
   test('TC-INSP-001: valid nominee details lead to successful policy creation @smoke @regression', async ({ page }) => {
     await openPurchaseFormForFirstProduct(page);
@@ -49,6 +50,9 @@ test.describe('Insurance Purchase @insurance @purchase', () => {
   test('TC-INSP-003: premium summary is shown before final confirmation @regression', async ({ page }) => {
     await openPurchaseFormForFirstProduct(page);
     const policy = new PolicyPage(page);
+    const nominee = generateNominee();
+    await policy.fillNominee(nominee.name, nominee.relationship, nominee.dateOfBirth);
+    await policy.submitPurchase();
     await expect(policy.premiumSummary).toBeVisible();
   });
 

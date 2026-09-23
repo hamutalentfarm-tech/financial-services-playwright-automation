@@ -16,7 +16,7 @@ export class FundDetailsPage {
     this.threeYearReturn = page.getByTestId('fund-3y-return');
     this.riskLevel = page.getByTestId('fund-risk-level');
     this.category = page.getByTestId('fund-category');
-    this.investButton = page.getByRole('button', { name: /invest now/i });
+    this.investButton = page.getByTestId('invest-now-button');
   }
 
   async gotoById(fundId: string | number) {

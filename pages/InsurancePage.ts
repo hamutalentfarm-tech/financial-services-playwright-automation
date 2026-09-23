@@ -7,10 +7,12 @@ export class InsurancePage {
   readonly premiumFilter: Locator;
   readonly coverageFilter: Locator;
   readonly compareButton: Locator;
+  readonly productCardsBuy: Locator;
 
   constructor(page: Page) {
     this.page = page;
-    this.productCards = page.locator('[data-testid^="insurance-card-"]');
+    this.productCardsBuy = page.locator('[data-testid^="buy-insurance-link"]');
+    this.productCards = page.locator('[data-testid^="insurance-details-link"]');
     this.typeFilter = page.getByLabel(/insurance type/i);
     this.premiumFilter = page.getByLabel(/premium/i);
     this.coverageFilter = page.getByLabel(/coverage/i);

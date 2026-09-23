@@ -6,15 +6,18 @@ export class LoginPage {
   readonly emailInput: Locator;
   readonly passwordInput: Locator;
   readonly submitButton: Locator;
-  readonly errorMessage: Locator;
+  readonly invalidCredentialsError: Locator;
+  readonly lockedAccountError: Locator;
+
 
   constructor(page: Page) {
     this.page = page;
     this.emailInput = page.getByTestId(dataTestIds.login.email);
     this.passwordInput = page.getByTestId(dataTestIds.login.password);
     this.submitButton = page.getByTestId(dataTestIds.login.submit);
-    // Fallback: many apps render validation text without a dedicated test-id.
-    this.errorMessage = page.getByRole('alert').or(page.getByText(/invalid|incorrect|locked/i));
+    this.invalidCredentialsError = page.getByTestId('login-form').getByText('Invalid email or password.');
+    this.lockedAccountError = page.getByTestId('login-form').getByText('Your account is locked. Please contact support');
+    // this.errorMessage = page.getByRole('alert').or(page.getByText(/invalid|incorrect|locked/i));
   }
 
   async goto() {
@@ -33,7 +36,12 @@ export class LoginPage {
   }
 
   async expectLoginError() {
-    await expect(this.errorMessage).toBeVisible();
+    await expect(this.invalidCredentialsError).toBeVisible();
+    await expect(this.page).toHaveURL(/login/);
+  }
+
+  async expectLockedError(){
+    await expect(this.lockedAccountError).toBeVisible();
     await expect(this.page).toHaveURL(/login/);
   }
 

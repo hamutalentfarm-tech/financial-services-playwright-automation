@@ -6,8 +6,8 @@
 
 # Test info
 
-- Name: mutual-funds\investment.spec.ts >> Mutual Fund Investment @mutual-funds @investment >> TC-INV-001: valid lumpsum investment above minimum succeeds and updates portfolio @smoke @regression
-- Location: tests\mutual-funds\investment.spec.ts:34:7
+- Name: mutual-funds\investment.spec.ts >> Mutual Fund Investment @mutual-funds @investment >> TC-INV-004: negative amount investment is rejected @regression
+- Location: tests\mutual-funds\investment.spec.ts:60:7
 
 # Error details
 

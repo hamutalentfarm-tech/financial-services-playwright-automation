@@ -4,19 +4,23 @@ export class RedemptionPage {
   readonly page: Page;
   readonly redeemByAmountOption: Locator;
   readonly redeemByUnitsOption: Locator;
-  readonly amountOrUnitsInput: Locator;
+  readonly unitsInput: Locator;
+  readonly amountInput: Locator;
   readonly submitButton: Locator;
   readonly validationMessage: Locator;
   readonly confirmationBanner: Locator;
+  readonly declaration: Locator;
 
   constructor(page: Page) {
     this.page = page;
     this.redeemByAmountOption = page.getByRole('radio', { name: /amount/i });
     this.redeemByUnitsOption = page.getByRole('radio', { name: /units/i });
-    this.amountOrUnitsInput = page.getByLabel(/redemption (amount|units)/i);
-    this.submitButton = page.getByRole('button', { name: /redeem|submit/i });
+    this.unitsInput = page.getByTestId('redeem-units-input');
+    this.amountInput = page.getByTestId('redeem-amount-input');
+    this.submitButton = page.getByTestId('confirm-redemption-button')
     this.validationMessage = page.getByRole('alert');
     this.confirmationBanner = page.getByText(/redemption (successful|confirmed|submitted)/i);
+    this.declaration = page.getByRole('checkbox', {name: /declaration/});
   }
 
   async gotoByHoldingId(holdingId: string | number) {
@@ -25,13 +29,15 @@ export class RedemptionPage {
 
   async redeemByAmount(amount: number | string) {
     await this.redeemByAmountOption.check();
-    await this.amountOrUnitsInput.fill(String(amount));
+    await this.amountInput.fill(String(amount));
+    await this.declaration.check();
     await this.submitButton.click();
   }
 
   async redeemByUnits(units: number | string) {
     await this.redeemByUnitsOption.check();
-    await this.amountOrUnitsInput.fill(String(units));
+    await this.unitsInput.fill(String(units));
+    await this.declaration.check();
     await this.submitButton.click();
   }
 

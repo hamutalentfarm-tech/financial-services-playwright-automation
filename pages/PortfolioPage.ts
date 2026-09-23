@@ -10,8 +10,8 @@ export class PortfolioPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.totalValue = page.getByTestId(dataTestIds.portfolio.totalValue);
-    this.holdingsRows = page.locator('[data-testid^="holding-row-"]');
+    this.totalValue = page.getByTestId('portfolio-total');
+    this.holdingsRows = page.locator('[data-testid^="holding-current-value-"]');
     this.statementDownloadButton = page.getByRole('button', { name: /download statement/i });
   }
 

@@ -1,92 +1,6 @@
-<testsuites id="" name="" tests="60" failures="4" skipped="0" errors="10" time="198.271085">
-<testsuite name="api\auth.api.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.48" errors="0">
-<testcase name="API - Health &amp; Auth @api › TC-API-001: GET /health returns 200 @smoke @api" classname="api\auth.api.spec.ts" time="0.48">
-</testcase>
-</testsuite>
-<testsuite name="api\insurancePolicies.api.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="chromium" tests="2" failures="0" skipped="0" time="1.042" errors="0">
-<testcase name="API - Insurance &amp; Policies @api › TC-API-030: GET /insurance-products returns 200 with a list @smoke @api" classname="api\insurancePolicies.api.spec.ts" time="0.547">
-</testcase>
-<testcase name="API - Insurance &amp; Policies @api › TC-API-034: GET /policies returns policies scoped to the authenticated user @smoke @api" classname="api\insurancePolicies.api.spec.ts" time="0.495">
-</testcase>
-</testsuite>
-<testsuite name="api\mutualFunds.api.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.48" errors="0">
-<testcase name="API - Mutual Funds @api › TC-API-010: GET /mutual-funds returns 200 with a list @smoke @api" classname="api\mutualFunds.api.spec.ts" time="0.48">
-</testcase>
-</testsuite>
-<testsuite name="api\portfolioRedemption.api.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.454" errors="0">
-<testcase name="API - Portfolio &amp; Redemptions @api › TC-API-020: GET /portfolio returns 200 with holdings scoped to the caller @smoke @api" classname="api\portfolioRedemption.api.spec.ts" time="0.454">
-</testcase>
-</testsuite>
-<testsuite name="api\transactions.api.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.442" errors="0">
-<testcase name="API - Transactions @api › TC-API-040: GET /transactions returns 200 with a list @smoke @api" classname="api\transactions.api.spec.ts" time="0.442">
-</testcase>
-</testsuite>
-<testsuite name="auth\login.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="chromium" tests="1" failures="0" skipped="0" time="9.266" errors="0">
-<testcase name="Authentication @auth › TC-AUTH-001: valid seed user can log in and reach dashboard @smoke @regression" classname="auth\login.spec.ts" time="9.266">
-</testcase>
-</testsuite>
-<testsuite name="dashboard\dashboard.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="chromium" tests="1" failures="0" skipped="0" time="9.955" errors="0">
-<testcase name="Dashboard @dashboard › TC-DASH-001: authenticated investor sees dashboard with portfolio summary @smoke" classname="dashboard\dashboard.spec.ts" time="9.955">
-</testcase>
-</testsuite>
-<testsuite name="insurance\insuranceDiscovery.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="chromium" tests="1" failures="0" skipped="0" time="4.802" errors="0">
-<testcase name="Insurance Discovery @insurance › TC-INS-001: insurance product listing loads with visible products @smoke" classname="insurance\insuranceDiscovery.spec.ts" time="4.802">
-</testcase>
-</testsuite>
-<testsuite name="insurance\insurancePurchase.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="chromium" tests="1" failures="0" skipped="0" time="15.229" errors="1">
-<testcase name="Insurance Purchase @insurance @purchase › TC-INSP-001: valid nominee details lead to successful policy creation @smoke @regression" classname="insurance\insurancePurchase.spec.ts" time="15.229">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-chromium\test-failed-1.png]]
-
-[[ATTACHMENT|..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-chromium\video.webm]]
-
-[[ATTACHMENT|..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-chromium\error-context.md]]
-
-[[ATTACHMENT|..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-chromium\trace.zip]]
-]]>
-</system-out>
-<error message="locator.click: Timeout 10000ms exceeded." type="TimeoutError">
-<![CDATA[  [chromium] › insurance\insurancePurchase.spec.ts:31:7 › Insurance Purchase @insurance @purchase › TC-INSP-001: valid nominee details lead to successful policy creation @smoke @regression 
-
-    TimeoutError: locator.click: Timeout 10000ms exceeded.
-    Call log:
-      - waiting for getByRole('button', { name: /buy now|purchase/i })
-
-
-      26 |     await insurance.goto();
-      27 |     await insurance.productCards.first().click();
-    > 28 |     await page.getByRole('button', { name: /buy now|purchase/i }).click();
-         |                                                                   ^
-      29 |   }
-      30 |
-      31 |   test('TC-INSP-001: valid nominee details lead to successful policy creation @smoke @regression', async ({ page }) => {
-        at openPurchaseFormForFirstProduct (C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\insurance\insurancePurchase.spec.ts:28:67)
-        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\insurance\insurancePurchase.spec.ts:32:5
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-chromium\error-context.md
-
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-chromium\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-chromium\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</error>
-</testcase>
-</testsuite>
-<testsuite name="mutual-funds\investment.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="chromium" tests="1" failures="1" skipped="0" time="8.642" errors="0">
-<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-001: valid lumpsum investment above minimum succeeds and updates portfolio @smoke @regression" classname="mutual-funds\investment.spec.ts" time="8.642">
+<testsuites id="" name="" tests="7" failures="7" skipped="0" errors="0" time="73.14224699999998">
+<testsuite name="mutual-funds\investment.spec.ts" timestamp="2026-09-22T13:34:41.767Z" hostname="chromium" tests="7" failures="7" skipped="0" time="62.948" errors="0">
+<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-001: valid lumpsum investment above minimum succeeds and updates portfolio @smoke @regression" classname="mutual-funds\investment.spec.ts" time="9.085">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-chromium\test-failed-1.png]]
@@ -103,14 +17,14 @@
 
     Error: expect(locator).toBeVisible() failed
 
-    Locator: getByRole('button', { name: /invest now/i })
+    Locator: getByTestId('invest-now-button')
     Expected: visible
     Timeout: 5000ms
     Error: element(s) not found
 
     Call log:
       - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByRole('button', { name: /invest now/i })
+      - waiting for getByTestId('invest-now-button')
 
 
        at ..\pages\FundDetailsPage.ts:27
@@ -146,234 +60,31 @@
 ]]>
 </failure>
 </testcase>
-</testsuite>
-<testsuite name="mutual-funds\mutualFundsDiscovery.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.805" errors="0">
-<testcase name="Mutual Fund Discovery @mutual-funds › TC-MF-001: fund listing page loads with visible fund cards @smoke" classname="mutual-funds\mutualFundsDiscovery.spec.ts" time="3.805">
-</testcase>
-</testsuite>
-<testsuite name="portfolio\portfolio.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="chromium" tests="1" failures="0" skipped="0" time="15.973" errors="1">
-<testcase name="Portfolio Management @portfolio › TC-PORT-001: investor sees their own holdings only @smoke" classname="portfolio\portfolio.spec.ts" time="15.973">
+<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-002: investment below minimum amount is rejected with validation message @regression" classname="mutual-funds\investment.spec.ts" time="9.109">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|..\test-artifacts\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-chromium\test-failed-1.png]]
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-0c571-lidation-message-regression-chromium\test-failed-1.png]]
 
-[[ATTACHMENT|..\test-artifacts\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-chromium\video.webm]]
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-0c571-lidation-message-regression-chromium\video.webm]]
 
-[[ATTACHMENT|..\test-artifacts\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-chromium\error-context.md]]
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-0c571-lidation-message-regression-chromium\error-context.md]]
 
-[[ATTACHMENT|..\test-artifacts\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-chromium\trace.zip]]
-]]>
-</system-out>
-<error message="locator.fill: Timeout 10000ms exceeded." type="TimeoutError">
-<![CDATA[  [chromium] › portfolio\portfolio.spec.ts:12:7 › Portfolio Management @portfolio › TC-PORT-001: investor sees their own holdings only @smoke 
-
-    TimeoutError: locator.fill: Timeout 10000ms exceeded.
-    Call log:
-      - waiting for getByTestId('login-email')
-
-
-       at ..\pages\LoginPage.ts:25
-
-      23 |
-      24 |   async login(email: string, password: string) {
-    > 25 |     await this.emailInput.fill(email);
-         |                           ^
-      26 |     await this.passwordInput.fill(password);
-      27 |     await this.submitButton.click();
-      28 |   }
-        at LoginPage.login (C:\Users\talentfarm_learner\financial-services-playwright-automation\pages\LoginPage.ts:25:27)
-        at loginAs (C:\Users\talentfarm_learner\financial-services-playwright-automation\fixtures\auth.fixture.ts:22:19)
-        at Object.investorPage (C:\Users\talentfarm_learner\financial-services-playwright-automation\fixtures\auth.fixture.ts:33:5)
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-artifacts\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\test-artifacts\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\test-artifacts\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-chromium\error-context.md
-
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-artifacts\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-chromium\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\test-artifacts\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-chromium\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</error>
-</testcase>
-</testsuite>
-<testsuite name="portfolio\redemption.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="chromium" tests="1" failures="0" skipped="0" time="14.834" errors="1">
-<testcase name="Redemption @portfolio @redemption › TC-RED-001: valid partial redemption by units succeeds @smoke @regression" classname="portfolio\redemption.spec.ts" time="14.834">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-chromium\test-failed-1.png]]
-
-[[ATTACHMENT|..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-chromium\video.webm]]
-
-[[ATTACHMENT|..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-chromium\error-context.md]]
-
-[[ATTACHMENT|..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-chromium\trace.zip]]
-]]>
-</system-out>
-<error message="locator.click: Timeout 10000ms exceeded." type="TimeoutError">
-<![CDATA[  [chromium] › portfolio\redemption.spec.ts:28:7 › Redemption @portfolio @redemption › TC-RED-001: valid partial redemption by units succeeds @smoke @regression 
-
-    TimeoutError: locator.click: Timeout 10000ms exceeded.
-    Call log:
-      - waiting for getByRole('button', { name: /redeem/i })
-
-
-      23 |     await portfolio.goto();
-      24 |     await portfolio.holdingsRows.first().click();
-    > 25 |     await page.getByRole('button', { name: /redeem/i }).click();
-         |                                                         ^
-      26 |   }
-      27 |
-      28 |   test('TC-RED-001: valid partial redemption by units succeeds @smoke @regression', async ({ page }) => {
-        at openRedemptionFormForFirstHolding (C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\portfolio\redemption.spec.ts:25:57)
-        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\portfolio\redemption.spec.ts:29:5
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-chromium\error-context.md
-
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-chromium\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-chromium\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</error>
-</testcase>
-</testsuite>
-<testsuite name="transactions\transactions.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="chromium" tests="1" failures="0" skipped="0" time="5.226" errors="0">
-<testcase name="Transaction History @transactions › TC-TXN-001: transaction history loads for the authenticated user @smoke" classname="transactions\transactions.spec.ts" time="5.226">
-</testcase>
-</testsuite>
-<testsuite name="api\auth.api.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="firefox" tests="1" failures="0" skipped="0" time="0.558" errors="0">
-<testcase name="API - Health &amp; Auth @api › TC-API-001: GET /health returns 200 @smoke @api" classname="api\auth.api.spec.ts" time="0.558">
-</testcase>
-</testsuite>
-<testsuite name="api\insurancePolicies.api.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="firefox" tests="2" failures="0" skipped="0" time="1.005" errors="0">
-<testcase name="API - Insurance &amp; Policies @api › TC-API-030: GET /insurance-products returns 200 with a list @smoke @api" classname="api\insurancePolicies.api.spec.ts" time="0.51">
-</testcase>
-<testcase name="API - Insurance &amp; Policies @api › TC-API-034: GET /policies returns policies scoped to the authenticated user @smoke @api" classname="api\insurancePolicies.api.spec.ts" time="0.495">
-</testcase>
-</testsuite>
-<testsuite name="api\mutualFunds.api.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="firefox" tests="1" failures="0" skipped="0" time="0.439" errors="0">
-<testcase name="API - Mutual Funds @api › TC-API-010: GET /mutual-funds returns 200 with a list @smoke @api" classname="api\mutualFunds.api.spec.ts" time="0.439">
-</testcase>
-</testsuite>
-<testsuite name="api\portfolioRedemption.api.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="firefox" tests="1" failures="0" skipped="0" time="0.487" errors="0">
-<testcase name="API - Portfolio &amp; Redemptions @api › TC-API-020: GET /portfolio returns 200 with holdings scoped to the caller @smoke @api" classname="api\portfolioRedemption.api.spec.ts" time="0.487">
-</testcase>
-</testsuite>
-<testsuite name="api\transactions.api.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="firefox" tests="1" failures="0" skipped="0" time="0.499" errors="0">
-<testcase name="API - Transactions @api › TC-API-040: GET /transactions returns 200 with a list @smoke @api" classname="api\transactions.api.spec.ts" time="0.499">
-</testcase>
-</testsuite>
-<testsuite name="auth\login.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="firefox" tests="1" failures="0" skipped="0" time="9.831" errors="0">
-<testcase name="Authentication @auth › TC-AUTH-001: valid seed user can log in and reach dashboard @smoke @regression" classname="auth\login.spec.ts" time="9.831">
-</testcase>
-</testsuite>
-<testsuite name="dashboard\dashboard.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="firefox" tests="1" failures="0" skipped="0" time="8.879" errors="0">
-<testcase name="Dashboard @dashboard › TC-DASH-001: authenticated investor sees dashboard with portfolio summary @smoke" classname="dashboard\dashboard.spec.ts" time="8.879">
-</testcase>
-</testsuite>
-<testsuite name="insurance\insuranceDiscovery.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="firefox" tests="1" failures="0" skipped="0" time="5.589" errors="0">
-<testcase name="Insurance Discovery @insurance › TC-INS-001: insurance product listing loads with visible products @smoke" classname="insurance\insuranceDiscovery.spec.ts" time="5.589">
-</testcase>
-</testsuite>
-<testsuite name="insurance\insurancePurchase.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="firefox" tests="1" failures="0" skipped="0" time="15.798" errors="1">
-<testcase name="Insurance Purchase @insurance @purchase › TC-INSP-001: valid nominee details lead to successful policy creation @smoke @regression" classname="insurance\insurancePurchase.spec.ts" time="15.798">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-firefox\test-failed-1.png]]
-
-[[ATTACHMENT|..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-firefox\video.webm]]
-
-[[ATTACHMENT|..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-firefox\error-context.md]]
-
-[[ATTACHMENT|..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-firefox\trace.zip]]
-]]>
-</system-out>
-<error message="locator.click: Timeout 10000ms exceeded." type="TimeoutError">
-<![CDATA[  [firefox] › insurance\insurancePurchase.spec.ts:31:7 › Insurance Purchase @insurance @purchase › TC-INSP-001: valid nominee details lead to successful policy creation @smoke @regression 
-
-    TimeoutError: locator.click: Timeout 10000ms exceeded.
-    Call log:
-      - waiting for getByRole('button', { name: /buy now|purchase/i })
-
-
-      26 |     await insurance.goto();
-      27 |     await insurance.productCards.first().click();
-    > 28 |     await page.getByRole('button', { name: /buy now|purchase/i }).click();
-         |                                                                   ^
-      29 |   }
-      30 |
-      31 |   test('TC-INSP-001: valid nominee details lead to successful policy creation @smoke @regression', async ({ page }) => {
-        at openPurchaseFormForFirstProduct (C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\insurance\insurancePurchase.spec.ts:28:67)
-        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\insurance\insurancePurchase.spec.ts:32:5
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-firefox\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-firefox\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-firefox\error-context.md
-
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-firefox\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-firefox\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</error>
-</testcase>
-</testsuite>
-<testsuite name="mutual-funds\investment.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="firefox" tests="1" failures="1" skipped="0" time="10.436" errors="0">
-<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-001: valid lumpsum investment above minimum succeeds and updates portfolio @smoke @regression" classname="mutual-funds\investment.spec.ts" time="10.436">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-firefox\test-failed-1.png]]
-
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-firefox\video.webm]]
-
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-firefox\error-context.md]]
-
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-firefox\trace.zip]]
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-0c571-lidation-message-regression-chromium\trace.zip]]
 ]]>
 </system-out>
 <failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
-<![CDATA[  [firefox] › mutual-funds\investment.spec.ts:34:7 › Mutual Fund Investment @mutual-funds @investment › TC-INV-001: valid lumpsum investment above minimum succeeds and updates portfolio @smoke @regression 
+<![CDATA[  [chromium] › mutual-funds\investment.spec.ts:46:7 › Mutual Fund Investment @mutual-funds @investment › TC-INV-002: investment below minimum amount is rejected with validation message @regression 
 
     Error: expect(locator).toBeVisible() failed
 
-    Locator: getByRole('button', { name: /invest now/i })
+    Locator: getByTestId('invest-now-button')
     Expected: visible
     Timeout: 5000ms
     Error: element(s) not found
 
     Call log:
       - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByRole('button', { name: /invest now/i })
+      - waiting for getByTestId('invest-now-button')
 
 
        at ..\pages\FundDetailsPage.ts:27
@@ -387,205 +98,53 @@
       30 |   async clickInvest() {
         at FundDetailsPage.expectLoaded (C:\Users\talentfarm_learner\financial-services-playwright-automation\pages\FundDetailsPage.ts:27:37)
         at navigateToFirstFundInvestmentForm (C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:30:19)
-        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:35:5
+        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:47:5
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-firefox\test-failed-1.png
+    ..\test-artifacts\mutual-funds-investment-Mu-0c571-lidation-message-regression-chromium\test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-firefox\video.webm
+    ..\test-artifacts\mutual-funds-investment-Mu-0c571-lidation-message-regression-chromium\video.webm
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    Error Context: ..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-firefox\error-context.md
+    Error Context: ..\test-artifacts\mutual-funds-investment-Mu-0c571-lidation-message-regression-chromium\error-context.md
 
     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-firefox\trace.zip
+    ..\test-artifacts\mutual-funds-investment-Mu-0c571-lidation-message-regression-chromium\trace.zip
     Usage:
 
-        npx playwright show-trace ..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-firefox\trace.zip
+        npx playwright show-trace ..\test-artifacts\mutual-funds-investment-Mu-0c571-lidation-message-regression-chromium\trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 </testcase>
-</testsuite>
-<testsuite name="mutual-funds\mutualFundsDiscovery.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="firefox" tests="1" failures="0" skipped="0" time="10.447" errors="0">
-<testcase name="Mutual Fund Discovery @mutual-funds › TC-MF-001: fund listing page loads with visible fund cards @smoke" classname="mutual-funds\mutualFundsDiscovery.spec.ts" time="10.447">
-</testcase>
-</testsuite>
-<testsuite name="portfolio\portfolio.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="firefox" tests="1" failures="0" skipped="0" time="8.414" errors="0">
-<testcase name="Portfolio Management @portfolio › TC-PORT-001: investor sees their own holdings only @smoke" classname="portfolio\portfolio.spec.ts" time="8.414">
-</testcase>
-</testsuite>
-<testsuite name="portfolio\redemption.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="firefox" tests="1" failures="0" skipped="0" time="15.837" errors="1">
-<testcase name="Redemption @portfolio @redemption › TC-RED-001: valid partial redemption by units succeeds @smoke @regression" classname="portfolio\redemption.spec.ts" time="15.837">
+<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-003: zero amount investment is rejected @regression" classname="mutual-funds\investment.spec.ts" time="8.958">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-firefox\test-failed-1.png]]
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-0620f-ment-is-rejected-regression-chromium\test-failed-1.png]]
 
-[[ATTACHMENT|..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-firefox\video.webm]]
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-0620f-ment-is-rejected-regression-chromium\video.webm]]
 
-[[ATTACHMENT|..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-firefox\error-context.md]]
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-0620f-ment-is-rejected-regression-chromium\error-context.md]]
 
-[[ATTACHMENT|..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-firefox\trace.zip]]
-]]>
-</system-out>
-<error message="locator.click: Timeout 10000ms exceeded." type="TimeoutError">
-<![CDATA[  [firefox] › portfolio\redemption.spec.ts:28:7 › Redemption @portfolio @redemption › TC-RED-001: valid partial redemption by units succeeds @smoke @regression 
-
-    TimeoutError: locator.click: Timeout 10000ms exceeded.
-    Call log:
-      - waiting for getByRole('button', { name: /redeem/i })
-
-
-      23 |     await portfolio.goto();
-      24 |     await portfolio.holdingsRows.first().click();
-    > 25 |     await page.getByRole('button', { name: /redeem/i }).click();
-         |                                                         ^
-      26 |   }
-      27 |
-      28 |   test('TC-RED-001: valid partial redemption by units succeeds @smoke @regression', async ({ page }) => {
-        at openRedemptionFormForFirstHolding (C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\portfolio\redemption.spec.ts:25:57)
-        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\portfolio\redemption.spec.ts:29:5
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-firefox\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-firefox\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-firefox\error-context.md
-
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-firefox\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-firefox\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</error>
-</testcase>
-</testsuite>
-<testsuite name="transactions\transactions.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.731" errors="0">
-<testcase name="Transaction History @transactions › TC-TXN-001: transaction history loads for the authenticated user @smoke" classname="transactions\transactions.spec.ts" time="4.731">
-</testcase>
-</testsuite>
-<testsuite name="api\auth.api.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="webkit" tests="1" failures="0" skipped="0" time="0.416" errors="0">
-<testcase name="API - Health &amp; Auth @api › TC-API-001: GET /health returns 200 @smoke @api" classname="api\auth.api.spec.ts" time="0.416">
-</testcase>
-</testsuite>
-<testsuite name="api\insurancePolicies.api.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="webkit" tests="2" failures="0" skipped="0" time="0.984" errors="0">
-<testcase name="API - Insurance &amp; Policies @api › TC-API-030: GET /insurance-products returns 200 with a list @smoke @api" classname="api\insurancePolicies.api.spec.ts" time="0.539">
-</testcase>
-<testcase name="API - Insurance &amp; Policies @api › TC-API-034: GET /policies returns policies scoped to the authenticated user @smoke @api" classname="api\insurancePolicies.api.spec.ts" time="0.445">
-</testcase>
-</testsuite>
-<testsuite name="api\mutualFunds.api.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="webkit" tests="1" failures="0" skipped="0" time="0.456" errors="0">
-<testcase name="API - Mutual Funds @api › TC-API-010: GET /mutual-funds returns 200 with a list @smoke @api" classname="api\mutualFunds.api.spec.ts" time="0.456">
-</testcase>
-</testsuite>
-<testsuite name="api\portfolioRedemption.api.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="webkit" tests="1" failures="0" skipped="0" time="0.494" errors="0">
-<testcase name="API - Portfolio &amp; Redemptions @api › TC-API-020: GET /portfolio returns 200 with holdings scoped to the caller @smoke @api" classname="api\portfolioRedemption.api.spec.ts" time="0.494">
-</testcase>
-</testsuite>
-<testsuite name="api\transactions.api.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="webkit" tests="1" failures="0" skipped="0" time="0.428" errors="0">
-<testcase name="API - Transactions @api › TC-API-040: GET /transactions returns 200 with a list @smoke @api" classname="api\transactions.api.spec.ts" time="0.428">
-</testcase>
-</testsuite>
-<testsuite name="auth\login.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="webkit" tests="1" failures="0" skipped="0" time="7.543" errors="0">
-<testcase name="Authentication @auth › TC-AUTH-001: valid seed user can log in and reach dashboard @smoke @regression" classname="auth\login.spec.ts" time="7.543">
-</testcase>
-</testsuite>
-<testsuite name="dashboard\dashboard.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="webkit" tests="1" failures="0" skipped="0" time="6.805" errors="0">
-<testcase name="Dashboard @dashboard › TC-DASH-001: authenticated investor sees dashboard with portfolio summary @smoke" classname="dashboard\dashboard.spec.ts" time="6.805">
-</testcase>
-</testsuite>
-<testsuite name="insurance\insuranceDiscovery.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="webkit" tests="1" failures="0" skipped="0" time="6.099" errors="0">
-<testcase name="Insurance Discovery @insurance › TC-INS-001: insurance product listing loads with visible products @smoke" classname="insurance\insuranceDiscovery.spec.ts" time="6.099">
-</testcase>
-</testsuite>
-<testsuite name="insurance\insurancePurchase.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="webkit" tests="1" failures="0" skipped="0" time="18.4" errors="1">
-<testcase name="Insurance Purchase @insurance @purchase › TC-INSP-001: valid nominee details lead to successful policy creation @smoke @regression" classname="insurance\insurancePurchase.spec.ts" time="18.4">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-webkit\test-failed-1.png]]
-
-[[ATTACHMENT|..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-webkit\video.webm]]
-
-[[ATTACHMENT|..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-webkit\error-context.md]]
-
-[[ATTACHMENT|..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-webkit\trace.zip]]
-]]>
-</system-out>
-<error message="locator.click: Timeout 10000ms exceeded." type="TimeoutError">
-<![CDATA[  [webkit] › insurance\insurancePurchase.spec.ts:31:7 › Insurance Purchase @insurance @purchase › TC-INSP-001: valid nominee details lead to successful policy creation @smoke @regression 
-
-    TimeoutError: locator.click: Timeout 10000ms exceeded.
-    Call log:
-      - waiting for locator('[data-testid^="insurance-card-"]').first()
-
-
-      25 |     const insurance = new InsurancePage(page);
-      26 |     await insurance.goto();
-    > 27 |     await insurance.productCards.first().click();
-         |                                          ^
-      28 |     await page.getByRole('button', { name: /buy now|purchase/i }).click();
-      29 |   }
-      30 |
-        at openPurchaseFormForFirstProduct (C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\insurance\insurancePurchase.spec.ts:27:42)
-        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\insurance\insurancePurchase.spec.ts:32:5
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-webkit\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-webkit\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-webkit\error-context.md
-
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-webkit\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-webkit\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</error>
-</testcase>
-</testsuite>
-<testsuite name="mutual-funds\investment.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="webkit" tests="1" failures="1" skipped="0" time="11.816" errors="0">
-<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-001: valid lumpsum investment above minimum succeeds and updates portfolio @smoke @regression" classname="mutual-funds\investment.spec.ts" time="11.816">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-webkit\test-failed-1.png]]
-
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-webkit\video.webm]]
-
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-webkit\error-context.md]]
-
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-webkit\trace.zip]]
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-0620f-ment-is-rejected-regression-chromium\trace.zip]]
 ]]>
 </system-out>
 <failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
-<![CDATA[  [webkit] › mutual-funds\investment.spec.ts:34:7 › Mutual Fund Investment @mutual-funds @investment › TC-INV-001: valid lumpsum investment above minimum succeeds and updates portfolio @smoke @regression 
+<![CDATA[  [chromium] › mutual-funds\investment.spec.ts:53:7 › Mutual Fund Investment @mutual-funds @investment › TC-INV-003: zero amount investment is rejected @regression 
 
     Error: expect(locator).toBeVisible() failed
 
-    Locator: getByRole('button', { name: /invest now/i })
+    Locator: getByTestId('invest-now-button')
     Expected: visible
     Timeout: 5000ms
     Error: element(s) not found
 
     Call log:
       - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByRole('button', { name: /invest now/i })
+      - waiting for getByTestId('invest-now-button')
 
 
        at ..\pages\FundDetailsPage.ts:27
@@ -599,256 +158,53 @@
       30 |   async clickInvest() {
         at FundDetailsPage.expectLoaded (C:\Users\talentfarm_learner\financial-services-playwright-automation\pages\FundDetailsPage.ts:27:37)
         at navigateToFirstFundInvestmentForm (C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:30:19)
-        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:35:5
+        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:54:5
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-webkit\test-failed-1.png
+    ..\test-artifacts\mutual-funds-investment-Mu-0620f-ment-is-rejected-regression-chromium\test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-webkit\video.webm
+    ..\test-artifacts\mutual-funds-investment-Mu-0620f-ment-is-rejected-regression-chromium\video.webm
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    Error Context: ..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-webkit\error-context.md
+    Error Context: ..\test-artifacts\mutual-funds-investment-Mu-0620f-ment-is-rejected-regression-chromium\error-context.md
 
     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-webkit\trace.zip
+    ..\test-artifacts\mutual-funds-investment-Mu-0620f-ment-is-rejected-regression-chromium\trace.zip
     Usage:
 
-        npx playwright show-trace ..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-webkit\trace.zip
+        npx playwright show-trace ..\test-artifacts\mutual-funds-investment-Mu-0620f-ment-is-rejected-regression-chromium\trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 </testcase>
-</testsuite>
-<testsuite name="mutual-funds\mutualFundsDiscovery.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="webkit" tests="1" failures="0" skipped="0" time="6.009" errors="0">
-<testcase name="Mutual Fund Discovery @mutual-funds › TC-MF-001: fund listing page loads with visible fund cards @smoke" classname="mutual-funds\mutualFundsDiscovery.spec.ts" time="6.009">
-</testcase>
-</testsuite>
-<testsuite name="portfolio\portfolio.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="webkit" tests="1" failures="0" skipped="0" time="15.737" errors="1">
-<testcase name="Portfolio Management @portfolio › TC-PORT-001: investor sees their own holdings only @smoke" classname="portfolio\portfolio.spec.ts" time="15.737">
+<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-004: negative amount investment is rejected @regression" classname="mutual-funds\investment.spec.ts" time="9.118">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|..\test-artifacts\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-webkit\test-failed-1.png]]
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-2612d-ment-is-rejected-regression-chromium\test-failed-1.png]]
 
-[[ATTACHMENT|..\test-artifacts\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-webkit\video.webm]]
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-2612d-ment-is-rejected-regression-chromium\video.webm]]
 
-[[ATTACHMENT|..\test-artifacts\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-webkit\error-context.md]]
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-2612d-ment-is-rejected-regression-chromium\error-context.md]]
 
-[[ATTACHMENT|..\test-artifacts\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-webkit\trace.zip]]
-]]>
-</system-out>
-<error message="page.waitForURL: Timeout 10000ms exceeded." type="TimeoutError">
-<![CDATA[  [webkit] › portfolio\portfolio.spec.ts:12:7 › Portfolio Management @portfolio › TC-PORT-001: investor sees their own holdings only @smoke 
-
-    TimeoutError: page.waitForURL: Timeout 10000ms exceeded.
-    =========================== logs ===========================
-    waiting for navigation until "load"
-    ============================================================
-
-       at ..\pages\LoginPage.ts:31
-
-      29 |
-      30 |   async expectLoginSuccess() {
-    > 31 |     await this.page.waitForURL(/dashboard/, { timeout: 10000 });
-         |                     ^
-      32 |     await expect(this.page.getByTestId(dataTestIds.dashboard)).toBeVisible();
-      33 |   }
-      34 |
-        at LoginPage.expectLoginSuccess (C:\Users\talentfarm_learner\financial-services-playwright-automation\pages\LoginPage.ts:31:21)
-        at loginAs (C:\Users\talentfarm_learner\financial-services-playwright-automation\fixtures\auth.fixture.ts:23:19)
-        at Object.investorPage (C:\Users\talentfarm_learner\financial-services-playwright-automation\fixtures\auth.fixture.ts:33:5)
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-artifacts\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-webkit\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\test-artifacts\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-webkit\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\test-artifacts\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-webkit\error-context.md
-
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-artifacts\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-webkit\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\test-artifacts\portfolio-portfolio-Portfo-b8f8c-eir-own-holdings-only-smoke-webkit\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</error>
-</testcase>
-</testsuite>
-<testsuite name="portfolio\redemption.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="webkit" tests="1" failures="0" skipped="0" time="17.851" errors="1">
-<testcase name="Redemption @portfolio @redemption › TC-RED-001: valid partial redemption by units succeeds @smoke @regression" classname="portfolio\redemption.spec.ts" time="17.851">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-webkit\test-failed-1.png]]
-
-[[ATTACHMENT|..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-webkit\video.webm]]
-
-[[ATTACHMENT|..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-webkit\error-context.md]]
-
-[[ATTACHMENT|..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-webkit\trace.zip]]
-]]>
-</system-out>
-<error message="locator.click: Timeout 10000ms exceeded." type="TimeoutError">
-<![CDATA[  [webkit] › portfolio\redemption.spec.ts:28:7 › Redemption @portfolio @redemption › TC-RED-001: valid partial redemption by units succeeds @smoke @regression 
-
-    TimeoutError: locator.click: Timeout 10000ms exceeded.
-    Call log:
-      - waiting for getByRole('button', { name: /redeem/i })
-
-
-      23 |     await portfolio.goto();
-      24 |     await portfolio.holdingsRows.first().click();
-    > 25 |     await page.getByRole('button', { name: /redeem/i }).click();
-         |                                                         ^
-      26 |   }
-      27 |
-      28 |   test('TC-RED-001: valid partial redemption by units succeeds @smoke @regression', async ({ page }) => {
-        at openRedemptionFormForFirstHolding (C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\portfolio\redemption.spec.ts:25:57)
-        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\portfolio\redemption.spec.ts:29:5
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-webkit\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-webkit\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-webkit\error-context.md
-
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-webkit\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-webkit\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</error>
-</testcase>
-</testsuite>
-<testsuite name="transactions\transactions.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="webkit" tests="1" failures="0" skipped="0" time="6.108" errors="0">
-<testcase name="Transaction History @transactions › TC-TXN-001: transaction history loads for the authenticated user @smoke" classname="transactions\transactions.spec.ts" time="6.108">
-</testcase>
-</testsuite>
-<testsuite name="api\auth.api.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="mobile-chrome" tests="1" failures="0" skipped="0" time="0.456" errors="0">
-<testcase name="API - Health &amp; Auth @api › TC-API-001: GET /health returns 200 @smoke @api" classname="api\auth.api.spec.ts" time="0.456">
-</testcase>
-</testsuite>
-<testsuite name="api\insurancePolicies.api.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="mobile-chrome" tests="2" failures="0" skipped="0" time="1.085" errors="0">
-<testcase name="API - Insurance &amp; Policies @api › TC-API-030: GET /insurance-products returns 200 with a list @smoke @api" classname="api\insurancePolicies.api.spec.ts" time="0.59">
-</testcase>
-<testcase name="API - Insurance &amp; Policies @api › TC-API-034: GET /policies returns policies scoped to the authenticated user @smoke @api" classname="api\insurancePolicies.api.spec.ts" time="0.495">
-</testcase>
-</testsuite>
-<testsuite name="api\mutualFunds.api.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="mobile-chrome" tests="1" failures="0" skipped="0" time="0.462" errors="0">
-<testcase name="API - Mutual Funds @api › TC-API-010: GET /mutual-funds returns 200 with a list @smoke @api" classname="api\mutualFunds.api.spec.ts" time="0.462">
-</testcase>
-</testsuite>
-<testsuite name="api\portfolioRedemption.api.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="mobile-chrome" tests="1" failures="0" skipped="0" time="0.509" errors="0">
-<testcase name="API - Portfolio &amp; Redemptions @api › TC-API-020: GET /portfolio returns 200 with holdings scoped to the caller @smoke @api" classname="api\portfolioRedemption.api.spec.ts" time="0.509">
-</testcase>
-</testsuite>
-<testsuite name="api\transactions.api.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="mobile-chrome" tests="1" failures="0" skipped="0" time="0.47" errors="0">
-<testcase name="API - Transactions @api › TC-API-040: GET /transactions returns 200 with a list @smoke @api" classname="api\transactions.api.spec.ts" time="0.47">
-</testcase>
-</testsuite>
-<testsuite name="auth\login.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="mobile-chrome" tests="1" failures="0" skipped="0" time="3.786" errors="0">
-<testcase name="Authentication @auth › TC-AUTH-001: valid seed user can log in and reach dashboard @smoke @regression" classname="auth\login.spec.ts" time="3.786">
-</testcase>
-</testsuite>
-<testsuite name="dashboard\dashboard.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="mobile-chrome" tests="1" failures="0" skipped="0" time="4.157" errors="0">
-<testcase name="Dashboard @dashboard › TC-DASH-001: authenticated investor sees dashboard with portfolio summary @smoke" classname="dashboard\dashboard.spec.ts" time="4.157">
-</testcase>
-</testsuite>
-<testsuite name="insurance\insuranceDiscovery.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="mobile-chrome" tests="1" failures="0" skipped="0" time="3.553" errors="0">
-<testcase name="Insurance Discovery @insurance › TC-INS-001: insurance product listing loads with visible products @smoke" classname="insurance\insuranceDiscovery.spec.ts" time="3.553">
-</testcase>
-</testsuite>
-<testsuite name="insurance\insurancePurchase.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="mobile-chrome" tests="1" failures="0" skipped="0" time="15.284" errors="1">
-<testcase name="Insurance Purchase @insurance @purchase › TC-INSP-001: valid nominee details lead to successful policy creation @smoke @regression" classname="insurance\insurancePurchase.spec.ts" time="15.284">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-mobile-chrome\test-failed-1.png]]
-
-[[ATTACHMENT|..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-mobile-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-mobile-chrome\error-context.md]]
-
-[[ATTACHMENT|..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-mobile-chrome\trace.zip]]
-]]>
-</system-out>
-<error message="locator.click: Timeout 10000ms exceeded." type="TimeoutError">
-<![CDATA[  [mobile-chrome] › insurance\insurancePurchase.spec.ts:31:7 › Insurance Purchase @insurance @purchase › TC-INSP-001: valid nominee details lead to successful policy creation @smoke @regression 
-
-    TimeoutError: locator.click: Timeout 10000ms exceeded.
-    Call log:
-      - waiting for getByRole('button', { name: /buy now|purchase/i })
-
-
-      26 |     await insurance.goto();
-      27 |     await insurance.productCards.first().click();
-    > 28 |     await page.getByRole('button', { name: /buy now|purchase/i }).click();
-         |                                                                   ^
-      29 |   }
-      30 |
-      31 |   test('TC-INSP-001: valid nominee details lead to successful policy creation @smoke @regression', async ({ page }) => {
-        at openPurchaseFormForFirstProduct (C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\insurance\insurancePurchase.spec.ts:28:67)
-        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\insurance\insurancePurchase.spec.ts:32:5
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-mobile-chrome\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-mobile-chrome\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-mobile-chrome\error-context.md
-
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-mobile-chrome\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\test-artifacts\insurance-insurancePurchas-a636e-y-creation-smoke-regression-mobile-chrome\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</error>
-</testcase>
-</testsuite>
-<testsuite name="mutual-funds\investment.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="mobile-chrome" tests="1" failures="1" skipped="0" time="9.154" errors="0">
-<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-001: valid lumpsum investment above minimum succeeds and updates portfolio @smoke @regression" classname="mutual-funds\investment.spec.ts" time="9.154">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-mobile-chrome\test-failed-1.png]]
-
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-mobile-chrome\video.webm]]
-
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-mobile-chrome\error-context.md]]
-
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-mobile-chrome\trace.zip]]
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-2612d-ment-is-rejected-regression-chromium\trace.zip]]
 ]]>
 </system-out>
 <failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
-<![CDATA[  [mobile-chrome] › mutual-funds\investment.spec.ts:34:7 › Mutual Fund Investment @mutual-funds @investment › TC-INV-001: valid lumpsum investment above minimum succeeds and updates portfolio @smoke @regression 
+<![CDATA[  [chromium] › mutual-funds\investment.spec.ts:60:7 › Mutual Fund Investment @mutual-funds @investment › TC-INV-004: negative amount investment is rejected @regression 
 
     Error: expect(locator).toBeVisible() failed
 
-    Locator: getByRole('button', { name: /invest now/i })
+    Locator: getByTestId('invest-now-button')
     Expected: visible
     Timeout: 5000ms
     Error: element(s) not found
 
     Call log:
       - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByRole('button', { name: /invest now/i })
+      - waiting for getByTestId('invest-now-button')
 
 
        at ..\pages\FundDetailsPage.ts:27
@@ -862,91 +218,207 @@
       30 |   async clickInvest() {
         at FundDetailsPage.expectLoaded (C:\Users\talentfarm_learner\financial-services-playwright-automation\pages\FundDetailsPage.ts:27:37)
         at navigateToFirstFundInvestmentForm (C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:30:19)
-        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:35:5
+        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:61:5
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-mobile-chrome\test-failed-1.png
+    ..\test-artifacts\mutual-funds-investment-Mu-2612d-ment-is-rejected-regression-chromium\test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-mobile-chrome\video.webm
+    ..\test-artifacts\mutual-funds-investment-Mu-2612d-ment-is-rejected-regression-chromium\video.webm
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    Error Context: ..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-mobile-chrome\error-context.md
+    Error Context: ..\test-artifacts\mutual-funds-investment-Mu-2612d-ment-is-rejected-regression-chromium\error-context.md
 
     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-mobile-chrome\trace.zip
+    ..\test-artifacts\mutual-funds-investment-Mu-2612d-ment-is-rejected-regression-chromium\trace.zip
     Usage:
 
-        npx playwright show-trace ..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-mobile-chrome\trace.zip
+        npx playwright show-trace ..\test-artifacts\mutual-funds-investment-Mu-2612d-ment-is-rejected-regression-chromium\trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 </testcase>
-</testsuite>
-<testsuite name="mutual-funds\mutualFundsDiscovery.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="mobile-chrome" tests="1" failures="0" skipped="0" time="3.153" errors="0">
-<testcase name="Mutual Fund Discovery @mutual-funds › TC-MF-001: fund listing page loads with visible fund cards @smoke" classname="mutual-funds\mutualFundsDiscovery.spec.ts" time="3.153">
-</testcase>
-</testsuite>
-<testsuite name="portfolio\portfolio.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="mobile-chrome" tests="1" failures="0" skipped="0" time="3.897" errors="0">
-<testcase name="Portfolio Management @portfolio › TC-PORT-001: investor sees their own holdings only @smoke" classname="portfolio\portfolio.spec.ts" time="3.897">
-</testcase>
-</testsuite>
-<testsuite name="portfolio\redemption.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="mobile-chrome" tests="1" failures="0" skipped="0" time="14.825" errors="1">
-<testcase name="Redemption @portfolio @redemption › TC-RED-001: valid partial redemption by units succeeds @smoke @regression" classname="portfolio\redemption.spec.ts" time="14.825">
+<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-005: non-numeric amount input is rejected @regression" classname="mutual-funds\investment.spec.ts" time="9.041">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-mobile-chrome\test-failed-1.png]]
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-66ae1-nput-is-rejected-regression-chromium\test-failed-1.png]]
 
-[[ATTACHMENT|..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-mobile-chrome\video.webm]]
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-66ae1-nput-is-rejected-regression-chromium\video.webm]]
 
-[[ATTACHMENT|..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-mobile-chrome\error-context.md]]
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-66ae1-nput-is-rejected-regression-chromium\error-context.md]]
 
-[[ATTACHMENT|..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-mobile-chrome\trace.zip]]
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-66ae1-nput-is-rejected-regression-chromium\trace.zip]]
 ]]>
 </system-out>
-<error message="locator.click: Timeout 10000ms exceeded." type="TimeoutError">
-<![CDATA[  [mobile-chrome] › portfolio\redemption.spec.ts:28:7 › Redemption @portfolio @redemption › TC-RED-001: valid partial redemption by units succeeds @smoke @regression 
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [chromium] › mutual-funds\investment.spec.ts:67:7 › Mutual Fund Investment @mutual-funds @investment › TC-INV-005: non-numeric amount input is rejected @regression 
 
-    TimeoutError: locator.click: Timeout 10000ms exceeded.
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByTestId('invest-now-button')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
     Call log:
-      - waiting for getByRole('button', { name: /redeem/i })
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByTestId('invest-now-button')
 
 
-      23 |     await portfolio.goto();
-      24 |     await portfolio.holdingsRows.first().click();
-    > 25 |     await page.getByRole('button', { name: /redeem/i }).click();
-         |                                                         ^
-      26 |   }
-      27 |
-      28 |   test('TC-RED-001: valid partial redemption by units succeeds @smoke @regression', async ({ page }) => {
-        at openRedemptionFormForFirstHolding (C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\portfolio\redemption.spec.ts:25:57)
-        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\portfolio\redemption.spec.ts:29:5
+       at ..\pages\FundDetailsPage.ts:27
+
+      25 |
+      26 |   async expectLoaded() {
+    > 27 |     await expect(this.investButton).toBeVisible();
+         |                                     ^
+      28 |   }
+      29 |
+      30 |   async clickInvest() {
+        at FundDetailsPage.expectLoaded (C:\Users\talentfarm_learner\financial-services-playwright-automation\pages\FundDetailsPage.ts:27:37)
+        at navigateToFirstFundInvestmentForm (C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:30:19)
+        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:68:5
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-mobile-chrome\test-failed-1.png
+    ..\test-artifacts\mutual-funds-investment-Mu-66ae1-nput-is-rejected-regression-chromium\test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-mobile-chrome\video.webm
+    ..\test-artifacts\mutual-funds-investment-Mu-66ae1-nput-is-rejected-regression-chromium\video.webm
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    Error Context: ..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-mobile-chrome\error-context.md
+    Error Context: ..\test-artifacts\mutual-funds-investment-Mu-66ae1-nput-is-rejected-regression-chromium\error-context.md
 
     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-mobile-chrome\trace.zip
+    ..\test-artifacts\mutual-funds-investment-Mu-66ae1-nput-is-rejected-regression-chromium\trace.zip
     Usage:
 
-        npx playwright show-trace ..\test-artifacts\portfolio-redemption-Redem-4a75c-s-succeeds-smoke-regression-mobile-chrome\trace.zip
+        npx playwright show-trace ..\test-artifacts\mutual-funds-investment-Mu-66ae1-nput-is-rejected-regression-chromium\trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
-</error>
+</failure>
 </testcase>
-</testsuite>
-<testsuite name="transactions\transactions.spec.ts" timestamp="2026-09-17T19:38:41.089Z" hostname="mobile-chrome" tests="1" failures="0" skipped="0" time="3.501" errors="0">
-<testcase name="Transaction History @transactions › TC-TXN-001: transaction history loads for the authenticated user @smoke" classname="transactions\transactions.spec.ts" time="3.501">
+<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-006: SIP investment path can be selected and submitted @regression" classname="mutual-funds\investment.spec.ts" time="8.751">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-9f3db-ed-and-submitted-regression-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-9f3db-ed-and-submitted-regression-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-9f3db-ed-and-submitted-regression-chromium\error-context.md]]
+
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-9f3db-ed-and-submitted-regression-chromium\trace.zip]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [chromium] › mutual-funds\investment.spec.ts:74:7 › Mutual Fund Investment @mutual-funds @investment › TC-INV-006: SIP investment path can be selected and submitted @regression 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByTestId('invest-now-button')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByTestId('invest-now-button')
+
+
+       at ..\pages\FundDetailsPage.ts:27
+
+      25 |
+      26 |   async expectLoaded() {
+    > 27 |     await expect(this.investButton).toBeVisible();
+         |                                     ^
+      28 |   }
+      29 |
+      30 |   async clickInvest() {
+        at FundDetailsPage.expectLoaded (C:\Users\talentfarm_learner\financial-services-playwright-automation\pages\FundDetailsPage.ts:27:37)
+        at navigateToFirstFundInvestmentForm (C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:30:19)
+        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:75:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-artifacts\mutual-funds-investment-Mu-9f3db-ed-and-submitted-regression-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-artifacts\mutual-funds-investment-Mu-9f3db-ed-and-submitted-regression-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-artifacts\mutual-funds-investment-Mu-9f3db-ed-and-submitted-regression-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-artifacts\mutual-funds-investment-Mu-9f3db-ed-and-submitted-regression-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-artifacts\mutual-funds-investment-Mu-9f3db-ed-and-submitted-regression-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-007: submitting without accepting mandatory declaration is blocked @regression" classname="mutual-funds\investment.spec.ts" time="8.886">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-53128-ation-is-blocked-regression-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-53128-ation-is-blocked-regression-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-53128-ation-is-blocked-regression-chromium\error-context.md]]
+
+[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-53128-ation-is-blocked-regression-chromium\trace.zip]]
+]]>
+</system-out>
+<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<![CDATA[  [chromium] › mutual-funds\investment.spec.ts:84:7 › Mutual Fund Investment @mutual-funds @investment › TC-INV-007: submitting without accepting mandatory declaration is blocked @regression 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByTestId('invest-now-button')
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for getByTestId('invest-now-button')
+
+
+       at ..\pages\FundDetailsPage.ts:27
+
+      25 |
+      26 |   async expectLoaded() {
+    > 27 |     await expect(this.investButton).toBeVisible();
+         |                                     ^
+      28 |   }
+      29 |
+      30 |   async clickInvest() {
+        at FundDetailsPage.expectLoaded (C:\Users\talentfarm_learner\financial-services-playwright-automation\pages\FundDetailsPage.ts:27:37)
+        at navigateToFirstFundInvestmentForm (C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:30:19)
+        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:85:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-artifacts\mutual-funds-investment-Mu-53128-ation-is-blocked-regression-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-artifacts\mutual-funds-investment-Mu-53128-ation-is-blocked-regression-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-artifacts\mutual-funds-investment-Mu-53128-ation-is-blocked-regression-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-artifacts\mutual-funds-investment-Mu-53128-ation-is-blocked-regression-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-artifacts\mutual-funds-investment-Mu-53128-ation-is-blocked-regression-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 </testcase>
 </testsuite>
 </testsuites>

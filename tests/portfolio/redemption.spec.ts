@@ -18,12 +18,25 @@ test.describe('Redemption @portfolio @redemption', () => {
     await loginPage.expectLoginSuccess();
   });
 
+  // async function openRedemptionFormForFirstHolding(page: import('@playwright/test').Page) {
+  //   const portfolio = new PortfolioPage(page);
+  //   await portfolio.goto();
+  //   await portfolio.holdingsRows.first().click();
+  //   await page.getByRole('button', { name: /redeem/i }).click();
+  // }
   async function openRedemptionFormForFirstHolding(page: import('@playwright/test').Page) {
-    const portfolio = new PortfolioPage(page);
-    await portfolio.goto();
-    await portfolio.holdingsRows.first().click();
-    await page.getByRole('button', { name: /redeem/i }).click();
-  }
+  const portfolio = new PortfolioPage(page);
+  await portfolio.goto();
+  const firstRow = portfolio.holdingsRows.first();
+
+  // Pull the real holding id off the row's own data-testid (e.g. "holding-row-4" -> "4")
+  // BEFORE clicking into the holding, since clicking navigates away from this row.
+  const holdingTestId = await firstRow.getAttribute('data-testid');
+  const holdingId = holdingTestId?.replace('holding-row-', '');
+
+  await firstRow.click();
+  await page.getByTestId(`redeem-button-${holdingId}`).click();
+}
 
   test('TC-RED-001: valid partial redemption by units succeeds @smoke @regression', async ({ page }) => {
     await openRedemptionFormForFirstHolding(page);

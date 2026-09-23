@@ -16,18 +16,20 @@ export class PolicyPage {
   readonly confirmationBanner: Locator;
   readonly validationMessage: Locator;
   readonly policyRows: Locator;
+  readonly declaration: Locator;
 
   constructor(page: Page) {
     this.page = page;
     this.personalDetailsSection = page.getByRole('region', { name: /personal details/i });
     this.nomineeNameInput = page.getByLabel(/nominee name/i);
-    this.nomineeRelationshipInput = page.getByLabel(/relationship/i);
-    this.nomineeDobInput = page.getByLabel(/nominee.*date of birth|date of birth.*nominee/i);
-    this.premiumSummary = page.getByTestId('premium-summary');
-    this.confirmPurchaseButton = page.getByRole('button', { name: /confirm purchase|buy now/i });
+    this.nomineeRelationshipInput = page.getByTestId('nominee-relationship-select');
+    this.nomineeDobInput = page.getByTestId('insured-dob-input');
+    this.premiumSummary = page.getByTestId('policy-confirmation-message');
+    this.confirmPurchaseButton = page.getByTestId('confirm-policy-button');
     this.confirmationBanner = page.getByText(/policy (created|confirmed|purchased)/i);
-    this.validationMessage = page.getByRole('alert');
+    this.validationMessage = page.getByTestId('form-error-summary');
     this.policyRows = page.locator('[data-testid^="policy-row-"]');
+    this.declaration = page.getByTestId('insurance-declaration-checkbox');
   }
 
   async gotoPurchaseForm(productId: string | number) {
@@ -44,8 +46,9 @@ export class PolicyPage {
 
   async fillNominee(name: string, relationship: string, dob: string) {
     await this.nomineeNameInput.fill(name);
-    await this.nomineeRelationshipInput.fill(relationship);
+    await this.nomineeRelationshipInput.selectOption({ value: relationship });
     await this.nomineeDobInput.fill(dob);
+    await this.declaration.click();
   }
 
   async submitPurchase() {

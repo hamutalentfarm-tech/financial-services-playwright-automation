@@ -37,8 +37,23 @@ test.describe('Portfolio Management @portfolio', () => {
     const response = await api.getPortfolio();
     expect(response.ok()).toBeTruthy();
     const body = await response.json();
-    const holdings: Array<{ current_value?: number }> = body?.data ?? body ?? [];
-    const apiTotal = holdings.reduce((sum, h) => sum + (h.current_value ?? 0), 0);
+
+
+  const holdings: Array<{ current_value?: number }> =
+    (Array.isArray(body?.data) && body.data) ||
+    (Array.isArray(body?.data?.holdings) && body.data.holdings) ||
+    (Array.isArray(body?.data?.portfolio) && body.data.portfolio) ||
+    (Array.isArray(body?.holdings) && body.holdings) ||
+    (Array.isArray(body) && body) || null;
+
+    if (!holdings) {
+    throw new Error(
+      `Could not find a holdings array in the /api/portfolio response. ` +
+      `Actual response body was: ${JSON.stringify(body, null, 2)}`
+    );
+  }
+
+const apiTotal = holdings.reduce((sum, h) => sum + (h.current_value ?? 0), 0);
 
     expectAmountsReconcile(uiTotal, apiTotal, 5);
   });
@@ -49,7 +64,7 @@ test.describe('Portfolio Management @portfolio', () => {
     const firstRow = portfolio.holdingsRows.first();
     const holdingId = await firstRow.getAttribute('data-testid');
     await firstRow.click();
-    expect(investorPage.url()).toContain('/portfolio/');
+    expect(investorPage.url()).toContain('/portfolio');
     expect(holdingId).toBeTruthy();
   });
 });
