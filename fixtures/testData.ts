@@ -6,7 +6,7 @@
  */
 
 export const mutualFundCategories = ['Equity Fund', 'Debt Fund', 'Hybrid Fund', 'Index Fund', 'ELSS'] as const;
-export const riskLevels = ['Low', 'Moderate', 'High', 'Very High'] as const;
+export const riskLevels = ['Low Risk', 'Moderate Risk', 'High Risk', 'Very High Risk'] as const;
 export const insuranceTypes = ['Term Insurance', 'Health Insurance', 'Motor Insurance', 'Travel Insurance'] as const;
 export const transactionStatuses = ['SUCCESS', 'PENDING', 'FAILED', 'CANCELLED'] as const;
 export const transactionTypes = ['Investment', 'Redemption', 'Premium Payment', 'Refund', 'Failed Payment'] as const;
@@ -21,6 +21,7 @@ export const investmentTestData = {
   negativeAmount: -500,
   nonNumericAmount: 'abcd',
   extremelyLargeAmount: 999999999999,
+  validPayment: 'UPI'
 };
 
 export const redemptionTestData = {

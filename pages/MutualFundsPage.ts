@@ -11,11 +11,11 @@ export class MutualFundsPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.searchInput = page.getByTestId(dataTestIds.mutualFunds.searchInput);
-    this.fundCards = page.locator('[data-testid^="fund-card-"]');
-    this.categoryFilter = page.getByLabel(/category/i);
-    this.riskFilter = page.getByLabel(/risk/i);
-    this.sortDropdown = page.getByLabel(/sort/i);
+    this.searchInput = page.getByTestId('fund-search-input');
+    this.fundCards = page.locator('[data-testid^="fund-details-link"]');
+    this.categoryFilter = page.getByTestId('fund-category-filter');
+    this.riskFilter = page.getByTestId('fund-risk-filter');
+    this.sortDropdown = page.getByTestId('fund-sort-select');
   }
 
   async goto() {

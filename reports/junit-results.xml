@@ -1,126 +1,426 @@
-<testsuites id="" name="" tests="7" failures="7" skipped="0" errors="0" time="73.14224699999998">
-<testsuite name="mutual-funds\investment.spec.ts" timestamp="2026-09-22T13:34:41.767Z" hostname="chromium" tests="7" failures="7" skipped="0" time="62.948" errors="0">
-<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-001: valid lumpsum investment above minimum succeeds and updates portfolio @smoke @regression" classname="mutual-funds\investment.spec.ts" time="9.085">
+<testsuites id="" name="" tests="57" failures="10" skipped="0" errors="3" time="135.934997">
+<testsuite name="api\auth.api.spec.ts" timestamp="2026-09-23T18:19:50.231Z" hostname="chromium" tests="4" failures="1" skipped="0" time="3.659" errors="0">
+<testcase name="API - Health &amp; Auth @api › TC-API-001: GET /health returns 200 @smoke @api" classname="api\auth.api.spec.ts" time="0.714">
+</testcase>
+<testcase name="API - Health &amp; Auth @api › TC-API-002: POST /login with valid credentials returns 200 @regression @api" classname="api\auth.api.spec.ts" time="1.336">
+</testcase>
+<testcase name="API - Health &amp; Auth @api › TC-API-003: POST /login with invalid credentials returns a validation/auth error @regression @api" classname="api\auth.api.spec.ts" time="0.548">
+</testcase>
+<testcase name="API - Health &amp; Auth @api › TC-API-004: request without X-API-Key header returns 401 @regression @api" classname="api\auth.api.spec.ts" time="1.061">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-chromium\test-failed-1.png]]
+[[ATTACHMENT|..\test-artifacts\api-auth.api-API---Health--f963d--returns-401-regression-api-chromium\error-context.md]]
 
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-chromium\video.webm]]
-
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-chromium\error-context.md]]
-
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-chromium\trace.zip]]
+[[ATTACHMENT|..\test-artifacts\api-auth.api-API---Health--f963d--returns-401-regression-api-chromium\trace.zip]]
 ]]>
 </system-out>
-<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
-<![CDATA[  [chromium] › mutual-funds\investment.spec.ts:34:7 › Mutual Fund Investment @mutual-funds @investment › TC-INV-001: valid lumpsum investment above minimum succeeds and updates portfolio @smoke @regression 
+<failure message="Expected HTTP 401 but got 200 for http://8.231.116.131:8082/login" type="expect.toBe">
+<![CDATA[  [chromium] › api\auth.api.spec.ts:30:7 › API - Health & Auth @api › TC-API-004: request without X-API-Key header returns 401 @regression @api 
 
-    Error: expect(locator).toBeVisible() failed
+    Error: Expected HTTP 401 but got 200 for http://8.231.116.131:8082/login
 
-    Locator: getByTestId('invest-now-button')
-    Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
+    expect(received).toBe(expected) // Object.is equality
 
-    Call log:
-      - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByTestId('invest-now-button')
+    Expected: 401
+    Received: 200
 
+       at ..\utils\assertions.ts:10
 
-       at ..\pages\FundDetailsPage.ts:27
+       8 |
+       9 | export async function expectStatus(response: APIResponse, expected: number) {
+    > 10 |   expect(response.status(), `Expected HTTP ${expected} but got ${response.status()} for ${response.url()}`).toBe(expected);
+         |                                                                                                             ^
+      11 | }
+      12 |
+      13 | export async function expectSuccessEnvelope(response: APIResponse) {
+        at expectStatus (C:\Users\talentfarm_learner\financial-services-playwright-automation\utils\assertions.ts:10:109)
+        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\api\auth.api.spec.ts:33:23
 
-      25 |
-      26 |   async expectLoaded() {
-    > 27 |     await expect(this.investButton).toBeVisible();
-         |                                     ^
-      28 |   }
-      29 |
-      30 |   async clickInvest() {
-        at FundDetailsPage.expectLoaded (C:\Users\talentfarm_learner\financial-services-playwright-automation\pages\FundDetailsPage.ts:27:37)
-        at navigateToFirstFundInvestmentForm (C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:30:19)
-        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:35:5
+    Error Context: ..\test-artifacts\api-auth.api-API---Health--f963d--returns-401-regression-api-chromium\error-context.md
 
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-chromium\error-context.md
-
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-chromium\trace.zip
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-artifacts\api-auth.api-API---Health--f963d--returns-401-regression-api-chromium\trace.zip
     Usage:
 
-        npx playwright show-trace ..\test-artifacts\mutual-funds-investment-Mu-dc815--portfolio-smoke-regression-chromium\trace.zip
+        npx playwright show-trace ..\test-artifacts\api-auth.api-API---Health--f963d--returns-401-regression-api-chromium\trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 </testcase>
-<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-002: investment below minimum amount is rejected with validation message @regression" classname="mutual-funds\investment.spec.ts" time="9.109">
+</testsuite>
+<testsuite name="api\insurancePolicies.api.spec.ts" timestamp="2026-09-23T18:19:50.231Z" hostname="chromium" tests="6" failures="0" skipped="0" time="3.708" errors="0">
+<testcase name="API - Insurance &amp; Policies @api › TC-API-030: GET /insurance-products returns 200 with a list @smoke @api" classname="api\insurancePolicies.api.spec.ts" time="0.597">
+</testcase>
+<testcase name="API - Insurance &amp; Policies @api › TC-API-031: each insurance product has an allowed insurance_type value @regression @api" classname="api\insurancePolicies.api.spec.ts" time="0.538">
+</testcase>
+<testcase name="API - Insurance &amp; Policies @api › TC-API-032: GET /insurance-products/{id} with invalid id returns 404 @regression @api" classname="api\insurancePolicies.api.spec.ts" time="0.771">
+</testcase>
+<testcase name="API - Insurance &amp; Policies @api › TC-API-033: POST /policies with missing required fields returns 422 @regression @api" classname="api\insurancePolicies.api.spec.ts" time="0.569">
+</testcase>
+<testcase name="API - Insurance &amp; Policies @api › TC-API-034: GET /policies returns policies scoped to the authenticated user @smoke @api" classname="api\insurancePolicies.api.spec.ts" time="0.541">
+</testcase>
+<testcase name="API - Insurance &amp; Policies @api › TC-API-035: GET /policies/{id} with invalid id returns 404 @regression @api" classname="api\insurancePolicies.api.spec.ts" time="0.692">
+</testcase>
+</testsuite>
+<testsuite name="api\mutualFunds.api.spec.ts" timestamp="2026-09-23T18:19:50.231Z" hostname="chromium" tests="6" failures="2" skipped="0" time="3.962" errors="0">
+<testcase name="API - Mutual Funds @api › TC-API-010: GET /mutual-funds returns 200 with a list @smoke @api" classname="api\mutualFunds.api.spec.ts" time="0.506">
+</testcase>
+<testcase name="API - Mutual Funds @api › TC-API-011: each fund exposes required fields with allowed category/risk values @regression @api" classname="api\mutualFunds.api.spec.ts" time="0.563">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-0c571-lidation-message-regression-chromium\test-failed-1.png]]
+[[ATTACHMENT|..\test-artifacts\api-mutualFunds.api-API----8ca7e--risk-values-regression-api-chromium\error-context.md]]
 
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-0c571-lidation-message-regression-chromium\video.webm]]
-
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-0c571-lidation-message-regression-chromium\error-context.md]]
-
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-0c571-lidation-message-regression-chromium\trace.zip]]
+[[ATTACHMENT|..\test-artifacts\api-mutualFunds.api-API----8ca7e--risk-values-regression-api-chromium\trace.zip]]
 ]]>
 </system-out>
-<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
-<![CDATA[  [chromium] › mutual-funds\investment.spec.ts:46:7 › Mutual Fund Investment @mutual-funds @investment › TC-INV-002: investment below minimum amount is rejected with validation message @regression 
+<failure message="expect(received).toContain(expected) // indexOf" type="expect.toContain">
+<![CDATA[  [chromium] › api\mutualFunds.api.spec.ts:20:7 › API - Mutual Funds @api › TC-API-011: each fund exposes required fields with allowed category/risk values @regression @api 
 
-    Error: expect(locator).toBeVisible() failed
+    Error: expect(received).toContain(expected) // indexOf
 
-    Locator: getByTestId('invest-now-button')
-    Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
+    Expected value: "Moderate"
+    Received array: ["Low Risk", "Moderate Risk", "High Risk", "Very High Risk"]
 
-    Call log:
-      - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByTestId('invest-now-button')
+       at ..\utils\assertions.ts:44
 
+      42 |
+      43 | export function expectValidRiskLevel(risk: string) {
+    > 44 |   expect(riskLevels as readonly string[]).toContain(risk);
+         |                                           ^
+      45 | }
+      46 |
+      47 | /** Compares a numeric UI value against an API value within a small tolerance (for currency rounding). */
+        at expectValidRiskLevel (C:\Users\talentfarm_learner\financial-services-playwright-automation\utils\assertions.ts:44:43)
+        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\api\mutualFunds.api.spec.ts:29:27
 
-       at ..\pages\FundDetailsPage.ts:27
+    Error Context: ..\test-artifacts\api-mutualFunds.api-API----8ca7e--risk-values-regression-api-chromium\error-context.md
 
-      25 |
-      26 |   async expectLoaded() {
-    > 27 |     await expect(this.investButton).toBeVisible();
-         |                                     ^
-      28 |   }
-      29 |
-      30 |   async clickInvest() {
-        at FundDetailsPage.expectLoaded (C:\Users\talentfarm_learner\financial-services-playwright-automation\pages\FundDetailsPage.ts:27:37)
-        at navigateToFirstFundInvestmentForm (C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:30:19)
-        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:47:5
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-0c571-lidation-message-regression-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-0c571-lidation-message-regression-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\test-artifacts\mutual-funds-investment-Mu-0c571-lidation-message-regression-chromium\error-context.md
-
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-0c571-lidation-message-regression-chromium\trace.zip
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-artifacts\api-mutualFunds.api-API----8ca7e--risk-values-regression-api-chromium\trace.zip
     Usage:
 
-        npx playwright show-trace ..\test-artifacts\mutual-funds-investment-Mu-0c571-lidation-message-regression-chromium\trace.zip
+        npx playwright show-trace ..\test-artifacts\api-mutualFunds.api-API----8ca7e--risk-values-regression-api-chromium\trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 </testcase>
-<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-003: zero amount investment is rejected @regression" classname="mutual-funds\investment.spec.ts" time="8.958">
+<testcase name="API - Mutual Funds @api › TC-API-012: GET /mutual-funds/{id} returns fund details for a valid id @regression @api" classname="api\mutualFunds.api.spec.ts" time="1.045">
+</testcase>
+<testcase name="API - Mutual Funds @api › TC-API-013: GET /mutual-funds/{id} with an invalid id returns 404 @regression @api" classname="api\mutualFunds.api.spec.ts" time="0.537">
+</testcase>
+<testcase name="API - Mutual Funds @api › TC-API-014: POST /investments below minimum amount returns 422 @regression @api" classname="api\mutualFunds.api.spec.ts" time="0.763">
+</testcase>
+<testcase name="API - Mutual Funds @api › TC-API-015: POST /investments with valid payload returns 201 @regression @api" classname="api\mutualFunds.api.spec.ts" time="0.548">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-artifacts\api-mutualFunds.api-API----54715--returns-201-regression-api-chromium\error-context.md]]
+
+[[ATTACHMENT|..\test-artifacts\api-mutualFunds.api-API----54715--returns-201-regression-api-chromium\trace.zip]]
+]]>
+</system-out>
+<failure message="Expected HTTP 201 but got 422 for http://8.231.116.131:8082/api/investments" type="expect.toBe">
+<![CDATA[  [chromium] › api\mutualFunds.api.spec.ts:60:7 › API - Mutual Funds @api › TC-API-015: POST /investments with valid payload returns 201 @regression @api 
+
+    Error: Expected HTTP 201 but got 422 for http://8.231.116.131:8082/api/investments
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 201
+    Received: 422
+
+       at ..\utils\assertions.ts:10
+
+       8 |
+       9 | export async function expectStatus(response: APIResponse, expected: number) {
+    > 10 |   expect(response.status(), `Expected HTTP ${expected} but got ${response.status()} for ${response.url()}`).toBe(expected);
+         |                                                                                                             ^
+      11 | }
+      12 |
+      13 | export async function expectSuccessEnvelope(response: APIResponse) {
+        at expectStatus (C:\Users\talentfarm_learner\financial-services-playwright-automation\utils\assertions.ts:10:109)
+        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\api\mutualFunds.api.spec.ts:67:23
+
+    Error Context: ..\test-artifacts\api-mutualFunds.api-API----54715--returns-201-regression-api-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-artifacts\api-mutualFunds.api-API----54715--returns-201-regression-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-artifacts\api-mutualFunds.api-API----54715--returns-201-regression-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="api\portfolioRedemption.api.spec.ts" timestamp="2026-09-23T18:19:50.231Z" hostname="chromium" tests="3" failures="1" skipped="0" time="2.241" errors="0">
+<testcase name="API - Portfolio &amp; Redemptions @api › TC-API-020: GET /portfolio returns 200 with holdings scoped to the caller @smoke @api" classname="api\portfolioRedemption.api.spec.ts" time="0.889">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-artifacts\api-portfolioRedemption.ap-57b23-ped-to-the-caller-smoke-api-chromium\error-context.md]]
+
+[[ATTACHMENT|..\test-artifacts\api-portfolioRedemption.ap-57b23-ped-to-the-caller-smoke-api-chromium\trace.zip]]
+]]>
+</system-out>
+<failure message="Expected HTTP 200 but got 500 for http://8.231.116.131:8082/api/portfolio" type="expect.toBe">
+<![CDATA[  [chromium] › api\portfolioRedemption.api.spec.ts:11:7 › API - Portfolio & Redemptions @api › TC-API-020: GET /portfolio returns 200 with holdings scoped to the caller @smoke @api 
+
+    Error: Expected HTTP 200 but got 500 for http://8.231.116.131:8082/api/portfolio
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 200
+    Received: 500
+
+       at ..\utils\assertions.ts:10
+
+       8 |
+       9 | export async function expectStatus(response: APIResponse, expected: number) {
+    > 10 |   expect(response.status(), `Expected HTTP ${expected} but got ${response.status()} for ${response.url()}`).toBe(expected);
+         |                                                                                                             ^
+      11 | }
+      12 |
+      13 | export async function expectSuccessEnvelope(response: APIResponse) {
+        at expectStatus (C:\Users\talentfarm_learner\financial-services-playwright-automation\utils\assertions.ts:10:109)
+        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\api\portfolioRedemption.api.spec.ts:14:23
+
+    Error Context: ..\test-artifacts\api-portfolioRedemption.ap-57b23-ped-to-the-caller-smoke-api-chromium\error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-artifacts\api-portfolioRedemption.ap-57b23-ped-to-the-caller-smoke-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-artifacts\api-portfolioRedemption.ap-57b23-ped-to-the-caller-smoke-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="API - Portfolio &amp; Redemptions @api › TC-API-021: POST /redemptions exceeding available units returns 422 @regression @api" classname="api\portfolioRedemption.api.spec.ts" time="0.739">
+</testcase>
+<testcase name="API - Portfolio &amp; Redemptions @api › TC-API-022: POST /redemptions with negative units returns 422 @regression @api" classname="api\portfolioRedemption.api.spec.ts" time="0.613">
+</testcase>
+</testsuite>
+<testsuite name="api\transactions.api.spec.ts" timestamp="2026-09-23T18:19:50.231Z" hostname="chromium" tests="3" failures="0" skipped="0" time="1.955" errors="0">
+<testcase name="API - Transactions @api › TC-API-040: GET /transactions returns 200 with a list @smoke @api" classname="api\transactions.api.spec.ts" time="0.559">
+</testcase>
+<testcase name="API - Transactions @api › TC-API-041: every transaction has an allowed status and type value @regression @api" classname="api\transactions.api.spec.ts" time="0.767">
+</testcase>
+<testcase name="API - Transactions @api › TC-API-042: GET /transactions/{id} with invalid id returns 404 @regression @api" classname="api\transactions.api.spec.ts" time="0.629">
+</testcase>
+</testsuite>
+<testsuite name="auth\login.spec.ts" timestamp="2026-09-23T18:19:50.231Z" hostname="chromium" tests="6" failures="0" skipped="0" time="21.588" errors="0">
+<testcase name="Authentication @auth › TC-AUTH-001: valid seed user can log in and reach dashboard @smoke @regression" classname="auth\login.spec.ts" time="4.138">
+</testcase>
+<testcase name="Authentication @auth › TC-AUTH-002: invalid credentials show an error and remain on login page @regression" classname="auth\login.spec.ts" time="3.068">
+</testcase>
+<testcase name="Authentication @auth › TC-AUTH-003: empty credentials are rejected client-side or server-side @regression" classname="auth\login.spec.ts" time="2.14">
+</testcase>
+<testcase name="Authentication @auth › TC-AUTH-004: locked seed user cannot log in @regression" classname="auth\login.spec.ts" time="4.016">
+</testcase>
+<testcase name="Authentication @auth › TC-AUTH-005: unauthenticated user is redirected away from a protected route @regression" classname="auth\login.spec.ts" time="2.084">
+</testcase>
+<testcase name="Authentication @auth › TC-AUTH-006: logged-in user can log out and lose access to protected routes @regression" classname="auth\login.spec.ts" time="6.142">
+</testcase>
+</testsuite>
+<testsuite name="dashboard\dashboard.spec.ts" timestamp="2026-09-23T18:19:50.231Z" hostname="chromium" tests="4" failures="1" skipped="0" time="32.754" errors="1">
+<testcase name="Dashboard @dashboard › TC-DASH-001: authenticated investor sees dashboard with portfolio summary @smoke" classname="dashboard\dashboard.spec.ts" time="4.535">
+</testcase>
+<testcase name="Dashboard @dashboard › TC-DASH-002: new user with no holdings sees an empty-state portfolio summary @regression" classname="dashboard\dashboard.spec.ts" time="3.342">
+</testcase>
+<testcase name="Dashboard @dashboard › TC-DASH-003: dashboard portfolio value reconciles with /api/dashboard summary @regression @api" classname="dashboard\dashboard.spec.ts" time="4.609">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-artifacts\dashboard-dashboard-Dashbo-b7b42-oard-summary-regression-api-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-artifacts\dashboard-dashboard-Dashbo-b7b42-oard-summary-regression-api-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-artifacts\dashboard-dashboard-Dashbo-b7b42-oard-summary-regression-api-chromium\error-context.md]]
+
+[[ATTACHMENT|..\test-artifacts\dashboard-dashboard-Dashbo-b7b42-oard-summary-regression-api-chromium\trace.zip]]
+]]>
+</system-out>
+<failure message="UI value 92910.6 vs API value 0 exceeds tolerance 1" type="expect.toBeLessThanOrEqual">
+<![CDATA[  [chromium] › dashboard\dashboard.spec.ts:33:7 › Dashboard @dashboard › TC-DASH-003: dashboard portfolio value reconciles with /api/dashboard summary @regression @api 
+
+    Error: UI value 92910.6 vs API value 0 exceeds tolerance 1
+
+    expect(received).toBeLessThanOrEqual(expected)
+
+    Expected: <= 1
+    Received:    92910.6
+
+       at ..\utils\assertions.ts:49
+
+      47 | /** Compares a numeric UI value against an API value within a small tolerance (for currency rounding). */
+      48 | export function expectAmountsReconcile(uiValue: number, apiValue: number, tolerance = 1) {
+    > 49 |   expect(Math.abs(uiValue - apiValue), `UI value ${uiValue} vs API value ${apiValue} exceeds tolerance ${tolerance}`).toBeLessThanOrEqual(tolerance);
+         |                                                                                                                       ^
+      50 | }
+      51 |
+        at expectAmountsReconcile (C:\Users\talentfarm_learner\financial-services-playwright-automation\utils\assertions.ts:49:119)
+        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\dashboard\dashboard.spec.ts:44:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-artifacts\dashboard-dashboard-Dashbo-b7b42-oard-summary-regression-api-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-artifacts\dashboard-dashboard-Dashbo-b7b42-oard-summary-regression-api-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-artifacts\dashboard-dashboard-Dashbo-b7b42-oard-summary-regression-api-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-artifacts\dashboard-dashboard-Dashbo-b7b42-oard-summary-regression-api-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-artifacts\dashboard-dashboard-Dashbo-b7b42-oard-summary-regression-api-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="Dashboard @dashboard › TC-DASH-004: dashboard navigation cards route to the correct module @regression" classname="dashboard\dashboard.spec.ts" time="20.268">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-artifacts\dashboard-dashboard-Dashbo-e60dd-e-correct-module-regression-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-artifacts\dashboard-dashboard-Dashbo-e60dd-e-correct-module-regression-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-artifacts\dashboard-dashboard-Dashbo-e60dd-e-correct-module-regression-chromium\error-context.md]]
+
+[[ATTACHMENT|..\test-artifacts\dashboard-dashboard-Dashbo-e60dd-e-correct-module-regression-chromium\trace.zip]]
+]]>
+</system-out>
+<error message="locator.click: Timeout 10000ms exceeded." type="TimeoutError">
+<![CDATA[  [chromium] › dashboard\dashboard.spec.ts:47:7 › Dashboard @dashboard › TC-DASH-004: dashboard navigation cards route to the correct module @regression 
+
+    TimeoutError: locator.click: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for getByRole('link', { name: /transaction/i })
+
+
+       at ..\pages\DashboardPage.ts:46
+
+      44 |
+      45 |   async navigateToTransactions() {
+    > 46 |     await this.page.getByRole('link', { name: /transaction/i }).click();
+         |                                                                 ^
+      47 |   }
+      48 | }
+      49 |
+        at DashboardPage.navigateToTransactions (C:\Users\talentfarm_learner\financial-services-playwright-automation\pages\DashboardPage.ts:46:65)
+        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\dashboard\dashboard.spec.ts:62:21
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-artifacts\dashboard-dashboard-Dashbo-e60dd-e-correct-module-regression-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-artifacts\dashboard-dashboard-Dashbo-e60dd-e-correct-module-regression-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-artifacts\dashboard-dashboard-Dashbo-e60dd-e-correct-module-regression-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-artifacts\dashboard-dashboard-Dashbo-e60dd-e-correct-module-regression-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-artifacts\dashboard-dashboard-Dashbo-e60dd-e-correct-module-regression-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+</testsuite>
+<testsuite name="insurance\insuranceDiscovery.spec.ts" timestamp="2026-09-23T18:19:50.231Z" hostname="chromium" tests="3" failures="1" skipped="0" time="18.045" errors="0">
+<testcase name="Insurance Discovery @insurance › TC-INS-001: insurance product listing loads with visible products @smoke" classname="insurance\insuranceDiscovery.spec.ts" time="4.323">
+</testcase>
+<testcase name="Insurance Discovery @insurance › TC-INS-002: filtering by type &quot;Term Insurance&quot; returns only matching products @regression" classname="insurance\insuranceDiscovery.spec.ts" time="8.701">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-artifacts\insurance-insuranceDiscove-4c1dd-atching-products-regression-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-artifacts\insurance-insuranceDiscove-4c1dd-atching-products-regression-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-artifacts\insurance-insuranceDiscove-4c1dd-atching-products-regression-chromium\error-context.md]]
+
+[[ATTACHMENT|..\test-artifacts\insurance-insuranceDiscove-4c1dd-atching-products-regression-chromium\trace.zip]]
+]]>
+</system-out>
+<failure message="expect(locator).toContainText(expected) failed" type="expect.toContainText">
+<![CDATA[  [chromium] › insurance\insuranceDiscovery.spec.ts:16:7 › Insurance Discovery @insurance › TC-INS-002: filtering by type "Term Insurance" returns only matching products @regression 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('[data-testid^="insurance-details-link"]').first()
+    Expected substring: "Term Insurance"
+    Received string:    "View Details"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toContainText" with timeout 5000ms
+      - waiting for locator('[data-testid^="insurance-details-link"]').first()
+        14 × locator resolved to <a class="btn btn-primary" href="http://8.231.116.131:8082/insurance/2" data-testid="insurance-details-link-FSLIFE002">View Details</a>
+           - unexpected value "View Details"
+
+
+       at ..\pages\InsurancePage.ts:37
+
+      35 |     const count = await this.productCards.count();
+      36 |     for (let i = 0; i < count; i++) {
+    > 37 |       await expect(this.productCards.nth(i)).toContainText(type);
+         |                                              ^
+      38 |     }
+      39 |   }
+      40 | }
+        at InsurancePage.expectResultsContainOnlyType (C:\Users\talentfarm_learner\financial-services-playwright-automation\pages\InsurancePage.ts:37:46)
+        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\insurance\insuranceDiscovery.spec.ts:20:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-artifacts\insurance-insuranceDiscove-4c1dd-atching-products-regression-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-artifacts\insurance-insuranceDiscove-4c1dd-atching-products-regression-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-artifacts\insurance-insuranceDiscove-4c1dd-atching-products-regression-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-artifacts\insurance-insuranceDiscove-4c1dd-atching-products-regression-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-artifacts\insurance-insuranceDiscove-4c1dd-atching-products-regression-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+</testcase>
+<testcase name="Insurance Discovery @insurance › TC-INS-003: opening a product shows its detail page @regression" classname="insurance\insuranceDiscovery.spec.ts" time="5.021">
+</testcase>
+</testsuite>
+<testsuite name="insurance\insurancePurchase.spec.ts" timestamp="2026-09-23T18:19:50.231Z" hostname="chromium" tests="5" failures="0" skipped="0" time="34.675" errors="0">
+<testcase name="Insurance Purchase @insurance @purchase › TC-INSP-001: valid nominee details lead to successful policy creation @smoke @regression" classname="insurance\insurancePurchase.spec.ts" time="7.293">
+</testcase>
+<testcase name="Insurance Purchase @insurance @purchase › TC-INSP-002: missing mandatory nominee details are rejected @regression" classname="insurance\insurancePurchase.spec.ts" time="5.958">
+</testcase>
+<testcase name="Insurance Purchase @insurance @purchase › TC-INSP-003: premium summary is shown before final confirmation @regression" classname="insurance\insurancePurchase.spec.ts" time="6.49">
+</testcase>
+<testcase name="Insurance Purchase @insurance @purchase › TC-INSP-004: successful policy purchase generates a related transaction @regression" classname="insurance\insurancePurchase.spec.ts" time="7.222">
+</testcase>
+<testcase name="Insurance Purchase @insurance @purchase › TC-INSP-005: newly purchased policy appears in Policies list @regression" classname="insurance\insurancePurchase.spec.ts" time="7.712">
+</testcase>
+</testsuite>
+<testsuite name="mutual-funds\investment.spec.ts" timestamp="2026-09-23T18:19:50.231Z" hostname="chromium" tests="6" failures="1" skipped="0" time="55.838" errors="1">
+<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-001: valid lumpsum investment above minimum succeeds and updates portfolio @smoke @regression" classname="mutual-funds\investment.spec.ts" time="8.174">
+</testcase>
+<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-002: investment below minimum amount is rejected with validation message @regression" classname="mutual-funds\investment.spec.ts" time="6.924">
+</testcase>
+<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-003: zero amount investment is rejected @regression" classname="mutual-funds\investment.spec.ts" time="14.44">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-0620f-ment-is-rejected-regression-chromium\test-failed-1.png]]
@@ -132,33 +432,25 @@
 [[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-0620f-ment-is-rejected-regression-chromium\trace.zip]]
 ]]>
 </system-out>
-<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
+<error message="page.waitForURL: Timeout 10000ms exceeded." type="TimeoutError">
 <![CDATA[  [chromium] › mutual-funds\investment.spec.ts:53:7 › Mutual Fund Investment @mutual-funds @investment › TC-INV-003: zero amount investment is rejected @regression 
 
-    Error: expect(locator).toBeVisible() failed
+    TimeoutError: page.waitForURL: Timeout 10000ms exceeded.
+    =========================== logs ===========================
+    waiting for navigation until "load"
+    ============================================================
 
-    Locator: getByTestId('invest-now-button')
-    Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
+       at ..\pages\LoginPage.ts:34
 
-    Call log:
-      - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByTestId('invest-now-button')
-
-
-       at ..\pages\FundDetailsPage.ts:27
-
-      25 |
-      26 |   async expectLoaded() {
-    > 27 |     await expect(this.investButton).toBeVisible();
-         |                                     ^
-      28 |   }
-      29 |
-      30 |   async clickInvest() {
-        at FundDetailsPage.expectLoaded (C:\Users\talentfarm_learner\financial-services-playwright-automation\pages\FundDetailsPage.ts:27:37)
-        at navigateToFirstFundInvestmentForm (C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:30:19)
-        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:54:5
+      32 |
+      33 |   async expectLoginSuccess() {
+    > 34 |     await this.page.waitForURL(/dashboard/, { timeout: 10000 });
+         |                     ^
+      35 |     await expect(this.page.getByTestId(dataTestIds.dashboard)).toBeVisible();
+      36 |   }
+      37 |
+        at LoginPage.expectLoginSuccess (C:\Users\talentfarm_learner\financial-services-playwright-automation\pages\LoginPage.ts:34:21)
+        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:22:21
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
     ..\test-artifacts\mutual-funds-investment-Mu-0620f-ment-is-rejected-regression-chromium\test-failed-1.png
@@ -178,9 +470,9 @@
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
-</failure>
+</error>
 </testcase>
-<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-004: negative amount investment is rejected @regression" classname="mutual-funds\investment.spec.ts" time="9.118">
+<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-004: negative amount investment is rejected @regression" classname="mutual-funds\investment.spec.ts" time="10.609">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-2612d-ment-is-rejected-regression-chromium\test-failed-1.png]]
@@ -197,28 +489,27 @@
 
     Error: expect(locator).toBeVisible() failed
 
-    Locator: getByTestId('invest-now-button')
+    Locator: getByTestId('investment-error')
     Expected: visible
     Timeout: 5000ms
     Error: element(s) not found
 
     Call log:
       - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByTestId('invest-now-button')
+      - waiting for getByTestId('investment-error')
 
 
-       at ..\pages\FundDetailsPage.ts:27
+       at ..\pages\InvestmentPage.ts:65
 
-      25 |
-      26 |   async expectLoaded() {
-    > 27 |     await expect(this.investButton).toBeVisible();
-         |                                     ^
-      28 |   }
-      29 |
-      30 |   async clickInvest() {
-        at FundDetailsPage.expectLoaded (C:\Users\talentfarm_learner\financial-services-playwright-automation\pages\FundDetailsPage.ts:27:37)
-        at navigateToFirstFundInvestmentForm (C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:30:19)
-        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:61:5
+      63 |
+      64 |   async expectZeroValidationError(){
+    > 65 |     await expect(this.zeroAmountError).toBeVisible();
+         |                                        ^
+      66 |   }
+      67 |
+      68 |   async expectConfirmation() {
+        at InvestmentPage.expectZeroValidationError (C:\Users\talentfarm_learner\financial-services-playwright-automation\pages\InvestmentPage.ts:65:40)
+        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:64:22
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
     ..\test-artifacts\mutual-funds-investment-Mu-2612d-ment-is-rejected-regression-chromium\test-failed-1.png
@@ -240,181 +531,248 @@
 ]]>
 </failure>
 </testcase>
-<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-005: non-numeric amount input is rejected @regression" classname="mutual-funds\investment.spec.ts" time="9.041">
+<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-006: SIP investment path can be selected and submitted @regression" classname="mutual-funds\investment.spec.ts" time="8.027">
+</testcase>
+<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-007: submitting without accepting mandatory declaration is blocked @regression" classname="mutual-funds\investment.spec.ts" time="7.664">
+</testcase>
+</testsuite>
+<testsuite name="mutual-funds\mutualFundsDiscovery.spec.ts" timestamp="2026-09-23T18:19:50.231Z" hostname="chromium" tests="3" failures="1" skipped="0" time="17.215" errors="0">
+<testcase name="Mutual Fund Discovery @mutual-funds › TC-MF-001: fund listing page loads with visible fund cards @smoke" classname="mutual-funds\mutualFundsDiscovery.spec.ts" time="3.96">
+</testcase>
+<testcase name="Mutual Fund Discovery @mutual-funds › TC-MF-002: filtering by category &quot;Equity Fund&quot; returns only matching funds @regression" classname="mutual-funds\mutualFundsDiscovery.spec.ts" time="9.417">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-66ae1-nput-is-rejected-regression-chromium\test-failed-1.png]]
+[[ATTACHMENT|..\test-artifacts\mutual-funds-mutualFundsDi-82dc8-y-matching-funds-regression-chromium\test-failed-1.png]]
 
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-66ae1-nput-is-rejected-regression-chromium\video.webm]]
+[[ATTACHMENT|..\test-artifacts\mutual-funds-mutualFundsDi-82dc8-y-matching-funds-regression-chromium\video.webm]]
 
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-66ae1-nput-is-rejected-regression-chromium\error-context.md]]
+[[ATTACHMENT|..\test-artifacts\mutual-funds-mutualFundsDi-82dc8-y-matching-funds-regression-chromium\error-context.md]]
 
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-66ae1-nput-is-rejected-regression-chromium\trace.zip]]
+[[ATTACHMENT|..\test-artifacts\mutual-funds-mutualFundsDi-82dc8-y-matching-funds-regression-chromium\trace.zip]]
 ]]>
 </system-out>
-<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
-<![CDATA[  [chromium] › mutual-funds\investment.spec.ts:67:7 › Mutual Fund Investment @mutual-funds @investment › TC-INV-005: non-numeric amount input is rejected @regression 
+<failure message="expect(locator).toContainText(expected) failed" type="expect.toContainText">
+<![CDATA[  [chromium] › mutual-funds\mutualFundsDiscovery.spec.ts:19:7 › Mutual Fund Discovery @mutual-funds › TC-MF-002: filtering by category "Equity Fund" returns only matching funds @regression 
 
-    Error: expect(locator).toBeVisible() failed
+    Error: expect(locator).toContainText(expected) failed
 
-    Locator: getByTestId('invest-now-button')
-    Expected: visible
+    Locator: locator('[data-testid^="fund-details-link"]').first()
+    Expected substring: "Equity Fund"
+    Received string:    "View Details"
     Timeout: 5000ms
-    Error: element(s) not found
 
     Call log:
-      - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByTestId('invest-now-button')
+      - Expect "toContainText" with timeout 5000ms
+      - waiting for locator('[data-testid^="fund-details-link"]').first()
+        14 × locator resolved to <a class="btn btn-secondary" data-testid="fund-details-link-FSBAL007" href="http://8.231.116.131:8082/mutual-funds/7">View Details</a>
+           - unexpected value "View Details"
 
 
-       at ..\pages\FundDetailsPage.ts:27
+       at ..\pages\MutualFundsPage.ts:45
 
-      25 |
-      26 |   async expectLoaded() {
-    > 27 |     await expect(this.investButton).toBeVisible();
-         |                                     ^
-      28 |   }
-      29 |
-      30 |   async clickInvest() {
-        at FundDetailsPage.expectLoaded (C:\Users\talentfarm_learner\financial-services-playwright-automation\pages\FundDetailsPage.ts:27:37)
-        at navigateToFirstFundInvestmentForm (C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:30:19)
-        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:68:5
+      43 |     const count = await this.fundCards.count();
+      44 |     for (let i = 0; i < count; i++) {
+    > 45 |       await expect(this.fundCards.nth(i)).toContainText(category);
+         |                                           ^
+      46 |     }
+      47 |   }
+      48 |
+        at MutualFundsPage.expectResultsContainOnlyCategory (C:\Users\talentfarm_learner\financial-services-playwright-automation\pages\MutualFundsPage.ts:45:43)
+        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\mutualFundsDiscovery.spec.ts:23:5
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-66ae1-nput-is-rejected-regression-chromium\test-failed-1.png
+    ..\test-artifacts\mutual-funds-mutualFundsDi-82dc8-y-matching-funds-regression-chromium\test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-66ae1-nput-is-rejected-regression-chromium\video.webm
+    ..\test-artifacts\mutual-funds-mutualFundsDi-82dc8-y-matching-funds-regression-chromium\video.webm
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    Error Context: ..\test-artifacts\mutual-funds-investment-Mu-66ae1-nput-is-rejected-regression-chromium\error-context.md
+    Error Context: ..\test-artifacts\mutual-funds-mutualFundsDi-82dc8-y-matching-funds-regression-chromium\error-context.md
 
     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-66ae1-nput-is-rejected-regression-chromium\trace.zip
+    ..\test-artifacts\mutual-funds-mutualFundsDi-82dc8-y-matching-funds-regression-chromium\trace.zip
     Usage:
 
-        npx playwright show-trace ..\test-artifacts\mutual-funds-investment-Mu-66ae1-nput-is-rejected-regression-chromium\trace.zip
+        npx playwright show-trace ..\test-artifacts\mutual-funds-mutualFundsDi-82dc8-y-matching-funds-regression-chromium\trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 </testcase>
-<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-006: SIP investment path can be selected and submitted @regression" classname="mutual-funds\investment.spec.ts" time="8.751">
+<testcase name="Mutual Fund Discovery @mutual-funds › TC-MF-003: searching for a known fund name returns relevant results @regression" classname="mutual-funds\mutualFundsDiscovery.spec.ts" time="3.838">
+</testcase>
+</testsuite>
+<testsuite name="portfolio\portfolio.spec.ts" timestamp="2026-09-23T18:19:50.231Z" hostname="chromium" tests="4" failures="1" skipped="0" time="17.96" errors="0">
+<testcase name="Portfolio Management @portfolio › TC-PORT-001: investor sees their own holdings only @smoke" classname="portfolio\portfolio.spec.ts" time="3.632">
+</testcase>
+<testcase name="Portfolio Management @portfolio › TC-PORT-002: new user with no holdings sees empty portfolio state @regression" classname="portfolio\portfolio.spec.ts" time="4.488">
+</testcase>
+<testcase name="Portfolio Management @portfolio › TC-PORT-003: portfolio total value reconciles between UI and /api/portfolio @regression @api" classname="portfolio\portfolio.spec.ts" time="5.485">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-9f3db-ed-and-submitted-regression-chromium\test-failed-1.png]]
+[[ATTACHMENT|..\test-artifacts\portfolio-portfolio-Portfo-e5ce2-pi-portfolio-regression-api-chromium\test-failed-1.png]]
 
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-9f3db-ed-and-submitted-regression-chromium\video.webm]]
+[[ATTACHMENT|..\test-artifacts\portfolio-portfolio-Portfo-e5ce2-pi-portfolio-regression-api-chromium\video.webm]]
 
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-9f3db-ed-and-submitted-regression-chromium\error-context.md]]
+[[ATTACHMENT|..\test-artifacts\portfolio-portfolio-Portfo-e5ce2-pi-portfolio-regression-api-chromium\error-context.md]]
 
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-9f3db-ed-and-submitted-regression-chromium\trace.zip]]
+[[ATTACHMENT|..\test-artifacts\portfolio-portfolio-Portfo-e5ce2-pi-portfolio-regression-api-chromium\trace.zip]]
 ]]>
 </system-out>
-<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
-<![CDATA[  [chromium] › mutual-funds\investment.spec.ts:74:7 › Mutual Fund Investment @mutual-funds @investment › TC-INV-006: SIP investment path can be selected and submitted @regression 
+<failure message="UI value 92910.6 vs API value 61006.1 exceeds tolerance 5" type="expect.toBeLessThanOrEqual">
+<![CDATA[  [chromium] › portfolio\portfolio.spec.ts:31:7 › Portfolio Management @portfolio › TC-PORT-003: portfolio total value reconciles between UI and /api/portfolio @regression @api 
 
-    Error: expect(locator).toBeVisible() failed
+    Error: UI value 92910.6 vs API value 61006.1 exceeds tolerance 5
 
-    Locator: getByTestId('invest-now-button')
-    Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
+    expect(received).toBeLessThanOrEqual(expected)
 
-    Call log:
-      - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByTestId('invest-now-button')
+    Expected: <= 5
+    Received:    31904.500000000007
 
+       at ..\utils\assertions.ts:49
 
-       at ..\pages\FundDetailsPage.ts:27
-
-      25 |
-      26 |   async expectLoaded() {
-    > 27 |     await expect(this.investButton).toBeVisible();
-         |                                     ^
-      28 |   }
-      29 |
-      30 |   async clickInvest() {
-        at FundDetailsPage.expectLoaded (C:\Users\talentfarm_learner\financial-services-playwright-automation\pages\FundDetailsPage.ts:27:37)
-        at navigateToFirstFundInvestmentForm (C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:30:19)
-        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:75:5
+      47 | /** Compares a numeric UI value against an API value within a small tolerance (for currency rounding). */
+      48 | export function expectAmountsReconcile(uiValue: number, apiValue: number, tolerance = 1) {
+    > 49 |   expect(Math.abs(uiValue - apiValue), `UI value ${uiValue} vs API value ${apiValue} exceeds tolerance ${tolerance}`).toBeLessThanOrEqual(tolerance);
+         |                                                                                                                       ^
+      50 | }
+      51 |
+        at expectAmountsReconcile (C:\Users\talentfarm_learner\financial-services-playwright-automation\utils\assertions.ts:49:119)
+        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\portfolio\portfolio.spec.ts:58:27
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-9f3db-ed-and-submitted-regression-chromium\test-failed-1.png
+    ..\test-artifacts\portfolio-portfolio-Portfo-e5ce2-pi-portfolio-regression-api-chromium\test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-9f3db-ed-and-submitted-regression-chromium\video.webm
+    ..\test-artifacts\portfolio-portfolio-Portfo-e5ce2-pi-portfolio-regression-api-chromium\video.webm
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    Error Context: ..\test-artifacts\mutual-funds-investment-Mu-9f3db-ed-and-submitted-regression-chromium\error-context.md
+    Error Context: ..\test-artifacts\portfolio-portfolio-Portfo-e5ce2-pi-portfolio-regression-api-chromium\error-context.md
 
     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-9f3db-ed-and-submitted-regression-chromium\trace.zip
+    ..\test-artifacts\portfolio-portfolio-Portfo-e5ce2-pi-portfolio-regression-api-chromium\trace.zip
     Usage:
 
-        npx playwright show-trace ..\test-artifacts\mutual-funds-investment-Mu-9f3db-ed-and-submitted-regression-chromium\trace.zip
+        npx playwright show-trace ..\test-artifacts\portfolio-portfolio-Portfo-e5ce2-pi-portfolio-regression-api-chromium\trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 </testcase>
-<testcase name="Mutual Fund Investment @mutual-funds @investment › TC-INV-007: submitting without accepting mandatory declaration is blocked @regression" classname="mutual-funds\investment.spec.ts" time="8.886">
+<testcase name="Portfolio Management @portfolio › TC-PORT-004: clicking a holding row navigates to holding detail @regression" classname="portfolio\portfolio.spec.ts" time="4.355">
+</testcase>
+</testsuite>
+<testsuite name="transactions\transactions.spec.ts" timestamp="2026-09-23T18:19:50.231Z" hostname="chromium" tests="4" failures="1" skipped="0" time="30.245" errors="1">
+<testcase name="Transaction History @transactions › TC-TXN-001: transaction history loads for the authenticated user @smoke" classname="transactions\transactions.spec.ts" time="4.461">
+</testcase>
+<testcase name="Transaction History @transactions › TC-TXN-002: filtering by status &quot;SUCCESS&quot; returns only matching rows @regression" classname="transactions\transactions.spec.ts" time="13.299">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-53128-ation-is-blocked-regression-chromium\test-failed-1.png]]
+[[ATTACHMENT|..\test-artifacts\transactions-transactions--3d708-ly-matching-rows-regression-chromium\test-failed-1.png]]
 
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-53128-ation-is-blocked-regression-chromium\video.webm]]
+[[ATTACHMENT|..\test-artifacts\transactions-transactions--3d708-ly-matching-rows-regression-chromium\video.webm]]
 
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-53128-ation-is-blocked-regression-chromium\error-context.md]]
+[[ATTACHMENT|..\test-artifacts\transactions-transactions--3d708-ly-matching-rows-regression-chromium\error-context.md]]
 
-[[ATTACHMENT|..\test-artifacts\mutual-funds-investment-Mu-53128-ation-is-blocked-regression-chromium\trace.zip]]
+[[ATTACHMENT|..\test-artifacts\transactions-transactions--3d708-ly-matching-rows-regression-chromium\trace.zip]]
 ]]>
 </system-out>
-<failure message="expect(locator).toBeVisible() failed" type="expect.toBeVisible">
-<![CDATA[  [chromium] › mutual-funds\investment.spec.ts:84:7 › Mutual Fund Investment @mutual-funds @investment › TC-INV-007: submitting without accepting mandatory declaration is blocked @regression 
+<error message="page.waitForURL: Timeout 10000ms exceeded." type="TimeoutError">
+<![CDATA[  [chromium] › transactions\transactions.spec.ts:21:7 › Transaction History @transactions › TC-TXN-002: filtering by status "SUCCESS" returns only matching rows @regression 
 
-    Error: expect(locator).toBeVisible() failed
+    TimeoutError: page.waitForURL: Timeout 10000ms exceeded.
+    =========================== logs ===========================
+    waiting for navigation until "load"
+    ============================================================
 
-    Locator: getByTestId('invest-now-button')
-    Expected: visible
-    Timeout: 5000ms
-    Error: element(s) not found
+       at ..\pages\LoginPage.ts:34
 
-    Call log:
-      - Expect "toBeVisible" with timeout 5000ms
-      - waiting for getByTestId('invest-now-button')
-
-
-       at ..\pages\FundDetailsPage.ts:27
-
-      25 |
-      26 |   async expectLoaded() {
-    > 27 |     await expect(this.investButton).toBeVisible();
-         |                                     ^
-      28 |   }
-      29 |
-      30 |   async clickInvest() {
-        at FundDetailsPage.expectLoaded (C:\Users\talentfarm_learner\financial-services-playwright-automation\pages\FundDetailsPage.ts:27:37)
-        at navigateToFirstFundInvestmentForm (C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:30:19)
-        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\mutual-funds\investment.spec.ts:85:5
+      32 |
+      33 |   async expectLoginSuccess() {
+    > 34 |     await this.page.waitForURL(/dashboard/, { timeout: 10000 });
+         |                     ^
+      35 |     await expect(this.page.getByTestId(dataTestIds.dashboard)).toBeVisible();
+      36 |   }
+      37 |
+        at LoginPage.expectLoginSuccess (C:\Users\talentfarm_learner\financial-services-playwright-automation\pages\LoginPage.ts:34:21)
+        at loginAs (C:\Users\talentfarm_learner\financial-services-playwright-automation\fixtures\auth.fixture.ts:23:19)
+        at Object.investorPage (C:\Users\talentfarm_learner\financial-services-playwright-automation\fixtures\auth.fixture.ts:33:5)
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-53128-ation-is-blocked-regression-chromium\test-failed-1.png
+    ..\test-artifacts\transactions-transactions--3d708-ly-matching-rows-regression-chromium\test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-53128-ation-is-blocked-regression-chromium\video.webm
+    ..\test-artifacts\transactions-transactions--3d708-ly-matching-rows-regression-chromium\video.webm
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    Error Context: ..\test-artifacts\mutual-funds-investment-Mu-53128-ation-is-blocked-regression-chromium\error-context.md
+    Error Context: ..\test-artifacts\transactions-transactions--3d708-ly-matching-rows-regression-chromium\error-context.md
 
     attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\test-artifacts\mutual-funds-investment-Mu-53128-ation-is-blocked-regression-chromium\trace.zip
+    ..\test-artifacts\transactions-transactions--3d708-ly-matching-rows-regression-chromium\trace.zip
     Usage:
 
-        npx playwright show-trace ..\test-artifacts\mutual-funds-investment-Mu-53128-ation-is-blocked-regression-chromium\trace.zip
+        npx playwright show-trace ..\test-artifacts\transactions-transactions--3d708-ly-matching-rows-regression-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</error>
+</testcase>
+<testcase name="Transaction History @transactions › TC-TXN-003: transaction list from UI is consistent with /api/transactions @regression @api" classname="transactions\transactions.spec.ts" time="3.515">
+</testcase>
+<testcase name="Transaction History @transactions › TC-TXN-004: opening a transaction row shows transaction detail @regression" classname="transactions\transactions.spec.ts" time="8.97">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-artifacts\transactions-transactions--80981-ansaction-detail-regression-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-artifacts\transactions-transactions--80981-ansaction-detail-regression-chromium\video.webm]]
+
+[[ATTACHMENT|..\test-artifacts\transactions-transactions--80981-ansaction-detail-regression-chromium\error-context.md]]
+
+[[ATTACHMENT|..\test-artifacts\transactions-transactions--80981-ansaction-detail-regression-chromium\trace.zip]]
+]]>
+</system-out>
+<failure message="expect(page).toHaveURL(expected) failed" type="expect.toHaveURL">
+<![CDATA[  [chromium] › transactions\transactions.spec.ts:46:7 › Transaction History @transactions › TC-TXN-004: opening a transaction row shows transaction detail @regression 
+
+    Error: expect(page).toHaveURL(expected) failed
+
+    Expected pattern: /transactions\/.+/
+    Received string:  "http://8.231.116.131:8082/transactions"
+    Timeout: 5000ms
+
+    Call log:
+      - Expect "toHaveURL" with timeout 5000ms
+        13 × locator resolved to <html lang="en">…</html>
+           - unexpected value "http://8.231.116.131:8082/transactions"
+
+
+      50 |     if (await firstRow.isVisible().catch(() => false)) {
+      51 |       await firstRow.click();
+    > 52 |       await expect(investorPage).toHaveURL(/transactions\/.+/);
+         |                                  ^
+      53 |     }
+      54 |   });
+      55 | });
+        at C:\Users\talentfarm_learner\financial-services-playwright-automation\tests\transactions\transactions.spec.ts:52:34
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-artifacts\transactions-transactions--80981-ansaction-detail-regression-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-artifacts\transactions-transactions--80981-ansaction-detail-regression-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-artifacts\transactions-transactions--80981-ansaction-detail-regression-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-artifacts\transactions-transactions--80981-ansaction-detail-regression-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-artifacts\transactions-transactions--80981-ansaction-detail-regression-chromium\trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>

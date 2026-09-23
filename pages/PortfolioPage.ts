@@ -13,6 +13,7 @@ export class PortfolioPage {
     this.totalValue = page.getByTestId('portfolio-total');
     this.holdingsRows = page.locator('[data-testid^="holding-current-value-"]');
     this.statementDownloadButton = page.getByRole('button', { name: /download statement/i });
+    
   }
 
   async goto() {

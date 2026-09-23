@@ -36,7 +36,7 @@ test.describe('Mutual Fund Investment @mutual-funds @investment', () => {
     const investment = new InvestmentPage(page);
     const portfolioBefore = new PortfolioPage(page);
 
-    await investment.completeLumpsumInvestment(investmentTestData.validLumpsumAmount);
+    await investment.completeLumpsumInvestment(investmentTestData.validLumpsumAmount, investmentTestData.validPayment);
     await investment.expectConfirmation();
 
     await portfolioBefore.goto();
@@ -46,36 +46,38 @@ test.describe('Mutual Fund Investment @mutual-funds @investment', () => {
   test('TC-INV-002: investment below minimum amount is rejected with validation message @regression', async ({ page }) => {
     await navigateToFirstFundInvestmentForm(page);
     const investment = new InvestmentPage(page);
-    await investment.completeLumpsumInvestment(investmentTestData.belowMinimumAmount);
+    await investment.completeLumpsumInvestment(investmentTestData.belowMinimumAmount, investmentTestData.validPayment);
     await investment.expectValidationError();
   });
 
   test('TC-INV-003: zero amount investment is rejected @regression', async ({ page }) => {
     await navigateToFirstFundInvestmentForm(page);
     const investment = new InvestmentPage(page);
-    await investment.completeLumpsumInvestment(investmentTestData.zeroAmount);
-    await investment.expectValidationError();
+    await investment.completeLumpsumInvestment(investmentTestData.zeroAmount, investmentTestData.validPayment);
+    await investment.expectZeroValidationError();
   });
 
   test('TC-INV-004: negative amount investment is rejected @regression', async ({ page }) => {
     await navigateToFirstFundInvestmentForm(page);
     const investment = new InvestmentPage(page);
-    await investment.completeLumpsumInvestment(investmentTestData.negativeAmount);
-    await investment.expectValidationError();
+    await investment.completeLumpsumInvestment(investmentTestData.negativeAmount, investmentTestData.validPayment);
+    await investment.expectZeroValidationError();
   });
 
-  test('TC-INV-005: non-numeric amount input is rejected @regression', async ({ page }) => {
-    await navigateToFirstFundInvestmentForm(page);
-    const investment = new InvestmentPage(page);
-    await investment.completeLumpsumInvestment(investmentTestData.nonNumericAmount);
-    await investment.expectValidationError();
-  });
+  //OOS as UI is not accepting non numerics to type
+  // test('TC-INV-005: non-numeric amount input is rejected @regression', async ({ page }) => {
+  //   await navigateToFirstFundInvestmentForm(page);
+  //   const investment = new InvestmentPage(page);
+  //   await investment.completeLumpsumInvestment(investmentTestData.nonNumericAmount, investmentTestData.validPayment);
+  //   await investment.expectValidationError();
+  // });
 
   test('TC-INV-006: SIP investment path can be selected and submitted @regression', async ({ page }) => {
     await navigateToFirstFundInvestmentForm(page);
     const investment = new InvestmentPage(page);
     await investment.selectSip();
     await investment.enterAmount(investmentTestData.validSipAmount);
+    await investment.selectPaymentMode(investmentTestData.validPayment);
     await investment.acceptDeclaration();
     await investment.submit();
     await investment.expectConfirmation();

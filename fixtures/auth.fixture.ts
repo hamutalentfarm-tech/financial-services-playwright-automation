@@ -36,7 +36,7 @@ export const test = base.extend<Fixtures>({
 
   apiContext: async ({ playwright }, use) => {
     const context = await request.newContext({
-      baseURL: process.env.API_BASE_URL ?? 'http://8.234.71.22:8082/api/',
+      baseURL: process.env.API_BASE_URL ?? 'http://8.231.116.131:8082/api/',
       extraHTTPHeaders: {
         [apiConfig.header]: apiConfig.expectedKeyValue,
         'Content-Type': 'application/json',

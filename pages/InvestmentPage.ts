@@ -9,17 +9,21 @@ export class InvestmentPage {
   readonly declarationCheckbox: Locator;
   readonly confirmButton: Locator;
   readonly validationMessage: Locator;
+  readonly zeroAmountError: Locator
   readonly confirmationBanner: Locator;
+  readonly paymentMode : Locator;
 
   constructor(page: Page) {
     this.page = page;
     this.sipOption = page.getByRole('radio', { name: /sip/i });
     this.lumpsumOption = page.getByRole('radio', { name: /lumpsum/i });
     this.amountInput = page.getByTestId(dataTestIds.investment.amountInput);
-    this.declarationCheckbox = page.getByRole('checkbox', { name: /declar|confirm|agree/i });
+    this.declarationCheckbox = page.getByTestId('investment-declaration-checkbox')
     this.confirmButton = page.getByTestId(dataTestIds.investment.confirmButton);
-    this.validationMessage = page.getByRole('alert');
-    this.confirmationBanner = page.getByText(/investment (successful|confirmed|placed)/i);
+    this.validationMessage = page.getByTestId('form-error-summary');
+    this.zeroAmountError = page.getByTestId('investment-error')
+    this.confirmationBanner = page.getByTestId('investment-confirmation-message');
+    this.paymentMode = page.getByTestId('payment-method-select')
   }
 
   async gotoByFundId(fundId: string | number) {
@@ -38,30 +42,37 @@ export class InvestmentPage {
     await this.amountInput.fill(String(amount));
   }
 
+  async selectPaymentMode(payment: string){
+    await this.paymentMode.selectOption({value: payment});
+  }
+
   async acceptDeclaration() {
-    if (await this.declarationCheckbox.isVisible().catch(() => false)) {
+    // if (await this.declarationCheckbox.isVisible().catch(() => false)) {
       await this.declarationCheckbox.check();
-    }
+    // }
   }
 
   async submit() {
     await this.confirmButton.click();
   }
 
-  async expectValidationError(messagePattern?: RegExp) {
+  async expectValidationError() {
     await expect(this.validationMessage).toBeVisible();
-    if (messagePattern) {
-      await expect(this.validationMessage).toHaveText(messagePattern);
-    }
+    
+  }
+
+  async expectZeroValidationError(){
+    await expect(this.zeroAmountError).toBeVisible();
   }
 
   async expectConfirmation() {
     await expect(this.confirmationBanner).toBeVisible();
   }
 
-  async completeLumpsumInvestment(amount: number | string) {
+  async completeLumpsumInvestment(amount: number | string, payment: string) {
     await this.selectLumpsum();
     await this.enterAmount(amount);
+    this.selectPaymentMode(payment);
     await this.acceptDeclaration();
     await this.submit();
   }

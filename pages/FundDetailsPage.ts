@@ -11,11 +11,11 @@ export class FundDetailsPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.navValue = page.getByTestId('fund-nav-value');
-    this.oneYearReturn = page.getByTestId('fund-1y-return');
+    this.navValue = page.getByTestId('fund-detail-nav');
+    this.oneYearReturn = page.getByTestId('fund-detail-one-year-return');
     this.threeYearReturn = page.getByTestId('fund-3y-return');
-    this.riskLevel = page.getByTestId('fund-risk-level');
-    this.category = page.getByTestId('fund-category');
+    this.riskLevel = page.locator('.risk');
+    this.category = page.locator('.badge');
     this.investButton = page.getByTestId('invest-now-button');
   }
 
