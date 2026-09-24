@@ -17,7 +17,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 2
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "projects": [
@@ -26,7 +26,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 2
+          "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
@@ -73,7 +73,7 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.62.1",
-    "workers": 2,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
@@ -110,12 +110,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 714,
+                      "duration": 453,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:19:51.534Z",
+                      "startTime": "2026-09-24T18:48:11.652Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -145,15 +145,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1336,
+                      "duration": 771,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:19:51.543Z",
+                      "startTime": "2026-09-24T18:48:12.188Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -186,12 +186,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 548,
+                      "duration": 475,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:19:52.400Z",
+                      "startTime": "2026-09-24T18:48:12.986Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -221,13 +221,13 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 1061,
+                      "duration": 429,
                       "error": {
-                        "message": "Error: Expected HTTP 401 but got 200 for http://8.231.116.131:8082/login\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m401\u001b[39m\nReceived: \u001b[31m200\u001b[39m",
-                        "stack": "Error: Expected HTTP 401 but got 200 for http://8.231.116.131:8082/login\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m401\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n    at expectStatus (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts:10:109)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\api\\auth.api.spec.ts:33:23",
+                        "message": "Error: Expected HTTP 401 but got 302 for http://8.234.70.115:8082/dashboard\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m401\u001b[39m\nReceived: \u001b[31m302\u001b[39m",
+                        "stack": "Error: Expected HTTP 401 but got 302 for http://8.234.70.115:8082/dashboard\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m401\u001b[39m\nReceived: \u001b[31m302\u001b[39m\n    at expectStatus (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts:10:109)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\api\\auth.api.spec.ts:33:23",
                         "location": {
                           "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts",
                           "column": 109,
@@ -242,13 +242,13 @@
                             "column": 109,
                             "line": 10
                           },
-                          "message": "Error: Expected HTTP 401 but got 200 for http://8.231.116.131:8082/login\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m401\u001b[39m\nReceived: \u001b[31m200\u001b[39m\n\n\u001b[90m   at \u001b[39m..\\utils\\assertions.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m expectStatus(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expected\u001b[33m:\u001b[39m number) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m   expect(response\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m \u001b[32m`Expected HTTP ${expected} but got ${response.status()} for ${response.url()}`\u001b[39m)\u001b[33m.\u001b[39mtoBe(expected)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m }\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m expectSuccessEnvelope(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m) {\u001b[0m\n\u001b[2m    at expectStatus (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts:10:109)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\api\\auth.api.spec.ts:33:23\u001b[22m"
+                          "message": "Error: Expected HTTP 401 but got 302 for http://8.234.70.115:8082/dashboard\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m401\u001b[39m\nReceived: \u001b[31m302\u001b[39m\n\n\u001b[90m   at \u001b[39m..\\utils\\assertions.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m expectStatus(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expected\u001b[33m:\u001b[39m number) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m   expect(response\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m \u001b[32m`Expected HTTP ${expected} but got ${response.status()} for ${response.url()}`\u001b[39m)\u001b[33m.\u001b[39mtoBe(expected)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m }\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m expectSuccessEnvelope(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m) {\u001b[0m\n\u001b[2m    at expectStatus (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts:10:109)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\api\\auth.api.spec.ts:33:23\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:19:52.981Z",
+                      "startTime": "2026-09-24T18:48:13.486Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -311,15 +311,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 597,
+                      "duration": 417,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:19:53.000Z",
+                      "startTime": "2026-09-24T18:48:14.893Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -349,15 +349,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 538,
+                      "duration": 369,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:19:53.644Z",
+                      "startTime": "2026-09-24T18:48:15.379Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -387,15 +387,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 1,
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 771,
+                      "duration": 404,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:19:55.291Z",
+                      "startTime": "2026-09-24T18:48:15.773Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -425,15 +425,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 569,
+                      "duration": 383,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:19:54.227Z",
+                      "startTime": "2026-09-24T18:48:16.203Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -463,15 +463,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 541,
+                      "duration": 360,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:19:54.823Z",
+                      "startTime": "2026-09-24T18:48:16.614Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -501,15 +501,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 692,
+                      "duration": 384,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:19:55.396Z",
+                      "startTime": "2026-09-24T18:48:16.997Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -556,15 +556,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 506,
+                      "duration": 390,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:19:56.127Z",
+                      "startTime": "2026-09-24T18:48:17.411Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -579,7 +579,7 @@
             },
             {
               "title": "TC-API-011: each fund exposes required fields with allowed category/risk values @regression @api",
-              "ok": false,
+              "ok": true,
               "tags": [
                 "api",
                 "regression",
@@ -594,55 +594,20 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 1,
-                      "status": "failed",
-                      "duration": 563,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"Moderate\"\u001b[39m\nReceived array: \u001b[31m[\"Low Risk\", \"Moderate Risk\", \"High Risk\", \"Very High Risk\"]\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"Moderate\"\u001b[39m\nReceived array: \u001b[31m[\"Low Risk\", \"Moderate Risk\", \"High Risk\", \"Very High Risk\"]\u001b[39m\n    at expectValidRiskLevel (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts:44:43)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\api\\mutualFunds.api.spec.ts:29:27",
-                        "location": {
-                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts",
-                          "column": 43,
-                          "line": 44
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39m..\\utils\\assertions.ts:44\n\n\u001b[0m \u001b[90m 42 |\u001b[39m\n \u001b[90m 43 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36mfunction\u001b[39m expectValidRiskLevel(risk\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m   expect(riskLevels \u001b[36mas\u001b[39m readonly string[])\u001b[33m.\u001b[39mtoContain(risk)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 45 |\u001b[39m }\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m \u001b[90m/** Compares a numeric UI value against an API value within a small tolerance (for currency rounding). */\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts",
-                            "column": 43,
-                            "line": 44
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoContain\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // indexOf\u001b[22m\n\nExpected value: \u001b[32m\"Moderate\"\u001b[39m\nReceived array: \u001b[31m[\"Low Risk\", \"Moderate Risk\", \"High Risk\", \"Very High Risk\"]\u001b[39m\n\n\u001b[90m   at \u001b[39m..\\utils\\assertions.ts:44\n\n\u001b[0m \u001b[90m 42 |\u001b[39m\n \u001b[90m 43 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36mfunction\u001b[39m expectValidRiskLevel(risk\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m   expect(riskLevels \u001b[36mas\u001b[39m readonly string[])\u001b[33m.\u001b[39mtoContain(risk)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 45 |\u001b[39m }\n \u001b[90m 46 |\u001b[39m\n \u001b[90m 47 |\u001b[39m \u001b[90m/** Compares a numeric UI value against an API value within a small tolerance (for currency rounding). */\u001b[39m\u001b[0m\n\u001b[2m    at expectValidRiskLevel (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts:44:43)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\api\\mutualFunds.api.spec.ts:29:27\u001b[22m"
-                        }
-                      ],
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 415,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:19:56.163Z",
+                      "startTime": "2026-09-24T18:48:17.828Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\api-mutualFunds.api-API----8ca7e--risk-values-regression-api-chromium\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\api-mutualFunds.api-API----8ca7e--risk-values-regression-api-chromium\\trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts",
-                        "column": 43,
-                        "line": 44
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "f0fa843f196ae93132d6-46479dd96c041ee43d49",
@@ -667,15 +632,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1045,
+                      "duration": 732,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:19:56.674Z",
+                      "startTime": "2026-09-24T18:48:18.263Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -705,15 +670,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 1,
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 537,
+                      "duration": 366,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:19:58.185Z",
+                      "startTime": "2026-09-24T18:48:19.016Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -743,15 +708,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 763,
+                      "duration": 392,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:19:57.765Z",
+                      "startTime": "2026-09-24T18:48:19.406Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -781,13 +746,13 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 1,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 548,
+                      "duration": 435,
                       "error": {
-                        "message": "Error: Expected HTTP 201 but got 422 for http://8.231.116.131:8082/api/investments\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m201\u001b[39m\nReceived: \u001b[31m422\u001b[39m",
-                        "stack": "Error: Expected HTTP 201 but got 422 for http://8.231.116.131:8082/api/investments\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m201\u001b[39m\nReceived: \u001b[31m422\u001b[39m\n    at expectStatus (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts:10:109)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\api\\mutualFunds.api.spec.ts:67:23",
+                        "message": "Error: Expected HTTP 201 but got 422 for http://8.234.70.115:8082/api/investments\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m201\u001b[39m\nReceived: \u001b[31m422\u001b[39m",
+                        "stack": "Error: Expected HTTP 201 but got 422 for http://8.234.70.115:8082/api/investments\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m201\u001b[39m\nReceived: \u001b[31m422\u001b[39m\n    at expectStatus (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts:10:109)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\api\\mutualFunds.api.spec.ts:67:23",
                         "location": {
                           "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts",
                           "column": 109,
@@ -802,13 +767,13 @@
                             "column": 109,
                             "line": 10
                           },
-                          "message": "Error: Expected HTTP 201 but got 422 for http://8.231.116.131:8082/api/investments\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m201\u001b[39m\nReceived: \u001b[31m422\u001b[39m\n\n\u001b[90m   at \u001b[39m..\\utils\\assertions.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m expectStatus(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expected\u001b[33m:\u001b[39m number) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m   expect(response\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m \u001b[32m`Expected HTTP ${expected} but got ${response.status()} for ${response.url()}`\u001b[39m)\u001b[33m.\u001b[39mtoBe(expected)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m }\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m expectSuccessEnvelope(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m) {\u001b[0m\n\u001b[2m    at expectStatus (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts:10:109)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\api\\mutualFunds.api.spec.ts:67:23\u001b[22m"
+                          "message": "Error: Expected HTTP 201 but got 422 for http://8.234.70.115:8082/api/investments\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m201\u001b[39m\nReceived: \u001b[31m422\u001b[39m\n\n\u001b[90m   at \u001b[39m..\\utils\\assertions.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m expectStatus(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expected\u001b[33m:\u001b[39m number) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m   expect(response\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m \u001b[32m`Expected HTTP ${expected} but got ${response.status()} for ${response.url()}`\u001b[39m)\u001b[33m.\u001b[39mtoBe(expected)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m }\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m expectSuccessEnvelope(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m) {\u001b[0m\n\u001b[2m    at expectStatus (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts:10:109)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\api\\mutualFunds.api.spec.ts:67:23\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:19:58.569Z",
+                      "startTime": "2026-09-24T18:48:19.823Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -856,7 +821,7 @@
           "specs": [
             {
               "title": "TC-API-020: GET /portfolio returns 200 with holdings scoped to the caller @smoke @api",
-              "ok": false,
+              "ok": true,
               "tags": [
                 "api",
                 "smoke",
@@ -871,55 +836,20 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 1,
-                      "status": "failed",
-                      "duration": 889,
-                      "error": {
-                        "message": "Error: Expected HTTP 200 but got 500 for http://8.231.116.131:8082/api/portfolio\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m500\u001b[39m",
-                        "stack": "Error: Expected HTTP 200 but got 500 for http://8.231.116.131:8082/api/portfolio\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n    at expectStatus (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts:10:109)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\api\\portfolioRedemption.api.spec.ts:14:23",
-                        "location": {
-                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts",
-                          "column": 109,
-                          "line": 10
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39m..\\utils\\assertions.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m expectStatus(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expected\u001b[33m:\u001b[39m number) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m   expect(response\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m \u001b[32m`Expected HTTP ${expected} but got ${response.status()} for ${response.url()}`\u001b[39m)\u001b[33m.\u001b[39mtoBe(expected)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m }\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m expectSuccessEnvelope(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m) {\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts",
-                            "column": 109,
-                            "line": 10
-                          },
-                          "message": "Error: Expected HTTP 200 but got 500 for http://8.231.116.131:8082/api/portfolio\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m500\u001b[39m\n\n\u001b[90m   at \u001b[39m..\\utils\\assertions.ts:10\n\n\u001b[0m \u001b[90m  8 |\u001b[39m\n \u001b[90m  9 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m expectStatus(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m\u001b[33m,\u001b[39m expected\u001b[33m:\u001b[39m number) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m   expect(response\u001b[33m.\u001b[39mstatus()\u001b[33m,\u001b[39m \u001b[32m`Expected HTTP ${expected} but got ${response.status()} for ${response.url()}`\u001b[39m)\u001b[33m.\u001b[39mtoBe(expected)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m }\n \u001b[90m 12 |\u001b[39m\n \u001b[90m 13 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36masync\u001b[39m \u001b[36mfunction\u001b[39m expectSuccessEnvelope(response\u001b[33m:\u001b[39m \u001b[33mAPIResponse\u001b[39m) {\u001b[0m\n\u001b[2m    at expectStatus (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts:10:109)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\api\\portfolioRedemption.api.spec.ts:14:23\u001b[22m"
-                        }
-                      ],
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 431,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:19:58.831Z",
+                      "startTime": "2026-09-24T18:48:21.348Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\api-portfolioRedemption.ap-57b23-ped-to-the-caller-smoke-api-chromium\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\api-portfolioRedemption.ap-57b23-ped-to-the-caller-smoke-api-chromium\\trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts",
-                        "column": 109,
-                        "line": 10
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "0cc1a20952b67a068cb4-253de8270bf022a9a59c",
@@ -944,15 +874,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 739,
+                      "duration": 457,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:00.249Z",
+                      "startTime": "2026-09-24T18:48:21.852Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -982,15 +912,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 613,
+                      "duration": 375,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:00.875Z",
+                      "startTime": "2026-09-24T18:48:22.335Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1037,15 +967,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 559,
+                      "duration": 388,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:01.100Z",
+                      "startTime": "2026-09-24T18:48:22.742Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1075,15 +1005,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 767,
+                      "duration": 430,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:01.588Z",
+                      "startTime": "2026-09-24T18:48:23.153Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1113,15 +1043,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 629,
+                      "duration": 390,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:01.710Z",
+                      "startTime": "2026-09-24T18:48:23.611Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1168,15 +1098,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4138,
+                      "duration": 2697,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:02.406Z",
+                      "startTime": "2026-09-24T18:48:24.034Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1205,15 +1135,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3068,
+                      "duration": 2086,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:02.419Z",
+                      "startTime": "2026-09-24T18:48:26.894Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1242,15 +1172,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2140,
+                      "duration": 1127,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:05.855Z",
+                      "startTime": "2026-09-24T18:48:29.012Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1279,15 +1209,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4016,
+                      "duration": 2355,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:06.807Z",
+                      "startTime": "2026-09-24T18:48:30.182Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1316,15 +1246,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2084,
+                      "duration": 1481,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:08.039Z",
+                      "startTime": "2026-09-24T18:48:32.570Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1353,15 +1283,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6142,
+                      "duration": 4117,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:10.169Z",
+                      "startTime": "2026-09-24T18:48:34.086Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1407,15 +1337,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4535,
+                      "duration": 2928,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:10.889Z",
+                      "startTime": "2026-09-24T18:48:38.250Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1444,15 +1374,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3342,
+                      "duration": 2464,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:15.473Z",
+                      "startTime": "2026-09-24T18:48:41.206Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1467,7 +1397,7 @@
             },
             {
               "title": "TC-DASH-003: dashboard portfolio value reconciles with /api/dashboard summary @regression @api",
-              "ok": false,
+              "ok": true,
               "tags": [
                 "dashboard",
                 "regression",
@@ -1482,65 +1412,20 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
-                      "status": "failed",
-                      "duration": 4609,
-                      "error": {
-                        "message": "Error: UI value 92910.6 vs API value 0 exceeds tolerance 1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m1\u001b[39m\nReceived:    \u001b[31m92910.6\u001b[39m",
-                        "stack": "Error: UI value 92910.6 vs API value 0 exceeds tolerance 1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m1\u001b[39m\nReceived:    \u001b[31m92910.6\u001b[39m\n    at expectAmountsReconcile (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts:49:119)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\dashboard\\dashboard.spec.ts:44:27",
-                        "location": {
-                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts",
-                          "column": 119,
-                          "line": 49
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39m..\\utils\\assertions.ts:49\n\n\u001b[0m \u001b[90m 47 |\u001b[39m \u001b[90m/** Compares a numeric UI value against an API value within a small tolerance (for currency rounding). */\u001b[39m\n \u001b[90m 48 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36mfunction\u001b[39m expectAmountsReconcile(uiValue\u001b[33m:\u001b[39m number\u001b[33m,\u001b[39m apiValue\u001b[33m:\u001b[39m number\u001b[33m,\u001b[39m tolerance \u001b[33m=\u001b[39m \u001b[35m1\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 49 |\u001b[39m   expect(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(uiValue \u001b[33m-\u001b[39m apiValue)\u001b[33m,\u001b[39m \u001b[32m`UI value ${uiValue} vs API value ${apiValue} exceeds tolerance ${tolerance}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tolerance)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 50 |\u001b[39m }\n \u001b[90m 51 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts",
-                            "column": 119,
-                            "line": 49
-                          },
-                          "message": "Error: UI value 92910.6 vs API value 0 exceeds tolerance 1\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m1\u001b[39m\nReceived:    \u001b[31m92910.6\u001b[39m\n\n\u001b[90m   at \u001b[39m..\\utils\\assertions.ts:49\n\n\u001b[0m \u001b[90m 47 |\u001b[39m \u001b[90m/** Compares a numeric UI value against an API value within a small tolerance (for currency rounding). */\u001b[39m\n \u001b[90m 48 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36mfunction\u001b[39m expectAmountsReconcile(uiValue\u001b[33m:\u001b[39m number\u001b[33m,\u001b[39m apiValue\u001b[33m:\u001b[39m number\u001b[33m,\u001b[39m tolerance \u001b[33m=\u001b[39m \u001b[35m1\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 49 |\u001b[39m   expect(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(uiValue \u001b[33m-\u001b[39m apiValue)\u001b[33m,\u001b[39m \u001b[32m`UI value ${uiValue} vs API value ${apiValue} exceeds tolerance ${tolerance}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tolerance)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 50 |\u001b[39m }\n \u001b[90m 51 |\u001b[39m\u001b[0m\n\u001b[2m    at expectAmountsReconcile (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts:49:119)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\dashboard\\dashboard.spec.ts:44:27\u001b[22m"
-                        }
-                      ],
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3218,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:16.387Z",
+                      "startTime": "2026-09-24T18:48:43.704Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\dashboard-dashboard-Dashbo-b7b42-oard-summary-regression-api-chromium\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\dashboard-dashboard-Dashbo-b7b42-oard-summary-regression-api-chromium\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\dashboard-dashboard-Dashbo-b7b42-oard-summary-regression-api-chromium\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\dashboard-dashboard-Dashbo-b7b42-oard-summary-regression-api-chromium\\trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts",
-                        "column": 119,
-                        "line": 49
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "747340cde928aa6c3216-95fce0c1868e7f8f7900",
@@ -1550,7 +1435,7 @@
             },
             {
               "title": "TC-DASH-004: dashboard navigation cards route to the correct module @regression",
-              "ok": false,
+              "ok": true,
               "tags": [
                 "dashboard",
                 "regression"
@@ -1564,70 +1449,25 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 2,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 20268,
-                      "error": {
-                        "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: /transaction/i })\u001b[22m\n",
-                        "stack": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: /transaction/i })\u001b[22m\n\n    at DashboardPage.navigateToTransactions (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\DashboardPage.ts:46:65)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\dashboard\\dashboard.spec.ts:62:21",
-                        "location": {
-                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\DashboardPage.ts",
-                          "column": 65,
-                          "line": 46
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\DashboardPage.ts:46\n\n\u001b[0m \u001b[90m 44 |\u001b[39m\n \u001b[90m 45 |\u001b[39m   \u001b[36masync\u001b[39m navigateToTransactions() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/transaction/i\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m   }\n \u001b[90m 48 |\u001b[39m }\n \u001b[90m 49 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\DashboardPage.ts",
-                            "column": 65,
-                            "line": 46
-                          },
-                          "message": "TimeoutError: locator.click: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: /transaction/i })\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\DashboardPage.ts:46\n\n\u001b[0m \u001b[90m 44 |\u001b[39m\n \u001b[90m 45 |\u001b[39m   \u001b[36masync\u001b[39m navigateToTransactions() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'link'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[35m/transaction/i\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m   }\n \u001b[90m 48 |\u001b[39m }\n \u001b[90m 49 |\u001b[39m\u001b[0m\n\u001b[2m    at DashboardPage.navigateToTransactions (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\DashboardPage.ts:46:65)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\dashboard\\dashboard.spec.ts:62:21\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 6640,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:18.898Z",
+                      "startTime": "2026-09-24T18:48:46.952Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\dashboard-dashboard-Dashbo-e60dd-e-correct-module-regression-chromium\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\dashboard-dashboard-Dashbo-e60dd-e-correct-module-regression-chromium\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\dashboard-dashboard-Dashbo-e60dd-e-correct-module-regression-chromium\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\dashboard-dashboard-Dashbo-e60dd-e-correct-module-regression-chromium\\trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\DashboardPage.ts",
-                        "column": 65,
-                        "line": 46
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "747340cde928aa6c3216-e2cd8a07db9a3aff6f7b",
               "file": "dashboard/dashboard.spec.ts",
-              "line": 47,
+              "line": 53,
               "column": 7
             }
           ]
@@ -1663,15 +1503,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 6,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4323,
+                      "duration": 2819,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:22.652Z",
+                      "startTime": "2026-09-24T18:48:53.629Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1686,7 +1526,7 @@
             },
             {
               "title": "TC-INS-002: filtering by type \"Term Insurance\" returns only matching products @regression",
-              "ok": false,
+              "ok": true,
               "tags": [
                 "insurance",
                 "regression"
@@ -1700,65 +1540,20 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 6,
-                      "parallelIndex": 1,
-                      "status": "failed",
-                      "duration": 8701,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-testid^=\"insurance-details-link\"]').first()\nExpected substring: \u001b[32m\"Term Insurance\"\u001b[39m\nReceived string:    \u001b[31m\"View Details\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid^=\"insurance-details-link\"]').first()\u001b[22m\n\u001b[2m    14 × locator resolved to <a class=\"btn btn-primary\" href=\"http://8.231.116.131:8082/insurance/2\" data-testid=\"insurance-details-link-FSLIFE002\">View Details</a>\u001b[22m\n\u001b[2m       - unexpected value \"View Details\"\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-testid^=\"insurance-details-link\"]').first()\nExpected substring: \u001b[32m\"Term Insurance\"\u001b[39m\nReceived string:    \u001b[31m\"View Details\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid^=\"insurance-details-link\"]').first()\u001b[22m\n\u001b[2m    14 × locator resolved to <a class=\"btn btn-primary\" href=\"http://8.231.116.131:8082/insurance/2\" data-testid=\"insurance-details-link-FSLIFE002\">View Details</a>\u001b[22m\n\u001b[2m       - unexpected value \"View Details\"\u001b[22m\n\n    at InsurancePage.expectResultsContainOnlyType (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\InsurancePage.ts:37:46)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insuranceDiscovery.spec.ts:20:5",
-                        "location": {
-                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\InsurancePage.ts",
-                          "column": 46,
-                          "line": 37
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\InsurancePage.ts:37\n\n\u001b[0m \u001b[90m 35 |\u001b[39m     \u001b[36mconst\u001b[39m count \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mproductCards\u001b[33m.\u001b[39mcount()\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m     \u001b[36mfor\u001b[39m (\u001b[36mlet\u001b[39m i \u001b[33m=\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m i \u001b[33m<\u001b[39m count\u001b[33m;\u001b[39m i\u001b[33m++\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 37 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mproductCards\u001b[33m.\u001b[39mnth(i))\u001b[33m.\u001b[39mtoContainText(type)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 38 |\u001b[39m     }\n \u001b[90m 39 |\u001b[39m   }\n \u001b[90m 40 |\u001b[39m }\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\InsurancePage.ts",
-                            "column": 46,
-                            "line": 37
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-testid^=\"insurance-details-link\"]').first()\nExpected substring: \u001b[32m\"Term Insurance\"\u001b[39m\nReceived string:    \u001b[31m\"View Details\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid^=\"insurance-details-link\"]').first()\u001b[22m\n\u001b[2m    14 × locator resolved to <a class=\"btn btn-primary\" href=\"http://8.231.116.131:8082/insurance/2\" data-testid=\"insurance-details-link-FSLIFE002\">View Details</a>\u001b[22m\n\u001b[2m       - unexpected value \"View Details\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\InsurancePage.ts:37\n\n\u001b[0m \u001b[90m 35 |\u001b[39m     \u001b[36mconst\u001b[39m count \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mproductCards\u001b[33m.\u001b[39mcount()\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m     \u001b[36mfor\u001b[39m (\u001b[36mlet\u001b[39m i \u001b[33m=\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m i \u001b[33m<\u001b[39m count\u001b[33m;\u001b[39m i\u001b[33m++\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 37 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mproductCards\u001b[33m.\u001b[39mnth(i))\u001b[33m.\u001b[39mtoContainText(type)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 38 |\u001b[39m     }\n \u001b[90m 39 |\u001b[39m   }\n \u001b[90m 40 |\u001b[39m }\u001b[0m\n\u001b[2m    at InsurancePage.expectResultsContainOnlyType (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\InsurancePage.ts:37:46)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\insurance\\insuranceDiscovery.spec.ts:20:5\u001b[22m"
-                        }
-                      ],
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3285,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:27.250Z",
+                      "startTime": "2026-09-24T18:48:56.480Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\insurance-insuranceDiscove-4c1dd-atching-products-regression-chromium\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\insurance-insuranceDiscove-4c1dd-atching-products-regression-chromium\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\insurance-insuranceDiscove-4c1dd-atching-products-regression-chromium\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\insurance-insuranceDiscove-4c1dd-atching-products-regression-chromium\\trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\InsurancePage.ts",
-                        "column": 46,
-                        "line": 37
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "2e19a849b337d6ba6f3a-7e747a63945defd6b517",
@@ -1782,15 +1577,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5021,
+                      "duration": 3374,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:37.217Z",
+                      "startTime": "2026-09-24T18:48:59.790Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1838,15 +1633,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 8,
+                      "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7293,
+                      "duration": 5017,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:40.654Z",
+                      "startTime": "2026-09-24T18:49:03.203Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1876,15 +1671,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5958,
+                      "duration": 4903,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:42.725Z",
+                      "startTime": "2026-09-24T18:49:08.258Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1914,15 +1709,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 8,
+                      "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6490,
+                      "duration": 4689,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:48.228Z",
+                      "startTime": "2026-09-24T18:49:13.197Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1952,15 +1747,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7222,
+                      "duration": 5089,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:48.752Z",
+                      "startTime": "2026-09-24T18:49:17.923Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1990,15 +1785,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 8,
+                      "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7712,
+                      "duration": 5220,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:54.762Z",
+                      "startTime": "2026-09-24T18:49:23.042Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2046,15 +1841,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 7,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8174,
+                      "duration": 5676,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:20:56.033Z",
+                      "startTime": "2026-09-24T18:49:28.359Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2084,15 +1879,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 8,
+                      "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6924,
+                      "duration": 4997,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:21:02.547Z",
+                      "startTime": "2026-09-24T18:49:34.072Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2103,172 +1898,6 @@
               "id": "ebc2ece6da49e2718372-06f372384e7f9c405487",
               "file": "mutual-funds/investment.spec.ts",
               "line": 46,
-              "column": 7
-            },
-            {
-              "title": "TC-INV-003: zero amount investment is rejected @regression",
-              "ok": false,
-              "tags": [
-                "mutual-funds",
-                "investment",
-                "regression"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 7,
-                      "parallelIndex": 1,
-                      "status": "failed",
-                      "duration": 14440,
-                      "error": {
-                        "message": "TimeoutError: page.waitForURL: Timeout 10000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================",
-                        "stack": "TimeoutError: page.waitForURL: Timeout 10000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n    at LoginPage.expectLoginSuccess (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\LoginPage.ts:34:21)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\mutual-funds\\investment.spec.ts:22:21",
-                        "location": {
-                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\LoginPage.ts",
-                          "column": 21,
-                          "line": 34
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\LoginPage.ts:34\n\n\u001b[0m \u001b[90m 32 |\u001b[39m\n \u001b[90m 33 |\u001b[39m   \u001b[36masync\u001b[39m expectLoginSuccess() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForURL(\u001b[35m/dashboard/\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByTestId(dataTestIds\u001b[33m.\u001b[39mdashboard))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m   }\n \u001b[90m 37 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\LoginPage.ts",
-                            "column": 21,
-                            "line": 34
-                          },
-                          "message": "TimeoutError: page.waitForURL: Timeout 10000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n\n\u001b[90m   at \u001b[39m..\\pages\\LoginPage.ts:34\n\n\u001b[0m \u001b[90m 32 |\u001b[39m\n \u001b[90m 33 |\u001b[39m   \u001b[36masync\u001b[39m expectLoginSuccess() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForURL(\u001b[35m/dashboard/\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByTestId(dataTestIds\u001b[33m.\u001b[39mdashboard))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m   }\n \u001b[90m 37 |\u001b[39m\u001b[0m\n\u001b[2m    at LoginPage.expectLoginSuccess (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\LoginPage.ts:34:21)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\mutual-funds\\investment.spec.ts:22:21\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-09-23T18:21:04.245Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-0620f-ment-is-rejected-regression-chromium\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-0620f-ment-is-rejected-regression-chromium\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-0620f-ment-is-rejected-regression-chromium\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-0620f-ment-is-rejected-regression-chromium\\trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\LoginPage.ts",
-                        "column": 21,
-                        "line": 34
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "ebc2ece6da49e2718372-961d244ef8ec9ae017a6",
-              "file": "mutual-funds/investment.spec.ts",
-              "line": 53,
-              "column": 7
-            },
-            {
-              "title": "TC-INV-004: negative amount investment is rejected @regression",
-              "ok": false,
-              "tags": [
-                "mutual-funds",
-                "investment",
-                "regression"
-              ],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 8,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 10609,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('investment-error')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('investment-error')\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('investment-error')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('investment-error')\u001b[22m\n\n    at InvestmentPage.expectZeroValidationError (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\InvestmentPage.ts:65:40)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\mutual-funds\\investment.spec.ts:64:22",
-                        "location": {
-                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\InvestmentPage.ts",
-                          "column": 40,
-                          "line": 65
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\InvestmentPage.ts:65\n\n\u001b[0m \u001b[90m 63 |\u001b[39m\n \u001b[90m 64 |\u001b[39m   \u001b[36masync\u001b[39m expectZeroValidationError(){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 65 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mzeroAmountError)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 66 |\u001b[39m   }\n \u001b[90m 67 |\u001b[39m\n \u001b[90m 68 |\u001b[39m   \u001b[36masync\u001b[39m expectConfirmation() {\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\InvestmentPage.ts",
-                            "column": 40,
-                            "line": 65
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('investment-error')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('investment-error')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\InvestmentPage.ts:65\n\n\u001b[0m \u001b[90m 63 |\u001b[39m\n \u001b[90m 64 |\u001b[39m   \u001b[36masync\u001b[39m expectZeroValidationError(){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 65 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mzeroAmountError)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                        \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 66 |\u001b[39m   }\n \u001b[90m 67 |\u001b[39m\n \u001b[90m 68 |\u001b[39m   \u001b[36masync\u001b[39m expectConfirmation() {\u001b[0m\n\u001b[2m    at InvestmentPage.expectZeroValidationError (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\InvestmentPage.ts:65:40)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\mutual-funds\\investment.spec.ts:64:22\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-09-23T18:21:09.511Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-2612d-ment-is-rejected-regression-chromium\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-2612d-ment-is-rejected-regression-chromium\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-2612d-ment-is-rejected-regression-chromium\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-investment-Mu-2612d-ment-is-rejected-regression-chromium\\trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\InvestmentPage.ts",
-                        "column": 40,
-                        "line": 65
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "ebc2ece6da49e2718372-bf515fee4073345b4285",
-              "file": "mutual-funds/investment.spec.ts",
-              "line": 60,
               "column": 7
             },
             {
@@ -2288,15 +1917,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8027,
+                      "duration": 5292,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:21:20.893Z",
+                      "startTime": "2026-09-24T18:49:39.104Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2326,15 +1955,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 10,
+                      "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7664,
+                      "duration": 5097,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:21:22.225Z",
+                      "startTime": "2026-09-24T18:49:44.428Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2380,15 +2009,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3960,
+                      "duration": 2904,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:21:29.222Z",
+                      "startTime": "2026-09-24T18:49:49.565Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2403,7 +2032,7 @@
             },
             {
               "title": "TC-MF-002: filtering by category \"Equity Fund\" returns only matching funds @regression",
-              "ok": false,
+              "ok": true,
               "tags": [
                 "mutual-funds",
                 "regression"
@@ -2417,65 +2046,20 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 10,
+                      "workerIndex": 2,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 9417,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-testid^=\"fund-details-link\"]').first()\nExpected substring: \u001b[32m\"Equity Fund\"\u001b[39m\nReceived string:    \u001b[31m\"View Details\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid^=\"fund-details-link\"]').first()\u001b[22m\n\u001b[2m    14 × locator resolved to <a class=\"btn btn-secondary\" data-testid=\"fund-details-link-FSBAL007\" href=\"http://8.231.116.131:8082/mutual-funds/7\">View Details</a>\u001b[22m\n\u001b[2m       - unexpected value \"View Details\"\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-testid^=\"fund-details-link\"]').first()\nExpected substring: \u001b[32m\"Equity Fund\"\u001b[39m\nReceived string:    \u001b[31m\"View Details\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid^=\"fund-details-link\"]').first()\u001b[22m\n\u001b[2m    14 × locator resolved to <a class=\"btn btn-secondary\" data-testid=\"fund-details-link-FSBAL007\" href=\"http://8.231.116.131:8082/mutual-funds/7\">View Details</a>\u001b[22m\n\u001b[2m       - unexpected value \"View Details\"\u001b[22m\n\n    at MutualFundsPage.expectResultsContainOnlyCategory (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\MutualFundsPage.ts:45:43)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\mutual-funds\\mutualFundsDiscovery.spec.ts:23:5",
-                        "location": {
-                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\MutualFundsPage.ts",
-                          "column": 43,
-                          "line": 45
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\MutualFundsPage.ts:45\n\n\u001b[0m \u001b[90m 43 |\u001b[39m     \u001b[36mconst\u001b[39m count \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mfundCards\u001b[33m.\u001b[39mcount()\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m     \u001b[36mfor\u001b[39m (\u001b[36mlet\u001b[39m i \u001b[33m=\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m i \u001b[33m<\u001b[39m count\u001b[33m;\u001b[39m i\u001b[33m++\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mfundCards\u001b[33m.\u001b[39mnth(i))\u001b[33m.\u001b[39mtoContainText(category)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m     }\n \u001b[90m 47 |\u001b[39m   }\n \u001b[90m 48 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\MutualFundsPage.ts",
-                            "column": 43,
-                            "line": 45
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-testid^=\"fund-details-link\"]').first()\nExpected substring: \u001b[32m\"Equity Fund\"\u001b[39m\nReceived string:    \u001b[31m\"View Details\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid^=\"fund-details-link\"]').first()\u001b[22m\n\u001b[2m    14 × locator resolved to <a class=\"btn btn-secondary\" data-testid=\"fund-details-link-FSBAL007\" href=\"http://8.231.116.131:8082/mutual-funds/7\">View Details</a>\u001b[22m\n\u001b[2m       - unexpected value \"View Details\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\MutualFundsPage.ts:45\n\n\u001b[0m \u001b[90m 43 |\u001b[39m     \u001b[36mconst\u001b[39m count \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mfundCards\u001b[33m.\u001b[39mcount()\u001b[33m;\u001b[39m\n \u001b[90m 44 |\u001b[39m     \u001b[36mfor\u001b[39m (\u001b[36mlet\u001b[39m i \u001b[33m=\u001b[39m \u001b[35m0\u001b[39m\u001b[33m;\u001b[39m i \u001b[33m<\u001b[39m count\u001b[33m;\u001b[39m i\u001b[33m++\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 45 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mfundCards\u001b[33m.\u001b[39mnth(i))\u001b[33m.\u001b[39mtoContainText(category)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 46 |\u001b[39m     }\n \u001b[90m 47 |\u001b[39m   }\n \u001b[90m 48 |\u001b[39m\u001b[0m\n\u001b[2m    at MutualFundsPage.expectResultsContainOnlyCategory (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\MutualFundsPage.ts:45:43)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\mutual-funds\\mutualFundsDiscovery.spec.ts:23:5\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 3577,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:21:30.252Z",
+                      "startTime": "2026-09-24T18:49:52.505Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-mutualFundsDi-82dc8-y-matching-funds-regression-chromium\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-mutualFundsDi-82dc8-y-matching-funds-regression-chromium\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-mutualFundsDi-82dc8-y-matching-funds-regression-chromium\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\mutual-funds-mutualFundsDi-82dc8-y-matching-funds-regression-chromium\\trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\MutualFundsPage.ts",
-                        "column": 43,
-                        "line": 45
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "d16b5df476ac1687d183-34f28169d405e3e44d32",
@@ -2499,15 +2083,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3838,
+                      "duration": 3317,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:21:33.217Z",
+                      "startTime": "2026-09-24T18:49:56.114Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2553,15 +2137,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3632,
+                      "duration": 3221,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:21:37.101Z",
+                      "startTime": "2026-09-24T18:49:59.466Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2590,15 +2174,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4488,
+                      "duration": 3084,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:21:41.158Z",
+                      "startTime": "2026-09-24T18:50:02.724Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2613,7 +2197,7 @@
             },
             {
               "title": "TC-PORT-003: portfolio total value reconciles between UI and /api/portfolio @regression @api",
-              "ok": false,
+              "ok": true,
               "tags": [
                 "portfolio",
                 "regression",
@@ -2628,65 +2212,20 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 1,
-                      "status": "failed",
-                      "duration": 5485,
-                      "error": {
-                        "message": "Error: UI value 92910.6 vs API value 61006.1 exceeds tolerance 5\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m5\u001b[39m\nReceived:    \u001b[31m31904.500000000007\u001b[39m",
-                        "stack": "Error: UI value 92910.6 vs API value 61006.1 exceeds tolerance 5\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m5\u001b[39m\nReceived:    \u001b[31m31904.500000000007\u001b[39m\n    at expectAmountsReconcile (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts:49:119)\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\portfolio.spec.ts:58:27",
-                        "location": {
-                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts",
-                          "column": 119,
-                          "line": 49
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39m..\\utils\\assertions.ts:49\n\n\u001b[0m \u001b[90m 47 |\u001b[39m \u001b[90m/** Compares a numeric UI value against an API value within a small tolerance (for currency rounding). */\u001b[39m\n \u001b[90m 48 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36mfunction\u001b[39m expectAmountsReconcile(uiValue\u001b[33m:\u001b[39m number\u001b[33m,\u001b[39m apiValue\u001b[33m:\u001b[39m number\u001b[33m,\u001b[39m tolerance \u001b[33m=\u001b[39m \u001b[35m1\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 49 |\u001b[39m   expect(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(uiValue \u001b[33m-\u001b[39m apiValue)\u001b[33m,\u001b[39m \u001b[32m`UI value ${uiValue} vs API value ${apiValue} exceeds tolerance ${tolerance}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tolerance)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 50 |\u001b[39m }\n \u001b[90m 51 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts",
-                            "column": 119,
-                            "line": 49
-                          },
-                          "message": "Error: UI value 92910.6 vs API value 61006.1 exceeds tolerance 5\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m5\u001b[39m\nReceived:    \u001b[31m31904.500000000007\u001b[39m\n\n\u001b[90m   at \u001b[39m..\\utils\\assertions.ts:49\n\n\u001b[0m \u001b[90m 47 |\u001b[39m \u001b[90m/** Compares a numeric UI value against an API value within a small tolerance (for currency rounding). */\u001b[39m\n \u001b[90m 48 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36mfunction\u001b[39m expectAmountsReconcile(uiValue\u001b[33m:\u001b[39m number\u001b[33m,\u001b[39m apiValue\u001b[33m:\u001b[39m number\u001b[33m,\u001b[39m tolerance \u001b[33m=\u001b[39m \u001b[35m1\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 49 |\u001b[39m   expect(\u001b[33mMath\u001b[39m\u001b[33m.\u001b[39mabs(uiValue \u001b[33m-\u001b[39m apiValue)\u001b[33m,\u001b[39m \u001b[32m`UI value ${uiValue} vs API value ${apiValue} exceeds tolerance ${tolerance}`\u001b[39m)\u001b[33m.\u001b[39mtoBeLessThanOrEqual(tolerance)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 50 |\u001b[39m }\n \u001b[90m 51 |\u001b[39m\u001b[0m\n\u001b[2m    at expectAmountsReconcile (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts:49:119)\u001b[22m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\portfolio\\portfolio.spec.ts:58:27\u001b[22m"
-                        }
-                      ],
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3350,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:21:40.771Z",
+                      "startTime": "2026-09-24T18:50:05.841Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-portfolio-Portfo-e5ce2-pi-portfolio-regression-api-chromium\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-portfolio-Portfo-e5ce2-pi-portfolio-regression-api-chromium\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-portfolio-Portfo-e5ce2-pi-portfolio-regression-api-chromium\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\portfolio-portfolio-Portfo-e5ce2-pi-portfolio-regression-api-chromium\\trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\utils\\assertions.ts",
-                        "column": 119,
-                        "line": 49
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "2723ef038a17eca1eaa4-1cc061ec8813d8c598ac",
@@ -2710,15 +2249,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 2,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4355,
+                      "duration": 3016,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:21:45.908Z",
+                      "startTime": "2026-09-24T18:50:09.221Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2728,7 +2267,7 @@
               ],
               "id": "2723ef038a17eca1eaa4-2f802cf5df5a8c03faae",
               "file": "portfolio/portfolio.spec.ts",
-              "line": 61,
+              "line": 67,
               "column": 7
             }
           ]
@@ -2764,15 +2303,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 12,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4461,
+                      "duration": 2894,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:21:47.757Z",
+                      "startTime": "2026-09-24T18:50:12.276Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2787,7 +2326,7 @@
             },
             {
               "title": "TC-TXN-002: filtering by status \"SUCCESS\" returns only matching rows @regression",
-              "ok": false,
+              "ok": true,
               "tags": [
                 "transactions",
                 "regression"
@@ -2801,65 +2340,20 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 2,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 13299,
-                      "error": {
-                        "message": "TimeoutError: page.waitForURL: Timeout 10000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================",
-                        "stack": "TimeoutError: page.waitForURL: Timeout 10000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n    at LoginPage.expectLoginSuccess (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\LoginPage.ts:34:21)\n    at loginAs (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\fixtures\\auth.fixture.ts:23:19)\n    at Object.investorPage (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\fixtures\\auth.fixture.ts:33:5)",
-                        "location": {
-                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\LoginPage.ts",
-                          "column": 21,
-                          "line": 34
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\LoginPage.ts:34\n\n\u001b[0m \u001b[90m 32 |\u001b[39m\n \u001b[90m 33 |\u001b[39m   \u001b[36masync\u001b[39m expectLoginSuccess() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForURL(\u001b[35m/dashboard/\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByTestId(dataTestIds\u001b[33m.\u001b[39mdashboard))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m   }\n \u001b[90m 37 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\LoginPage.ts",
-                            "column": 21,
-                            "line": 34
-                          },
-                          "message": "TimeoutError: page.waitForURL: Timeout 10000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation until \"load\"\n============================================================\n\n\u001b[90m   at \u001b[39m..\\pages\\LoginPage.ts:34\n\n\u001b[0m \u001b[90m 32 |\u001b[39m\n \u001b[90m 33 |\u001b[39m   \u001b[36masync\u001b[39m expectLoginSuccess() {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 34 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForURL(\u001b[35m/dashboard/\u001b[39m\u001b[33m,\u001b[39m { timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 35 |\u001b[39m     \u001b[36mawait\u001b[39m expect(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByTestId(dataTestIds\u001b[33m.\u001b[39mdashboard))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m   }\n \u001b[90m 37 |\u001b[39m\u001b[0m\n\u001b[2m    at LoginPage.expectLoginSuccess (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\LoginPage.ts:34:21)\u001b[22m\n\u001b[2m    at loginAs (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\fixtures\\auth.fixture.ts:23:19)\u001b[22m\n\u001b[2m    at Object.investorPage (C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\fixtures\\auth.fixture.ts:33:5)\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 2899,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:21:50.310Z",
+                      "startTime": "2026-09-24T18:50:15.197Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\transactions-transactions--3d708-ly-matching-rows-regression-chromium\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\transactions-transactions--3d708-ly-matching-rows-regression-chromium\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\transactions-transactions--3d708-ly-matching-rows-regression-chromium\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\transactions-transactions--3d708-ly-matching-rows-regression-chromium\\trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\pages\\LoginPage.ts",
-                        "column": 21,
-                        "line": 34
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "662893c5e85f431a6cae-e57bf4351cb844f74a0f",
@@ -2884,15 +2378,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 12,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3515,
+                      "duration": 3162,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:21:52.485Z",
+                      "startTime": "2026-09-24T18:50:18.128Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2907,7 +2401,7 @@
             },
             {
               "title": "TC-TXN-004: opening a transaction row shows transaction detail @regression",
-              "ok": false,
+              "ok": true,
               "tags": [
                 "transactions",
                 "regression"
@@ -2921,65 +2415,20 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 12,
-                      "parallelIndex": 1,
-                      "status": "failed",
-                      "duration": 8970,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/transactions\\/.+/\u001b[39m\nReceived string:  \u001b[31m\"http://8.231.116.131:8082/transactions\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    13 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://8.231.116.131:8082/transactions\"\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/transactions\\/.+/\u001b[39m\nReceived string:  \u001b[31m\"http://8.231.116.131:8082/transactions\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    13 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://8.231.116.131:8082/transactions\"\u001b[22m\n\n    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\transactions\\transactions.spec.ts:52:34",
-                        "location": {
-                          "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\transactions\\transactions.spec.ts",
-                          "column": 34,
-                          "line": 52
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 50 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mawait\u001b[39m firstRow\u001b[33m.\u001b[39misVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mfalse\u001b[39m)) {\n \u001b[90m 51 |\u001b[39m       \u001b[36mawait\u001b[39m firstRow\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m       \u001b[36mawait\u001b[39m expect(investorPage)\u001b[33m.\u001b[39mtoHaveURL(\u001b[35m/transactions\\/.+/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 53 |\u001b[39m     }\n \u001b[90m 54 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 55 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\transactions\\transactions.spec.ts",
-                            "column": 34,
-                            "line": 52
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/transactions\\/.+/\u001b[39m\nReceived string:  \u001b[31m\"http://8.231.116.131:8082/transactions\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    13 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://8.231.116.131:8082/transactions\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 50 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mawait\u001b[39m firstRow\u001b[33m.\u001b[39misVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mfalse\u001b[39m)) {\n \u001b[90m 51 |\u001b[39m       \u001b[36mawait\u001b[39m firstRow\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m       \u001b[36mawait\u001b[39m expect(investorPage)\u001b[33m.\u001b[39mtoHaveURL(\u001b[35m/transactions\\/.+/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 53 |\u001b[39m     }\n \u001b[90m 54 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 55 |\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\transactions\\transactions.spec.ts:52:34\u001b[22m"
-                        }
-                      ],
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3744,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-09-23T18:21:56.034Z",
+                      "startTime": "2026-09-24T18:50:21.322Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\transactions-transactions--80981-ansaction-detail-regression-chromium\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\transactions-transactions--80981-ansaction-detail-regression-chromium\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\transactions-transactions--80981-ansaction-detail-regression-chromium\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\test-artifacts\\transactions-transactions--80981-ansaction-detail-regression-chromium\\trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\talentfarm_learner\\financial-services-playwright-automation\\tests\\transactions\\transactions.spec.ts",
-                        "column": 34,
-                        "line": 52
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "662893c5e85f431a6cae-9ef7f47c8b253ee9d87e",
@@ -2994,11 +2443,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-09-23T18:19:49.377Z",
-    "duration": 135934.997,
-    "expected": 44,
+    "startTime": "2026-09-24T18:48:10.609Z",
+    "duration": 134825.165,
+    "expected": 53,
     "skipped": 0,
-    "unexpected": 13,
+    "unexpected": 2,
     "flaky": 0
   }
 }

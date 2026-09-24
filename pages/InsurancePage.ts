@@ -8,6 +8,8 @@ export class InsurancePage {
   readonly coverageFilter: Locator;
   readonly compareButton: Locator;
   readonly productCardsBuy: Locator;
+  readonly productCardsSequence: Locator;
+  readonly insuranceFilterSubmit: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -17,6 +19,8 @@ export class InsurancePage {
     this.premiumFilter = page.getByLabel(/premium/i);
     this.coverageFilter = page.getByLabel(/coverage/i);
     this.compareButton = page.getByRole('button', { name: /compare/i });
+    this.productCardsSequence = page.locator('[data-testid^="insurance-card"]'); 
+    this.insuranceFilterSubmit = page.getByTestId('insurance-filter-submit');
   }
 
   async goto() {
@@ -25,6 +29,7 @@ export class InsurancePage {
 
   async filterByType(type: string) {
     await this.typeFilter.selectOption({ label: type });
+    await this.insuranceFilterSubmit.click();
   }
 
   async openProduct(productId: string | number) {
@@ -32,9 +37,9 @@ export class InsurancePage {
   }
 
   async expectResultsContainOnlyType(type: string) {
-    const count = await this.productCards.count();
+    const count = await this.productCardsSequence.count();
     for (let i = 0; i < count; i++) {
-      await expect(this.productCards.nth(i)).toContainText(type);
+      await expect(this.productCardsSequence.nth(i)).toContainText(type);
     }
   }
 }

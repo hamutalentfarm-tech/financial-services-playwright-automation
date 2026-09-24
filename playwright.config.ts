@@ -22,7 +22,7 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? Number(process.env.RETRIES ?? 2) : Number(process.env.RETRIES ?? 0),
   // workers: process.env.CI ? 2 : undefined,
-  workers: 2,
+  workers: 1,
 
   reporter: [
     ['html', { outputFolder: 'reports/html-report', open: 'never' }],
@@ -36,7 +36,7 @@ export default defineConfig({
   use: {
     // FINSERVE_BASE_URL follows the lab guide's suggested env var naming
     // (section 5); BASE_URL is kept as a fallback for compatibility.
-    baseURL: process.env.FINSERVE_BASE_URL ?? process.env.BASE_URL ?? 'http://8.231.116.131:8082',
+    baseURL: process.env.FINSERVE_BASE_URL ?? process.env.BASE_URL ?? 'http://8.234.70.115:8082',
     headless: process.env.HEADLESS !== 'false',
     trace: 'retain-on-failure',
     screenshot: 'only-on-failure',

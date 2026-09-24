@@ -73,6 +73,7 @@ export class ApiClient {
     return this.request[method](path, {
       data,
       headers: { 'X-API-Key': '' },
+      maxRedirects: 0,
     });
   }
 }

@@ -28,8 +28,14 @@ test.describe('Portfolio Management @portfolio', () => {
     expect(await portfolio.getHoldingsCount()).toBe(0);
   });
 
-  test('TC-PORT-003: portfolio total value reconciles between UI and /api/portfolio @regression @api', async ({ investorPage, apiContext }) => {
-    const portfolio = new PortfolioPage(investorPage);
+  test('TC-PORT-003: portfolio total value reconciles between UI and /api/portfolio @regression @api', async ({page, apiContext }) => {
+    const { LoginPage } = await import('../../pages/LoginPage');
+    const { users } = await import('../../fixtures/users');
+    const loginPage = new LoginPage(page);
+    await loginPage.goto();
+    await loginPage.login(users.qaUser.email, users.qaUser.password);
+    await loginPage.expectLoginSuccess();
+    const portfolio = new PortfolioPage(page);
     await portfolio.goto();
     const uiTotal = await portfolio.getTotalValue();
 

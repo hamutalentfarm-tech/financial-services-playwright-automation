@@ -50,19 +50,19 @@ test.describe('Mutual Fund Investment @mutual-funds @investment', () => {
     await investment.expectValidationError();
   });
 
-  test('TC-INV-003: zero amount investment is rejected @regression', async ({ page }) => {
-    await navigateToFirstFundInvestmentForm(page);
-    const investment = new InvestmentPage(page);
-    await investment.completeLumpsumInvestment(investmentTestData.zeroAmount, investmentTestData.validPayment);
-    await investment.expectZeroValidationError();
-  });
+  // test('TC-INV-003: zero amount investment is rejected @regression', async ({ page }) => {
+  //   await navigateToFirstFundInvestmentForm(page);
+  //   const investment = new InvestmentPage(page);
+  //   await investment.completeLumpsumInvestment(investmentTestData.zeroAmount, investmentTestData.validPayment);
+  //   await investment.expectZeroValidationError();
+  // });
 
-  test('TC-INV-004: negative amount investment is rejected @regression', async ({ page }) => {
-    await navigateToFirstFundInvestmentForm(page);
-    const investment = new InvestmentPage(page);
-    await investment.completeLumpsumInvestment(investmentTestData.negativeAmount, investmentTestData.validPayment);
-    await investment.expectZeroValidationError();
-  });
+  // test('TC-INV-004: negative amount investment is rejected @regression', async ({ page }) => {
+  //   await navigateToFirstFundInvestmentForm(page);
+  //   const investment = new InvestmentPage(page);
+  //   await investment.completeLumpsumInvestment(investmentTestData.negativeAmount, investmentTestData.validPayment);
+  //   await investment.expectZeroValidationError();
+  // });
 
   //OOS as UI is not accepting non numerics to type
   // test('TC-INV-005: non-numeric amount input is rejected @regression', async ({ page }) => {

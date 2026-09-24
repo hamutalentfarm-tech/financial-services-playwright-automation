@@ -30,8 +30,14 @@ test.describe('Dashboard @dashboard', () => {
     expect(total).toBe(0);
   });
 
-  test('TC-DASH-003: dashboard portfolio value reconciles with /api/dashboard summary @regression @api', async ({ investorPage, apiContext }) => {
-    const dashboard = new DashboardPage(investorPage);
+  test('TC-DASH-003: dashboard portfolio value reconciles with /api/dashboard summary @regression @api', async ({ page, apiContext }) => {
+    const { LoginPage } = await import('../../pages/LoginPage');
+    const loginPage = new LoginPage(page);
+    const { users } = await import('../../fixtures/users');
+    await loginPage.goto();
+    await loginPage.login(users.newUser.email, users.newUser.password);
+    await loginPage.expectLoginSuccess();
+    const dashboard = new DashboardPage(page);
     await dashboard.goto();
     const uiValue = await dashboard.getPortfolioTotalValue();
 

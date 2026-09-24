@@ -5,11 +5,13 @@ export class TransactionPage {
   readonly page: Page;
   readonly statusFilter: Locator;
   readonly transactionRows: Locator;
+  readonly viewTransaction: Locator;
 
   constructor(page: Page) {
     this.page = page;
     this.statusFilter = page.getByTestId(dataTestIds.transactions.statusFilter);
     this.transactionRows = page.locator('[data-testid^="transaction-row-"]');
+    this.viewTransaction = page.locator('[data-testid^="transaction-details-link"]')
   }
 
   async goto() {

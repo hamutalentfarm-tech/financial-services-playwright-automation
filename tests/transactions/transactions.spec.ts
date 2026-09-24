@@ -46,7 +46,7 @@ test.describe('Transaction History @transactions', () => {
   test('TC-TXN-004: opening a transaction row shows transaction detail @regression', async ({ investorPage }) => {
     const transactions = new TransactionPage(investorPage);
     await transactions.goto();
-    const firstRow = transactions.transactionRows.first();
+    const firstRow = transactions.viewTransaction.first();
     if (await firstRow.isVisible().catch(() => false)) {
       await firstRow.click();
       await expect(investorPage).toHaveURL(/transactions\/.+/);

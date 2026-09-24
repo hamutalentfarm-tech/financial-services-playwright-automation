@@ -12,12 +12,12 @@
 # Error details
 
 ```
-Error: Expected HTTP 401 but got 200 for http://8.231.116.131:8082/login
+Error: Expected HTTP 401 but got 302 for http://8.234.70.115:8082/dashboard
 
 expect(received).toBe(expected) // Object.is equality
 
 Expected: 401
-Received: 200
+Received: 302
 ```
 
 # Test source
@@ -33,7 +33,7 @@ Received: 200
   8  | 
   9  | export async function expectStatus(response: APIResponse, expected: number) {
 > 10 |   expect(response.status(), `Expected HTTP ${expected} but got ${response.status()} for ${response.url()}`).toBe(expected);
-     |                                                                                                             ^ Error: Expected HTTP 401 but got 200 for http://8.231.116.131:8082/login
+     |                                                                                                             ^ Error: Expected HTTP 401 but got 302 for http://8.234.70.115:8082/dashboard
   11 | }
   12 | 
   13 | export async function expectSuccessEnvelope(response: APIResponse) {

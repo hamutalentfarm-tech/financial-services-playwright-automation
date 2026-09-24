@@ -12,7 +12,7 @@
 # Error details
 
 ```
-Error: Expected HTTP 201 but got 422 for http://8.231.116.131:8082/api/investments
+Error: Expected HTTP 201 but got 422 for http://8.234.70.115:8082/api/investments
 
 expect(received).toBe(expected) // Object.is equality
 
@@ -33,7 +33,7 @@ Received: 422
   8  | 
   9  | export async function expectStatus(response: APIResponse, expected: number) {
 > 10 |   expect(response.status(), `Expected HTTP ${expected} but got ${response.status()} for ${response.url()}`).toBe(expected);
-     |                                                                                                             ^ Error: Expected HTTP 201 but got 422 for http://8.231.116.131:8082/api/investments
+     |                                                                                                             ^ Error: Expected HTTP 201 but got 422 for http://8.234.70.115:8082/api/investments
   11 | }
   12 | 
   13 | export async function expectSuccessEnvelope(response: APIResponse) {
